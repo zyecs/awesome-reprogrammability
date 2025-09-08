@@ -1,0 +1,70 @@
+- title: "Adversarial Reprogramming of Neural Networks"
+  authors:
+    - "Elsayed, Gamaleldin F."
+    - "Goodfellow, Ian"
+    - "Sohl-Dickstein, Jascha"
+  year: 2018
+  venue: "ICLR"
+  url: "https://arxiv.org/abs/1806.11146"
+  code_url: "https://github.com/tensorflow/cleverhans"
+  mechanism: "adversarial-reprogramming"
+  location: "input-layer"
+  operator: "addition"
+  tags:
+    - "computer-vision"
+    - "adversarial-reprogramming"
+    - "imagenet"
+  summary: "Introduces adversarial reprogramming to repurpose ImageNet classifiers for counting squares and MNIST classification"
+  datasets:
+    - "ImageNet"
+    - "MNIST"
+  architectures:
+    - "ResNet"
+    - "Inception"
+
+- title: "The Power of Scale for Parameter-Efficient Prompt Tuning"
+  authors:
+    - "Lester, Brian"
+    - "Al-Rfou, Rami" 
+    - "Constant, Noah"
+  year: 2021
+  venue: "EMNLP"
+  url: "https://arxiv.org/abs/2104.08691"
+  code_url: "https://github.com/google-research/prompt-tuning"
+  mechanism: "soft-prompts"
+  location: "input-layer"
+  operator: "addition"
+  tags:
+    - "natural-language-processing"
+    - "prompt-tuning"
+    - "transformer"
+  summary: "Shows that prompt tuning becomes more competitive with model tuning as model size increases"
+  datasets:
+    - "SuperGLUE"
+  architectures:
+    - "T5"
+
+- title: "Learning to Prompt for Vision-Language Models"
+  authors:
+    - "Zhou, Kaiyang"
+    - "Yang, Jingkang"
+    - "Loy, Chen Change"
+    - "Liu, Ziwei"
+  year: 2022
+  venue: "IJCV" 
+  url: "https://arxiv.org/abs/2109.01134"
+  code_url: "https://github.com/KaiyangZhou/CoOp"
+  mechanism: "soft-prompts"
+  location: "input-layer"
+  operator: "addition"
+  tags:
+    - "computer-vision"
+    - "natural-language-processing"
+    - "multimodal"
+    - "prompt-tuning"
+  summary: "Introduces Context Optimization (CoOp) for learning continuous prompts for vision-language models"
+  datasets:
+    - "ImageNet"
+    - "CIFAR-10"
+  architectures:
+    - "CLIP"

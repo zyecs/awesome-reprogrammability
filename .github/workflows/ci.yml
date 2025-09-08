@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Seeder sanity (dry run)
+        run: |
+          cat > /tmp/sample.bib <<'EOF'
+          @inproceedings{lester2021prompt,
+            title={The Power of Scale for Parameter-Efficient Prompt Tuning},
+            author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},
+            year={2021},
+            booktitle={EMNLP},
+            url={https://arxiv.org/abs/2104.08691}
+          }
+          EOF
+          python scripts/bibtex_to_yaml.py /tmp/sample.bib --dry-run
+
+      - name: Validate lists
+        run: |
+          python scripts/validate_lists.py
+
+      - name: Render README (auto)
+        run: |
+          python scripts/render_readme.py
+          # Fail if README needs updating but changes were not committed
+          if ! git diff --exit-code -- README.md; then
+            echo "README changed by renderer. Commit the updated README." >&2
+            exit 1
+          fi
+
+      - name: Linkcheck
+        run: |
+          python scripts/linkcheck.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: awesome-lint
+        run: |
+          npx --yes awesome-lint README.md
+
+      - name: markdownlint
+        run: |
+          npx --yes markdownlint-cli@0.39.0 "**/*.md" --ignore node_modules
+
+      - name: MkDocs build
+        run: |
+          mkdocs build --strict

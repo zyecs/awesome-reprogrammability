@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Awesome Neural Network Reprogrammability"
+message: "If you use this collection, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Contributors"
+    given-names: "Awesome Reprogrammability"
+repository-code: "https://github.com/username/awesome-reprogrammability"
+url: "https://github.com/username/awesome-reprogrammability"
+abstract: "A curated list of resources on neural network reprogrammability - techniques for reprogramming neural networks to perform new tasks without full retraining."
+keywords:
+  - neural networks
+  - reprogrammability
+  - machine learning
+  - deep learning
+  - transfer learning
+license: CC-BY-4.0
+version: "1.0.0"
+date-released: "2024-09-08"

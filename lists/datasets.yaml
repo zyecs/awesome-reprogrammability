@@ -1,0 +1,30 @@
+- name: "ImageNet"
+  domain: "computer-vision"
+  url: "https://www.image-net.org/"
+  description: "Large-scale dataset of images organized according to the WordNet hierarchy"
+  tasks:
+    - "image-classification"
+    - "object-detection"
+  size:
+    train: 1281167
+    validation: 50000
+    test: 100000
+  tags:
+    - "imagenet"
+    - "computer-vision"
+
+- name: "SuperGLUE"
+  domain: "natural-language-processing"  
+  url: "https://super.gluebenchmark.com/"
+  description: "A challenging benchmark suite for general-purpose language understanding"
+  tasks:
+    - "natural-language-inference"
+    - "question-answering"
+    - "reading-comprehension"
+  size:
+    train: 27312
+    validation: 3226
+    test: 3245
+  tags:
+    - "glue"
+    - "natural-language-processing"

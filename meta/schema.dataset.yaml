@@ -1,0 +1,50 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+$id: "dataset-schema"
+title: "Dataset Schema for Reprogrammability Evaluation"
+type: object
+required:
+  - name
+  - domain
+  - url
+  - description
+  - tasks
+properties:
+  name:
+    type: string
+    description: "Dataset name"
+  domain:
+    type: string
+    enum:
+      - computer-vision
+      - natural-language-processing
+      - speech
+      - multimodal
+      - robotics
+    description: "Primary domain"
+  url:
+    type: string
+    format: uri
+    description: "Link to dataset"
+  description:
+    type: string
+    description: "Brief description of the dataset"
+  tasks:
+    type: array
+    items:
+      type: string
+    description: "Tasks this dataset is used for"
+  size:
+    type: object
+    properties:
+      train:
+        type: integer
+      validation:
+        type: integer
+      test:
+        type: integer
+    description: "Dataset split sizes"
+  tags:
+    type: array
+    items:
+      type: string
+    description: "Additional descriptive tags"

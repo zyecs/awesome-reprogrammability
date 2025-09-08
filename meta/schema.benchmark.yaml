@@ -1,0 +1,62 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+$id: "benchmark-schema"
+title: "Benchmark Schema for Reprogrammability Evaluation"
+type: object
+required:
+  - name
+  - description
+  - datasets
+  - metrics
+  - url
+properties:
+  name:
+    type: string
+    description: "Benchmark name"
+  description:
+    type: string
+    description: "Description of what the benchmark evaluates"
+  datasets:
+    type: array
+    items:
+      type: string
+    description: "Datasets included in this benchmark"
+  metrics:
+    type: array
+    items:
+      type: string
+      enum:
+        - accuracy
+        - f1-score
+        - bleu
+        - rouge
+        - perplexity
+        - auc
+        - map
+    description: "Evaluation metrics used"
+  url:
+    type: string
+    format: uri
+    description: "Link to benchmark details/leaderboard"
+  code_url:
+    type: string
+    format: uri
+    description: "Link to evaluation code (optional)"
+  tasks:
+    type: array
+    items:
+      type: string
+    description: "Tasks evaluated by this benchmark"
+  domain:
+    type: string
+    enum:
+      - computer-vision
+      - natural-language-processing
+      - speech
+      - multimodal
+      - robotics
+    description: "Primary domain"
+  tags:
+    type: array
+    items:
+      type: string
+    description: "Additional descriptive tags"

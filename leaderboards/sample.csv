@@ -1,0 +1,4 @@
+paper,model,mechanism,dataset,split,shots,metric,value,seed,frozen_base,notes
+Adversarial Reprogramming of Neural Networks,Inception-v3,adversarial-reprogramming,MNIST,test,0,accuracy,0.98,1,true,Repurposed ImageNet model
+The Power of Scale for Parameter-Efficient Prompt Tuning,T5-Large,soft-prompts,SuperGLUE,validation,32,avg_score,0.85,0,true,Prompt tuning with continuous vectors
+Learning to Prompt for Vision-Language Models,CLIP ViT-B/16,soft-prompts,ImageNet,validation,0,top1,0.70,0,true,Context Optimization (CoOp)

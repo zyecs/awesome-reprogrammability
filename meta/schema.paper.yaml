@@ -1,0 +1,89 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+$id: "paper-schema"
+title: "Neural Network Reprogrammability Paper Schema"
+type: object
+required:
+  - title
+  - authors
+  - year
+  - venue
+  - url
+  - mechanism
+  - location
+  - operator
+  - tags
+properties:
+  title:
+    type: string
+    description: "Full title of the paper"
+  authors:
+    type: array
+    items:
+      type: string
+    description: "List of author names"
+  year:
+    type: integer
+    minimum: 2000
+    maximum: 2030
+    description: "Publication year"
+  venue:
+    type: string
+    description: "Conference/journal venue"
+  url:
+    type: string
+    format: uri
+    description: "Link to paper (preferably PDF)"
+  code_url:
+    type: string
+    format: uri
+    description: "Link to code repository (optional)"
+  mechanism:
+    type: string
+    enum:
+      - model-reprogramming
+      - input-space-transformation
+      - adversarial-reprogramming
+      - input-mapping
+      - prompt-tuning
+      - soft-prompts
+      - hard-prompts
+      - context-learning
+      - prompt-instruction
+      - task-instructions
+      - few-shot-examples
+      - chain-of-thought
+    description: "Primary reprogramming mechanism"
+  location:
+    type: string
+    enum:
+      - input-layer
+      - intermediate-layers
+      - output-layer
+      - cross-layer
+    description: "Where in the network the modification occurs"
+  operator:
+    type: string
+    enum:
+      - addition
+      - multiplication
+      - concatenation
+      - replacement
+    description: "Type of operation performed"
+  tags:
+    type: array
+    items:
+      type: string
+    description: "Additional tags from controlled vocabulary"
+  summary:
+    type: string
+    description: "Brief summary of the paper's contribution"
+  datasets:
+    type: array
+    items:
+      type: string
+    description: "Datasets used for evaluation"
+  architectures:
+    type: array
+    items:
+      type: string
+    description: "Neural network architectures used"
