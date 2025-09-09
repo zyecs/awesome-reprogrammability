@@ -3,7 +3,7 @@ site_description: A curated list of resources on neural network reprogrammabilit
 site_url: https://username.github.io/awesome-reprogrammability
 
 theme:
-  name: material
+  name: readthedocs
   palette:
     - scheme: default
       primary: blue
@@ -14,6 +14,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Papers: sections/papers.md
   - Taxonomy: sections/taxonomy.md
   - Evaluations: sections/evaluations.md
   - Leaderboards: sections/leaderboards.md

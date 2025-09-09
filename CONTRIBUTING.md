@@ -37,12 +37,13 @@ python scripts/render_readme.py
 You can bootstrap `lists/papers.yaml` from BibTeX:
 
 ```bash
-python scripts/bibtex_to_yaml.py my_refs.bib --out lists/papers.yaml --append
+python scripts/bibtex_to_yaml.py my_refs.bib --out lists/papers.yaml --append \
+  --category "model reprogramming"
 python scripts/validate_lists.py && python scripts/render_readme.py
 ```
 
 Notes:
-- The seeder maps common fields (title, author, year, booktitle/journal → venue, url/doi) and applies light heuristics for `mechanism`, `location`, and `operator`.
+- The seeder maps common fields (title, author, year, booktitle/journal → venue, url/doi). Use `--category` to force the mechanism for all imported entries (accepted: `model reprogramming`, `prompt tuning`, `prompt instruction`). Otherwise, it applies light heuristics for `mechanism`, `location`, and `operator`.
 - Use flags to override defaults: `--default-mechanism soft-prompts` (and `--default-location`, `--default-operator`).
 - Duplicates are skipped by (title, year). Review and adjust tags to match `meta/tags.md`.
 

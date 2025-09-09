@@ -68,12 +68,24 @@ properties:
       - multiplication
       - concatenation
       - replacement
+      - parametric
     description: "Type of operation performed"
+  alignment:
+    type: string
+    enum:
+      - linear
+      - statistical
+      - rule-based
+      - identity
+    description: "How target tasks align with source tasks"
   tags:
     type: array
     items:
       type: string
     description: "Additional tags from controlled vocabulary"
+  tldr:
+    type: string
+    description: "Concise one-sentence summary of the paper's main contribution"
   summary:
     type: string
     description: "Brief summary of the paper's contribution"

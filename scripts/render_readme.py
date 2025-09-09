@@ -29,6 +29,7 @@ META_TAXONOMY = REPO_ROOT / "meta" / "taxonomy.md"
 DOCS_SECTIONS = REPO_ROOT / "docs" / "sections"
 DOCS_TAXONOMY = DOCS_SECTIONS / "taxonomy.md"
 DOCS_EVALS = DOCS_SECTIONS / "evaluations.md"
+DOCS_PAPERS = DOCS_SECTIONS / "papers.md"
 
 
 AUTO_START = "<!-- AUTO:START -->"
@@ -47,20 +48,25 @@ def load_papers(path: Path):
 
 
 def group_papers(papers):
-    # mechanism -> location -> operator -> [papers]
-    tree = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    # Group papers by main category only (simplified)
+    tree = defaultdict(list)
     for p in papers:
         mech = p.get("mechanism", "unknown")
-        loc = p.get("location", "unknown")
-        op = p.get("operator", "unknown")
-        tree[mech][loc][op].append(p)
-    # sort each list by year desc, title asc
-    for mech in tree:
-        for loc in tree[mech]:
-            for op in tree[mech][loc]:
-                tree[mech][loc][op].sort(
-                    key=lambda x: (-int(x.get("year", 0)), x.get("title", ""))
-                )
+        # Map to user-friendly category names
+        category_map = {
+            "model-reprogramming": "Model Reprogramming",
+            "adversarial-reprogramming": "Model Reprogramming",
+            "prompt-tuning": "Prompt Tuning",
+            "soft-prompts": "Prompt Tuning",
+            "hard-prompts": "Prompt Tuning",
+            "prompt-instruction": "Prompt Instruction",
+        }
+        category = category_map.get(mech, mech.replace("-", " ").title())
+        tree[category].append(p)
+
+    # Sort each category by year desc, then title asc
+    for category in tree:
+        tree[category].sort(key=lambda x: (-int(x.get("year", 0)), x.get("title", "")))
     return tree
 
 
@@ -68,27 +74,37 @@ def render_grouped_md(tree):
     lines = []
     lines.append("\n")
     lines.append("## Curated Papers (auto-generated)\n")
-    for mech in sorted(tree.keys()):
-        lines.append(f"\n### {mech}")
-        for loc in sorted(tree[mech].keys()):
-            lines.append(f"\n#### {loc}")
-            for op in sorted(tree[mech][loc].keys()):
-                lines.append(f"\n##### {op}")
-                for p in tree[mech][loc][op]:
-                    title = p.get("title", "Untitled")
-                    year = p.get("year", "?")
-                    venue = p.get("venue", "")
-                    url = p.get("url")
-                    code_url = p.get("code_url")
-                    parts = [f"{title} ({year})"]
-                    if venue:
-                        parts.append(venue)
-                    desc = " — ".join(parts)
-                    link = f"[{desc}]({url})" if url else desc
-                    suffix = f" · [code]({code_url})" if code_url else ""
-                    lines.append(f"- {link}{suffix}")
+
+    # Order categories logically
+    category_order = ["Model Reprogramming", "Prompt Tuning", "Prompt Instruction"]
+    ordered_categories = [cat for cat in category_order if cat in tree]
+    ordered_categories.extend(
+        [cat for cat in sorted(tree.keys()) if cat not in category_order]
+    )
+
+    for category in ordered_categories:
+        papers = tree[category]
+        lines.append(f"\n### {category}")
+        lines.append(f"\n*{len(papers)} papers*\n")
+
+        for p in papers:
+            title = p.get("title", "Untitled")
+            year = p.get("year", "?")
+            venue = p.get("venue", "")
+            url = p.get("url")
+            code_url = p.get("code_url")
+
+            # Create paper entry
+            parts = [f"{title} ({year})"]
+            if venue:
+                parts.append(venue)
+            desc = " — ".join(parts)
+            link = f"[{desc}]({url})" if url else desc
+            suffix = f" · [code]({code_url})" if code_url else ""
+            lines.append(f"- {link}{suffix}")
+
     lines.append("\n")
-    generated_at = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
     lines.append(f"_Generated: {generated_at}_\n")
     return "\n".join(lines)
 
@@ -142,10 +158,162 @@ def ensure_docs():
     print("✅ Docs sections updated: taxonomy.md, evaluations.md")
 
 
+def map_mechanism_to_configuration(mechanism):
+    """Map mechanism to Configuration (λ) according to the taxonomy"""
+    format_mapping = {
+        "model-reprogramming": "Learnable",
+        "adversarial-reprogramming": "Learnable",
+        "prompt-tuning": "Learnable",
+        "soft-prompts": "Learnable",
+        "hard-prompts": "Learnable",
+        "prompt-instruction": "Fixed",
+    }
+    return format_mapping.get(mechanism, "Learnable")
+
+
+def map_location_to_greek(location):
+    """Map location to Location (ℓ) with LaTeX notation"""
+    location_mapping = {
+        "input-layer": "Input ($\\mathcal{X}_S$)",
+        "intermediate-layers": "Hidden ($\\mathcal{H}$)",
+        "output-layer": "Output ($\\mathcal{Y}$)",
+        "embedding": "Embedding ($\\mathcal{E}$)",
+    }
+    return location_mapping.get(location, location)
+
+
+def map_operator_to_greek(operator):
+    """Map operator to Operator (τ) with abbreviations"""
+    operator_mapping = {
+        "addition": "Additive (AD)",
+        "multiplication": "Multiplicative (MU)",
+        "concatenation": "Concatenative (CO)",
+        "replacement": "Replacement (RE)",
+        "parametric": "Parametric (PR)",
+    }
+    return operator_mapping.get(operator, operator)
+
+
+def map_alignment_to_display(alignment):
+    """Map alignment field to display format with abbreviation"""
+    alignment_mapping = {
+        "linear": "Linear (LA)",
+        "statistical": "Statistical (SA)", 
+        "rule-based": "Rule-based (RA)",
+        "identity": "Identity (ID)"
+    }
+    return alignment_mapping.get(alignment, "Linear (LA)")
+
+def map_mechanism_to_alignment(mechanism):
+    """Fallback: Map mechanism to Alignment (ω) when alignment field is missing"""
+    alignment_mapping = {
+        "adversarial-reprogramming": "Linear (LA)",
+        "model-reprogramming": "Linear (LA)",
+        "prompt-tuning": "Linear (LA)",
+        "soft-prompts": "Linear (LA)",
+        "hard-prompts": "Linear (LA)",
+        "prompt-instruction": "Rule-based (RA)",
+    }
+    return alignment_mapping.get(mechanism, "Linear (LA)")
+
+
+def format_paper_citation(paper):
+    """Format paper in 'Author et al. (Year, *Short Title*)' format"""
+    authors = paper.get("authors", [])
+    year = paper.get("year", "")
+    title = paper.get("title", "")
+    
+    # Get first author's last name
+    if authors:
+        first_author = authors[0].split(",")[0].split()[-1]  # Get last part of name
+    else:
+        first_author = "Unknown"
+    
+    # Create short title (truncate long titles)
+    short_title = title
+    if len(title) > 50:
+        short_title = title[:47] + "..."
+    
+    # Format: "Author et al. (Year, *Title*)"
+    if len(authors) > 1:
+        citation = f"{first_author} et al. ({year}, *{short_title}*)"
+    else:
+        citation = f"{first_author} ({year}, *{short_title}*)"
+    
+    return citation
+
+def render_papers_table_md(papers):
+    # Sort by year desc, then title asc
+    rows = sorted(papers, key=lambda p: (-int(p.get("year", 0)), p.get("title", "")))
+
+    cols = [
+        "Paper",
+        "Configuration ($\\lambda$)",
+        "Location ($\\ell$)",
+        "Operator ($\\tau$)",
+        "Alignment ($\\omega$)",
+        "Venue",
+        "Year",
+    ]
+
+    lines = []
+    lines.append("# Papers\n")
+    lines.append(
+        "A tabular view of curated papers organized by the reprogrammability taxonomy dimensions."
+    )
+    lines.append("")
+    lines.append(" | ".join(cols))
+    lines.append(" | ".join(["---"] * len(cols)))
+
+    for p in rows:
+        venue = p.get("venue", "")
+        year = p.get("year", "")
+        mechanism = p.get("mechanism", "")
+        location = p.get("location", "")
+        operator = p.get("operator", "")
+        alignment = p.get("alignment", "")
+
+        # Map to taxonomy format using only YAML data
+        configuration_lambda = map_mechanism_to_configuration(mechanism)
+        location_l = map_location_to_greek(location)
+        operator_tau = map_operator_to_greek(operator)
+        
+        # Use alignment field if present, otherwise fallback to mechanism-based mapping
+        if alignment:
+            alignment_omega = map_alignment_to_display(alignment)
+        else:
+            alignment_omega = map_mechanism_to_alignment(mechanism)
+
+        paper_citation = format_paper_citation(p)
+        
+        vals = [
+            paper_citation,
+            configuration_lambda,
+            location_l,
+            operator_tau, 
+            alignment_omega,
+            venue,
+            str(year),
+        ]
+        lines.append(" | ".join(vals))
+
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_papers_table(papers):
+    DOCS_SECTIONS.mkdir(parents=True, exist_ok=True)
+    md = render_papers_table_md(papers)
+    with open(DOCS_PAPERS, "w", encoding="utf-8") as f:
+        f.write(md)
+    print(f"✅ Wrote {DOCS_PAPERS}")
+
+
 def main():
     papers = load_papers(PAPERS)
     tree = group_papers(papers)
     ensure_docs()
+    write_papers_table(papers)
     rc = write_readme(tree)
     sys.exit(rc)
 

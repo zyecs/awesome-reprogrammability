@@ -10,8 +10,8 @@ Features
 - Supports --append/--overwrite and --dry-run
 
 Usage
-  python scripts/bibtex_to_yaml.py input1.bib [input2.bib ...] \
-    --out lists/papers.yaml --append
+  python scripts/bibtex_to_yaml.py input1.bib [input2.bib ...] \\
+    --out lists/papers.yaml --append [--category "model reprogramming"|"prompt tuning"|"prompt instruction"]
 
 After generating, run:
   python scripts/validate_lists.py
@@ -24,7 +24,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 try:
     import yaml
@@ -37,28 +37,44 @@ BIB_ENTRY_RE = re.compile(
     r"@(?P<type>[a-zA-Z]+)\s*\{\s*(?P<key>[^,]+)\s*,(?P<body>.*?)\}\s*", re.DOTALL
 )
 BIB_FIELD_RE = re.compile(
-    r"(?m)^(?P<name>[a-zA-Z_]+)\s*=\s*(?P<value>\{[^{}]*\}|\"[^\"]*\"|[^,\n]+)\s*,?"
+    r"(?m)^\s*(?P<name>[a-zA-Z_]+)\s*=\s*(?P<value>\{.*?\}|\".*?\"|[^,\n]+)\s*,?\s*$"
 )
 
 
 def parse_bibtex(text: str) -> List[Dict[str, str]]:
     entries: List[Dict[str, str]] = []
-    for m in BIB_ENTRY_RE.finditer(text):
-        etype = m.group("type").strip().lower()
-        body = m.group("body")
-        fields: Dict[str, str] = {"_type": etype}
-        for fm in BIB_FIELD_RE.finditer(body):
-            name = fm.group("name").strip().lower()
-            raw = fm.group("value").strip()
-            # strip outer braces/quotes
-            if (raw.startswith("{") and raw.endswith("}")) or (
-                raw.startswith('"') and raw.endswith('"')
-            ):
-                raw = raw[1:-1]
-            # collapse whitespace
-            val = re.sub(r"\s+", " ", raw).strip()
-            fields[name] = val
-        entries.append(fields)
+
+    # Find @type{key, and then manually find the matching closing brace
+    entry_starts = []
+    for m in re.finditer(r"@([a-zA-Z]+)\s*\{\s*([^,]+)\s*,", text):
+        entry_starts.append((m.start(), m.group(1).strip().lower(), m.end()))
+
+    for _, etype, body_start in entry_starts:
+        # Find the matching closing brace
+        brace_count = 1
+        pos = body_start
+        while pos < len(text) and brace_count > 0:
+            if text[pos] == "{":
+                brace_count += 1
+            elif text[pos] == "}":
+                brace_count -= 1
+            pos += 1
+
+        if brace_count == 0:
+            body = text[body_start : pos - 1]
+            fields: Dict[str, str] = {"_type": etype}
+            for fm in BIB_FIELD_RE.finditer(body):
+                name = fm.group("name").strip().lower()
+                raw = fm.group("value").strip()
+                # strip outer braces/quotes
+                if (raw.startswith("{") and raw.endswith("}")) or (
+                    raw.startswith('"') and raw.endswith('"')
+                ):
+                    raw = raw[1:-1]
+                # collapse whitespace
+                val = re.sub(r"\s+", " ", raw).strip()
+                fields[name] = val
+            entries.append(fields)
     return entries
 
 
@@ -101,6 +117,14 @@ def guess_url(fields: Dict[str, str]) -> Optional[str]:
         "arxiv" in archive or re.fullmatch(r"\d{4}\.\d{4,5}(v\d+)?", eprint)
     ):
         return f"https://arxiv.org/abs/{eprint}"
+    # Try to extract arXiv ID embedded in free-text fields
+    for key in ("journal", "note", "howpublished", "booktitle"):
+        val = (fields.get(key) or "").strip()
+        if not val:
+            continue
+        m = re.search(r"arXiv[:\s]+(\d{4}\.\d{4,5}(?:v\d+)?)", val, flags=re.IGNORECASE)
+        if m:
+            return f"https://arxiv.org/abs/{m.group(1)}"
     return None
 
 
@@ -211,9 +235,13 @@ def map_entry_to_schema(
     op = defaults.get("operator") or guess_operator(mech, title)
     tags = guess_domain_tags(title, venue)
 
-    if not (year and url):
+    if not year:
         # Skip entries missing critical fields
         return None
+
+    # Use placeholder URL if missing - can be manually updated later
+    if not url:
+        url = f"#{title.lower().replace(' ', '-').replace(',', '').replace(':', '')}"
 
     item: Dict[str, object] = {
         "title": title,
@@ -307,35 +335,94 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument(
         "--default-operator", dest="operator", default=None, help="Default operator"
     )
+    ap.add_argument(
+        "--category",
+        dest="category",
+        default=None,
+        help=(
+            "Force mechanism for all entries. Accepts: 'model reprogramming', 'prompt tuning', 'prompt instruction'"
+        ),
+    )
     args = ap.parse_args(argv)
 
-    inputs = [Path(p) for p in args.inputs]
-    for p in inputs:
-        if not p.exists():
-            print(f"❌ Input not found: {p}")
+    inputs: List[Path] = []
+    for p in args.inputs:
+        path = Path(p)
+        if not path.exists():
+            alt = Path("bibs") / p
+            if alt.exists():
+                path = alt
+        if not path.exists():
+            print(f"❌ Input not found: {path}")
             return 1
+        inputs.append(path)
 
     converted: List[Dict[str, object]] = []
+
+    def normalize_category(val: Optional[str]) -> Optional[str]:
+        if not val:
+            return None
+        s = str(val).strip().lower().replace("_", "-")
+        mapping = {
+            "MR": "model-reprogramming",
+            "mr": "model-reprogramming",
+            "model reprogramming": "model-reprogramming",
+            "model-reprogramming": "model-reprogramming",
+            "PT": "prompt-tuning",
+            "pt": "prompt-tuning",
+            "prompt tuning": "prompt-tuning",
+            "prompt-tuning": "prompt-tuning",
+            "PI": "prompt-instruction",
+            "pi": "prompt-instruction",
+            "prompt instruction": "prompt-instruction",
+            "prompt-instruction": "prompt-instruction",
+        }
+        if s in mapping:
+            return mapping[s]
+        print(
+            "❌ Unknown category for --category. Use one of: 'model reprogramming', 'prompt tuning', 'prompt instruction'",
+            file=sys.stderr,
+        )
+        sys.exit(2)
+
+    forced_mechanism = normalize_category(args.category)
+
     defaults = {
         k: v
         for k, v in {
-            "mechanism": args.mechanism,
+            "mechanism": forced_mechanism or args.mechanism,
             "location": args.location,
             "operator": args.operator,
         }.items()
         if v
     }
 
+    total = added = skipped_title = skipped_missing = 0
+
     for path in inputs:
         text = path.read_text(encoding="utf-8", errors="ignore")
+        print(f"Parsing {path}")
         entries = parse_bibtex(text)
         for e in entries:
+            total += 1
             mapped = map_entry_to_schema(e, defaults)
             if mapped:
                 converted.append(mapped)
+                added += 1
+            else:
+                title = (e.get("title") or "").strip()
+                year = to_int(e.get("year"))
+                url = guess_url(e)
+                if not title or not year:
+                    skipped_title += 1
+                elif not url:
+                    skipped_missing += 1
 
     if not converted:
         print("⚠️  No convertible entries found.")
+        print(
+            f"   Parsed: {total}, missing title/year: {skipped_title}, missing URL/DOI/arXiv: {skipped_missing}"
+        )
         return 0
 
     out_path = Path(args.out)
@@ -358,6 +445,10 @@ def main(argv: Optional[List[str]] = None) -> int:
         yaml.safe_dump(final, sort_keys=False, allow_unicode=True), encoding="utf-8"
     )
     print(f"✅ Wrote {out_path} ({len(final)} items)")
+    if skipped_title or skipped_missing:
+        print(
+            f"ℹ️  Skipped entries — missing title/year: {skipped_title}, missing URL/DOI/arXiv: {skipped_missing}"
+        )
     return 0
 
 

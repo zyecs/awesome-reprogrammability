@@ -8,9 +8,10 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 
 ## Navigation
 
+- [Papers](sections/papers.md) - Tabular view organized by reprogrammability taxonomy dimensions
 - [Taxonomy](sections/taxonomy.md) - Classification system for reprogrammability methods
 - [Evaluations](sections/evaluations.md) - Benchmark results and comparisons  
-- [Leaderboards](sections/leaderboards.md) - Performance rankings across datasets
+<!-- - [Leaderboards](sections/leaderboards.md) - Performance rankings across datasets -->
 
 ## Quick Start
 
