@@ -21,7 +21,7 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 
 ### Model Reprogramming
 
-*19 papers*
+*20 papers*
 
 - [Attribute-based Visual Reprogramming for Vision-Language Models (2025) — ICLR](#attribute-based-visual-reprogramming-for-vision-language-models)
 - [Model Reprogramming Demystified: A Neural Tangent Kernel Perspective (2025) — arXiv preprint arXiv:2506.0620](https://arxiv.org/abs/2506.0620)
@@ -39,9 +39,10 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [Cross-modal adversarial reprogramming (2022) — CVPR](#cross-modal-adversarial-reprogramming)
 - [Voice2series: Reprogramming acoustic models for time series classification (2021) — ICML](#voice2series-reprogramming-acoustic-models-for-time-series-classification)
 - [WARP: Word-level adversarial reprogramming (2021) — ACL-IJCNLP](#warp-word-level-adversarial-reprogramming)
-- [Reprogramming Language Models for Molecular Representation Learning (2020) — NeurIPS](#reprogramming-language-models-for-molecular-representation-learning)
-- [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources (2020) — ICML](#transfer-learning-without-knowing-reprogramming-black-box-machine-learning-models-with-scarce-data-and-limited-resources)
-- [Adversarial Reprogramming of Text Classification Neural Networks (2019) — EMNLP/IJCNLP](#adversarial-reprogramming-of-text-classification-neural-networks)
+- [Reprogramming Language Models for Molecular Representation Learning (2020) — NeurIPS Workshop](https://arxiv.org/abs/2012.03460)
+- [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources (2020) — ICML](https://arxiv.org/abs/2007.08714)
+- [Adversarial Reprogramming of Neural Networks (2019) — ICLR](https://arxiv.org/abs/1806.11146)
+- [Adversarial Reprogramming of Text Classification Neural Networks (2019) — EMNLP/IJCNLP](https://arxiv.org/abs/1809.01829)
 
 ### Prompt Tuning
 
@@ -53,10 +54,10 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [P-Tuning: Prompt Tuning Can Be Comparable to Fine-Tuning Across Scales and Tasks (2022) — ACL, Volume 2: Short Papers](#p-tuning-prompt-tuning-can-be-comparable-to-fine-tuning-across-scales-and-tasks)
 - [PPT: Pre-trained Prompt Tuning for Few-shot Learning (2022) — Proceedings of ACL](#ppt-pre-trained-prompt-tuning-for-few-shot-learning)
 - [PTR: Prompt Tuning with Rules for Text Classification (2022) — AI Open](#ptr-prompt-tuning-with-rules-for-text-classification)
-- [Learning how to ask: Querying LMs with mixtures of soft prompts (2021) — arXiv preprint arXiv:2104.06599](https://arxiv.org/abs/2104.06599)
-- [P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks (2021) — arXiv preprint arXiv:2110.07602](https://arxiv.org/abs/2110.07602)
-- [Prefix-Tuning: Optimizing Continuous Prompts for Generation (2021) — ACL/IJCNLP](#prefix-tuning-optimizing-continuous-prompts-for-generation)
-- [Spot: Better frozen model adaptation through soft prompt transfer (2021) — arXiv preprint arXiv:2110.07904](https://arxiv.org/abs/2110.07904)
+- [Spot: Better frozen model adaptation through soft prompt transfer (2022) — ACL](https://arxiv.org/abs/2110.07904)
+- [Learning how to ask: Querying LMs with mixtures of soft prompts (2021) — NAACL](https://arxiv.org/abs/2104.06599)
+- [P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks (2021) — ACL](https://arxiv.org/abs/2110.07602)
+- [Prefix-Tuning: Optimizing Continuous Prompts for Generation (2021) — ACL/IJCNLP](https://arxiv.org/abs/2101.00190)
 - [The Power of Scale for Parameter-Efficient Prompt Tuning (2021) — EMNLP](https://arxiv.org/abs/2104.08691) · [code](https://github.com/google-research/prompt-tuning)
 
 ### Prompt Instruction
@@ -68,14 +69,8 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [Multitask Prompted Training Enables Zero-Shot Task Generalization (2022) — ICLR](#multitask-prompted-training-enables-zero-shot-task-generalization)
 - [Training language models to follow instructions with human feedback (2022) — NeurIPS](#training-language-models-to-follow-instructions-with-human-feedback)
 
-### Unknown
 
-*1 papers*
-
-- [Adversarial Reprogramming of Neural Networks (2019) — ICLR](https://arxiv.org/abs/1806.11146)
-
-
-_Generated: 2025-09-10 15:27 UTC_
+_Generated: 2025-09-11 00:11 UTC_
 
 <!-- AUTO:END -->
 

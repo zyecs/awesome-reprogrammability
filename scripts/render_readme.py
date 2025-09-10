@@ -178,11 +178,17 @@ def map_location_to_greek(location):
         "input": "Input ($\\mathcal{X}_S$)",
         "intermediate-layers": "Hidden ($\\mathcal{H}$)",
         "hidden": "Hidden ($\\mathcal{H}$)",
+        "hidden-layers": "Hidden ($\\mathcal{H}$)",
         "intermediate": "Hidden ($\\mathcal{H}$)",
-        # "output-layer": "Output ($\\mathcal{Y}$)",
         "embedding": "Embedding ($\\mathcal{E}$)",
         "embedding-layer": "Embedding ($\\mathcal{E}$)",
     }
+
+    if "/" in location:
+        locations = location.split("/")
+        locations = [a.strip() for a in locations]
+        return " / ".join([location_mapping.get(a, a) for a in locations])
+
     return location_mapping.get(location, location)
 
 

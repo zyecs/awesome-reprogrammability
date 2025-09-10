@@ -54,6 +54,7 @@
   tags:
   - natural-language-processing
   tldr: Uses model reprogramming as a defense mechanism against backdoor attacks
+
 - title: Reprogramming pretrained language models for protein sequence representation
     learning
   authors:
@@ -429,21 +430,24 @@
   tags:
   - natural-language-processing
   tldr: Incorporates human feedback for better prompt instruction
+
 - title: 'Learning how to ask: Querying LMs with mixtures of soft prompts'
   authors:
   - Qin, Guanghui
   - Eisner, Jason
   year: 2021
-  venue: arXiv preprint arXiv:2104.06599
+  venue: NAACL
   url: https://arxiv.org/abs/2104.06599
   mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
+  location: embedding-layer
+  operator: concatenation
+  alignment: identity
   tags:
-  - natural-language-processing
-  tldr: Mixture-based prompt tuning for language model querying
-- title: 'P-tuning v2: Prompt tuning can be comparable to fine-tuning universally
-    across scales and tasks'
+  - prompt-tuning
+  - LM
+  tldr:  learning continuous "soft prompts" through gradient descent, including mixtures of prompts, to efficiently adapt pre-trained language models for various tasks by manipulating the input embeddings.
+
+- title: 'P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks'
   authors:
   - Liu, Xiao
   - Ji, Kaixuan
@@ -453,27 +457,33 @@
   - Yang, Zhilin
   - Tang, Jie
   year: 2021
-  venue: arXiv preprint arXiv:2110.07602
+  venue: ACL
   url: https://arxiv.org/abs/2110.07602
   mechanism: prompt-tuning
-  location: input-layer
-  operator: multiplication
+  location: intermediate-layers
+  operator: concatenation
+  alignment: linear
   tags:
-  - natural-language-processing
-  tldr: P-tuning approach to prompt tuning across different scales
+  - prompt-tuning
+  - LM
+  tldr: Learnable continuous prompts into multiple hidden layers of pre-trained language models via concatenation, achieving performance comparable to fine-tuning across various model scales and NLU tasks with significantly fewer trainable parameters.
+
 - title: 'Prefix-Tuning: Optimizing Continuous Prompts for Generation'
   authors:
   - Li, Xiang Lisa
   - Liang, Percy
   year: 2021
   venue: ACL/IJCNLP
-  url: '#prefix-tuning-optimizing-continuous-prompts-for-generation'
+  url: 'https://arxiv.org/abs/2101.00190'
   mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
+  location: embedding-layer
+  operator: concatenation
+  alignment: identity
   tags:
-  - natural-language-processing
-  tldr: Prefix-based prompt tuning for natural language generation
+  - prompt-tuning
+  - LM
+  tldr: Optimizing a small, continuous task-specific vector (prefix) that is prepended to the input embeddings
+
 - title: 'Spot: Better frozen model adaptation through soft prompt transfer'
   authors:
   - Vu, Tu
@@ -481,15 +491,17 @@
   - Constant, Noah
   - Al-Rfou, Rami
   - Cer, Daniel
-  year: 2021
-  venue: arXiv preprint arXiv:2110.07904
+  year: 2022
+  venue: ACL
   url: https://arxiv.org/abs/2110.07904
   mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
+  location: embedding-layer / intermediate-layers
+  operator: concatenation
+  alignment: linear
   tags:
-  - natural-language-processing
-  tldr: Transferable prompt tuning for frozen model adaptation
+  - prompt-tuning
+  - LM
+  tldr: Reuse task-specific prompts
 - title: The Power of Scale for Parameter-Efficient Prompt Tuning
   authors:
   - Lester, Brian
@@ -541,35 +553,39 @@
   tags:
   - natural-language-processing
   tldr: Word-level model reprogramming for text classification tasks
+
 - title: Reprogramming Language Models for Molecular Representation Learning
   authors:
   - Vinod, Ria
   - Chen, Pin-Yu
   - Das, Payel
   year: 2020
-  venue: NeurIPS
-  url: '#reprogramming-language-models-for-molecular-representation-learning'
+  venue: NeurIPS Workshop
+  url: 'https://arxiv.org/abs/2012.03460'
   mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
+  location: input-layer
+  operator: parametric
+  alignment: rule-based 
   tags:
-  - natural-language-processing
-  tldr: Applies model reprogramming to biological sequence modeling and protein design
-- title: 'Transfer Learning without Knowing: Reprogramming Black-box Machine Learning
-    Models with Scarce Data and Limited Resources'
+  - model-reprogramming
+  - LM
+  tldr: Proposes representation reprogramming via dictiopnary learning, which repurposes pre-trained language models for molecular tasks by learning a parametric input transformation to bridge different data domains, followed by a structured output alignment.
+
+- title: 'Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources'
   authors:
   - Tsai, Yun-Yun
   - Chen, Pin-Yu
   - Ho, Tsung-Yi
   year: 2020
   venue: ICML
-  url: '#transfer-learning-without-knowing-reprogramming-black-box-machine-learning-models-with-scarce-data-and-limited-resources'
+  url: 'https://arxiv.org/abs/2007.08714'
   mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
+  location: input-layers
+  operator: statistical / linear
   tags:
-  - natural-language-processing
-  tldr: Black-box model reprogramming with limited data and computational resources
+  - model-reprogramming
+  - VM
+  tldr: Repurposes black-box machine learning models for new tasks with scarce data
 
 - title: Adversarial Reprogramming of Text Classification Neural Networks
   authors:
@@ -585,7 +601,7 @@
   operator: parametric
   alignment: statistical / linear
   tags:
-  - natural-language-processing
+  - model-reprogramming
   tldr: Extends adversarial reprogramming to text classification by developing a learnable, context-based vocabulary remapping approach that modifies input embeddings to adapt pre-trained models for new tasks
 
 - title: Adversarial Reprogramming of Neural Networks
@@ -597,13 +613,13 @@
   venue: ICLR
   url: https://arxiv.org/abs/1806.11146
   # code_url: https://github.com/tensorflow/cleverhans
-  # mechanism: adversarial-reprogramming
+  mechanism: adversarial-reprogramming
   location: input-layer
   operator: addition
   alignment: statistical
   tags:
-  - computer-vision
-  - adversarial-reprogramming
+  - model-reprogramming
+  - VM
   datasets:
   - ImageNet
   - MNIST
