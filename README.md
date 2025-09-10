@@ -21,7 +21,7 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 
 ### Model Reprogramming
 
-*21 papers*
+*19 papers*
 
 - [Attribute-based Visual Reprogramming for Vision-Language Models (2025) — ICLR](#attribute-based-visual-reprogramming-for-vision-language-models)
 - [Model Reprogramming Demystified: A Neural Tangent Kernel Perspective (2025) — arXiv preprint arXiv:2506.0620](https://arxiv.org/abs/2506.0620)
@@ -41,9 +41,7 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [WARP: Word-level adversarial reprogramming (2021) — ACL-IJCNLP](#warp-word-level-adversarial-reprogramming)
 - [Reprogramming Language Models for Molecular Representation Learning (2020) — NeurIPS](#reprogramming-language-models-for-molecular-representation-learning)
 - [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources (2020) — ICML](#transfer-learning-without-knowing-reprogramming-black-box-machine-learning-models-with-scarce-data-and-limited-resources)
-- [Adversarial Reprogramming of Neural Networks (2019) — ICLR](#adversarial-reprogramming-of-neural-networks)
 - [Adversarial Reprogramming of Text Classification Neural Networks (2019) — EMNLP/IJCNLP](#adversarial-reprogramming-of-text-classification-neural-networks)
-- [Adversarial Reprogramming of Neural Networks (2018) — ICLR](https://arxiv.org/abs/1806.11146) · [code](https://github.com/tensorflow/cleverhans)
 
 ### Prompt Tuning
 
@@ -70,8 +68,14 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [Multitask Prompted Training Enables Zero-Shot Task Generalization (2022) — ICLR](#multitask-prompted-training-enables-zero-shot-task-generalization)
 - [Training language models to follow instructions with human feedback (2022) — NeurIPS](#training-language-models-to-follow-instructions-with-human-feedback)
 
+### Unknown
 
-_Generated: 2025-09-09 20:28 UTC_
+*1 papers*
+
+- [Adversarial Reprogramming of Neural Networks (2019) — ICLR](https://arxiv.org/abs/1806.11146)
+
+
+_Generated: 2025-09-10 15:27 UTC_
 
 <!-- AUTO:END -->
 

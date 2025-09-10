@@ -175,9 +175,13 @@ def map_location_to_greek(location):
     """Map location to Location (ℓ) with LaTeX notation"""
     location_mapping = {
         "input-layer": "Input ($\\mathcal{X}_S$)",
+        "input": "Input ($\\mathcal{X}_S$)",
         "intermediate-layers": "Hidden ($\\mathcal{H}$)",
-        "output-layer": "Output ($\\mathcal{Y}$)",
+        "hidden": "Hidden ($\\mathcal{H}$)",
+        "intermediate": "Hidden ($\\mathcal{H}$)",
+        # "output-layer": "Output ($\\mathcal{Y}$)",
         "embedding": "Embedding ($\\mathcal{E}$)",
+        "embedding-layer": "Embedding ($\\mathcal{E}$)",
     }
     return location_mapping.get(location, location)
 
@@ -186,9 +190,14 @@ def map_operator_to_greek(operator):
     """Map operator to Operator (τ) with abbreviations"""
     operator_mapping = {
         "addition": "Additive (AD)",
-        "multiplication": "Multiplicative (MU)",
+        "additive": "Additive (AD)",
+        "add": "Additive (AD)",
+        # "multiplication": "Multiplicative (MU)",
         "concatenation": "Concatenative (CO)",
-        "replacement": "Replacement (RE)",
+        "concat": "Concatenative (CO)",
+        "concatenate": "Concatenative (CO)",
+        "concatenative": "Concatenative (CO)",
+        # "replacement": "Replacement (RE)",
         "parametric": "Parametric (PR)",
     }
     return operator_mapping.get(operator, operator)
@@ -198,11 +207,18 @@ def map_alignment_to_display(alignment):
     """Map alignment field to display format with abbreviation"""
     alignment_mapping = {
         "linear": "Linear (LA)",
-        "statistical": "Statistical (SA)", 
+        "statistical": "Statistical (SA)",
         "rule-based": "Rule-based (RA)",
-        "identity": "Identity (ID)"
+        "identity": "Identity (ID)",
     }
-    return alignment_mapping.get(alignment, "Linear (LA)")
+
+    if "/" in alignment:
+        alignments = alignment.split("/")
+        alignments = [a.strip() for a in alignments]
+        return " / ".join([alignment_mapping.get(a, a) for a in alignments])
+
+    return alignment_mapping.get(alignment, "Identity (ID)")
+
 
 def map_mechanism_to_alignment(mechanism):
     """Fallback: Map mechanism to Alignment (ω) when alignment field is missing"""
@@ -217,34 +233,37 @@ def map_mechanism_to_alignment(mechanism):
     return alignment_mapping.get(mechanism, "Linear (LA)")
 
 
-def format_paper_citation(paper):
-    """Format paper in 'Author et al. (Year, *Short Title*)' format"""
+def format_paper_link(paper):
+    """Format paper in '[Title](url) Authors (Year)' format"""
     authors = paper.get("authors", [])
     year = paper.get("year", "")
     title = paper.get("title", "")
-    
+    url = paper.get("url", "")
+
     # Get first author's last name
     if authors:
         first_author = authors[0].split(",")[0].split()[-1]  # Get last part of name
     else:
         first_author = "Unknown"
-    
-    # Create short title (truncate long titles)
-    short_title = title
-    if len(title) > 50:
-        short_title = title[:47] + "..."
-    
-    # Format: "Author et al. (Year, *Title*)"
+
+    # Format authors
     if len(authors) > 1:
-        citation = f"{first_author} et al. ({year}, *{short_title}*)"
+        author_text = f"{first_author} et al."
     else:
-        citation = f"{first_author} ({year}, *{short_title}*)"
-    
-    return citation
+        author_text = first_author
+
+    # Format: "[Title](url) Authors (Year)"
+    if url:
+        link_text = f"[{title}]({url})"
+    else:
+        link_text = title
+
+    return f"{link_text} {author_text} ({year})"
+
 
 def render_papers_table_md(papers):
-    # Sort by year desc, then title asc
-    rows = sorted(papers, key=lambda p: (-int(p.get("year", 0)), p.get("title", "")))
+    # Sort by year asc, then title asc
+    rows = sorted(papers, key=lambda p: (int(p.get("year", 0)), p.get("title", "")))
 
     cols = [
         "Paper",
@@ -253,7 +272,6 @@ def render_papers_table_md(papers):
         "Operator ($\\tau$)",
         "Alignment ($\\omega$)",
         "Venue",
-        "Year",
     ]
 
     lines = []
@@ -277,23 +295,22 @@ def render_papers_table_md(papers):
         configuration_lambda = map_mechanism_to_configuration(mechanism)
         location_l = map_location_to_greek(location)
         operator_tau = map_operator_to_greek(operator)
-        
+
         # Use alignment field if present, otherwise fallback to mechanism-based mapping
         if alignment:
             alignment_omega = map_alignment_to_display(alignment)
         else:
             alignment_omega = map_mechanism_to_alignment(mechanism)
 
-        paper_citation = format_paper_citation(p)
-        
+        paper_link = format_paper_link(p)
+
         vals = [
-            paper_citation,
+            paper_link,
             configuration_lambda,
             location_l,
-            operator_tau, 
+            operator_tau,
             alignment_omega,
             venue,
-            str(year),
         ]
         lines.append(" | ".join(vals))
 

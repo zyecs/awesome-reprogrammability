@@ -570,20 +570,7 @@
   tags:
   - natural-language-processing
   tldr: Black-box model reprogramming with limited data and computational resources
-- title: Adversarial Reprogramming of Neural Networks
-  authors:
-  - Elsayed, Gamaleldin F.
-  - Goodfellow, Ian
-  - Sohl-Dickstein, Jascha
-  year: 2019
-  venue: ICLR
-  url: '#adversarial-reprogramming-of-neural-networks'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  tags:
-  - natural-language-processing
-  tldr: Introduces model reprogramming technique for neural network adaptation
+
 - title: Adversarial Reprogramming of Text Classification Neural Networks
   authors:
   - Neekhara, Paarth
@@ -592,35 +579,36 @@
   - Koushanfar, Farinaz
   year: 2019
   venue: EMNLP/IJCNLP
-  url: '#adversarial-reprogramming-of-text-classification-neural-networks'
+  url: 'https://arxiv.org/abs/1809.01829'
   mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
+  location: embedding
+  operator: parametric
+  alignment: statistical / linear
   tags:
   - natural-language-processing
-  tldr: Applies model reprogramming to neural text classification models
+  tldr: Extends adversarial reprogramming to text classification by developing a learnable, context-based vocabulary remapping approach that modifies input embeddings to adapt pre-trained models for new tasks
+
 - title: Adversarial Reprogramming of Neural Networks
   authors:
   - Elsayed, Gamaleldin F.
   - Goodfellow, Ian
   - Sohl-Dickstein, Jascha
-  year: 2018
+  year: 2019
   venue: ICLR
   url: https://arxiv.org/abs/1806.11146
-  code_url: https://github.com/tensorflow/cleverhans
-  mechanism: adversarial-reprogramming
+  # code_url: https://github.com/tensorflow/cleverhans
+  # mechanism: adversarial-reprogramming
   location: input-layer
   operator: addition
+  alignment: statistical
   tags:
   - computer-vision
   - adversarial-reprogramming
-  - imagenet
-  summary: Introduces adversarial reprogramming to repurpose ImageNet classifiers
-    for counting squares and MNIST classification
   datasets:
   - ImageNet
   - MNIST
   architectures:
   - ResNet
   - Inception
-  tldr: Introduces adversarial reprogramming technique for neural network adaptation
+  tldr: Introduces adversarial reprogramming to repurpose ImageNet classifiers
+    for counting squares and MNIST classification
