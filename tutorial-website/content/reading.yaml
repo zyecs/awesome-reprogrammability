@@ -1,0 +1,22 @@
+essential:
+  - title: "Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction"
+    authors: "Liu, F., Ye, Z., Chen, P."
+    url: "https://arxiv.org/abs/2506.04650"
+    description: "Central survey paper establishing the unified framework"
+    bibtex: |
+      @article{liu2024reprogrammability,
+        title={Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction},
+        author={Liu, Feng and Ye, Zesheng and Chen, Pin-Yu},
+        journal={arXiv preprint arXiv:2506.04650},
+        year={2024}
+      }
+
+advanced:
+  - title: "Parameter-Efficient Transfer Learning"
+    authors: "Various"
+    description: "Advanced techniques and applications"
+
+reference:
+  - title: "Foundation Models and Adaptation"
+    authors: "Various" 
+    description: "Background reading on foundation models"

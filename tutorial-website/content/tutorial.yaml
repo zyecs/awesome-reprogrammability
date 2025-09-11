@@ -1,0 +1,14 @@
+title: "Neural Network Reprogrammability: A Unified Framework for Parameter-Efficient Foundation Model Adaptation"
+conference: "AAAI 2026"
+date: "TBD"
+duration: "3.5 hours (3 sessions + breaks)"
+venue:
+  location: "TBD"
+  room: "TBD"
+timezone: "Conference Local Time"
+official_link: "https://aaai.org/tutorials"
+contact: "feng.liu1@unimelb.edu.au"
+project_context:
+  parent_project: "awesome-reprogrammability"
+  website_path: "/tutorial-website"
+  repository: "https://github.com/zeshengye/awesome-reprogrammability"

@@ -1,0 +1,31 @@
+sessions:
+  - order: 1
+    title: "Foundations of Reprogrammability: From Input Sensitivity to Input Manipulation"
+    presenter: "Feng Liu"
+    duration: "70 minutes"
+    topics:
+      - "Adaptation bottleneck and paradigm shift (parameter-centric → reprogrammability-centric)"
+      - "From vulnerability to strength: leveraging input sensitivity"
+      - "Examples: ICL (fixed); MR (learnable)"
+      - "Formal decomposition: f' = O ∘ f_pre ∘ I (IM and OA)"
+    break_after: "15 minutes"
+    
+  - order: 2
+    title: "Mechanics: Input Manipulation and Output Alignment"
+    presenter: "Zesheng Ye"
+    duration: "70 minutes"
+    topics:
+      - "Taxonomy of IM: location, operator, configuration"
+      - "Taxonomy of OA: mapping strategies and when they are needed"
+      - "Case study: ViT visual prompt; frontier OA via probabilistic correlations"
+      - "Trade-offs: performance, data, compute, access (black-box/white-box)"
+    break_after: "15 minutes"
+    
+  - order: 3
+    title: "Implications: Towards Trustworthy, General-Purpose AI"
+    presenter: "Pin-Yu Chen"
+    duration: "70 minutes"
+    topics:
+      - "Holistic trustworthiness: robustness, security, fairness/accountability"
+      - "Applications: bioinformatics, time series, multimodal"
+      - "Open challenges and outlook"

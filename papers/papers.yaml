@@ -1,314 +1,345 @@
 - title: Attribute-based Visual Reprogramming for Vision-Language Models
   authors:
-  - Cai, Chengyi
-  - Ye, Zesheng
-  - Feng, Lei
-  - Qi, Jianzhong
-  - Liu, Feng
+    - Cai, Chengyi
+    - Ye, Zesheng
+    - Feng, Lei
+    - Qi, Jianzhong
+    - Liu, Feng
   year: 2025
   venue: ICLR
   url: '#attribute-based-visual-reprogramming-for-vision-language-models'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - computer-vision
-  - natural-language-processing
-  - multimodal
+    - computer-vision
+    - natural-language-processing
+    - multimodal
   tldr: Attribute-driven model reprogramming for vision-language model adaptation
+
 - title: 'Model Reprogramming Demystified: A Neural Tangent Kernel Perspective'
   authors:
-  - Chung, Ming-Yu
-  - Fan, Jiashuo
-  - Ye, Hancheng
-  - Wang, Qinsi
-  - Shen, Wei-Chen
-  - Yu, Chia-Mu
-  - Chen, Pin-Yu
-  - Kuo, Sy-Yen
+    - Chung, Ming-Yu
+    - Fan, Jiashuo
+    - Ye, Hancheng
+    - Wang, Qinsi
+    - Shen, Wei-Chen
+    - Yu, Chia-Mu
+    - Chen, Pin-Yu
+    - Kuo, Sy-Yen
   year: 2025
   venue: arXiv preprint arXiv:2506.0620
   url: https://arxiv.org/abs/2506.0620
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
-  tldr: Theoretical analysis of model reprogramming through Neural Tangent Kernel
-    perspective
+    - natural-language-processing
+  tldr: Theoretical analysis of model reprogramming through Neural Tangent Kernel perspective
+
 - title: 'Refine: Inversion-free backdoor defense via model reprogramming'
   authors:
-  - Chen, Yukun
-  - Shao, Shuo
-  - Huang, Enhao
-  - Li, Yiming
-  - Chen, Pin-Yu
-  - Qin, Zhan
-  - Ren, Kui
+    - Chen, Yukun
+    - Shao, Shuo
+    - Huang, Enhao
+    - Li, Yiming
+    - Chen, Pin-Yu
+    - Qin, Zhan
+    - Ren, Kui
   year: 2025
   venue: ICLR
   url: '#refine-inversion-free-backdoor-defense-via-model-reprogramming'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Uses model reprogramming as a defense mechanism against backdoor attacks
 
-- title: Reprogramming pretrained language models for protein sequence representation
-    learning
+- title: Reprogramming pretrained language models for protein sequence representation learning
   authors:
-  - Vinod, Ria
-  - Chen, Pin-Yu
-  - Das, Payel
+    - Vinod, Ria
+    - Chen, Pin-Yu
+    - Das, Payel
   year: 2025
   venue: Digital Discovery
   url: '#reprogramming-pretrained-language-models-for-protein-sequence-representation-learning'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Applies model reprogramming to biological sequence modeling and protein design
+
 - title: Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts
   authors:
-  - Cai, Chengyi
-  - Ye, Zesheng
-  - Feng, Lei
-  - Qi, Jianzhong
-  - Liu, Feng
+    - Cai, Chengyi
+    - Ye, Zesheng
+    - Feng, Lei
+    - Qi, Jianzhong
+    - Liu, Feng
   year: 2025
   venue: ICML
   url: '#understanding-model-reprogramming-for-clip-via-decoupling-visual-prompts'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - multimodal
+    - multimodal
   tldr: Visual model reprogramming methods for adapting CLIP models
-- title: Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in
-    Text-Image Encoders
+
+- title: Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders
   authors:
-  - Geng, Andrew
-  - Chen, Pin-Yu
+    - Geng, Andrew
+    - Chen, Pin-Yu
   year: 2024
   venue: SaTML
   url: '#model-reprogramming-outperforms-fine-tuning-on-out-of-distribution-data-in-text-image-encoders'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - computer-vision
+    - computer-vision
   tldr: Shows model reprogramming outperforms fine-tuning on out-of-distribution data
+
 - title: 'Model reprogramming: Resource-efficient cross-domain machine learning'
   authors:
-  - Chen, Pin-Yu
+    - Chen, Pin-Yu
   year: 2024
   venue: AAAI
   url: '#model-reprogramming-resource-efficient-cross-domain-machine-learning'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Introduces model reprogramming technique for neural network adaptation
+
 - title: 'Time-llm: Time series forecasting by reprogramming large language models'
   authors:
-  - Jin, Ming
-  - Wang, Shiyu
-  - Ma, Lintao
-  - Chu, Zhixuan
-  - Zhang, James Y
-  - Shi, Xiaoming
-  - Chen, Pin-Yu
-  - Liang, Yuxuan
-  - Li, Yuan-Fang
-  - Pan, Shirui
-  - others
+    - Jin, Ming
+    - Wang, Shiyu
+    - Ma, Lintao
+    - Chu, Zhixuan
+    - Zhang, James Y
+    - Shi, Xiaoming
+    - Chen, Pin-Yu
+    - Liang, Yuxuan
+    - Li, Yuan-Fang
+    - Pan, Shirui
+    - others
   year: 2024
   venue: ICLR
   url: '#time-llm-time-series-forecasting-by-reprogramming-large-language-models'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Uses model reprogramming to adapt models for time series classification tasks
+
 - title: Deep graph reprogramming
   authors:
-  - Jing, Yongcheng
-  - Yuan, Chongbin
-  - Ju, Li
-  - Yang, Yiding
-  - Wang, Xinchao
-  - Tao, Dacheng
+    - Jing, Yongcheng
+    - Yuan, Chongbin
+    - Ju, Li
+    - Yang, Yiding
+    - Wang, Xinchao
+    - Tao, Dacheng
   year: 2023
   venue: CVPR
   url: '#deep-graph-reprogramming'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - computer-vision
+    - computer-vision
   tldr: Graph-based model reprogramming methods for network representation learning
-- title: 'From english to more languages: Parameter-efficient model reprogramming
-    for cross-lingual speech recognition'
+
+- title: 'From english to more languages: Parameter-efficient model reprogramming for cross-lingual speech recognition'
   authors:
-  - Yang, Chao-Han Huck
-  - Li, Bo
-  - Zhang, Yu
-  - Chen, Nanxin
-  - Prabhavalkar, Rohit
-  - Sainath, Tara N
-  - Strohman, Trevor
+    - Yang, Chao-Han Huck
+    - Li, Bo
+    - Zhang, Yu
+    - Chen, Nanxin
+    - Prabhavalkar, Rohit
+    - Sainath, Tara N
+    - Strohman, Trevor
   year: 2023
   venue: ICASSP
   url: '#from-english-to-more-languages-parameter-efficient-model-reprogramming-for-cross-lingual-speech-recognition'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Parameter-efficient model reprogramming for cross-lingual speech recognition
+
 - title: Low-resource music genre classification with cross-modal neural model reprogramming
   authors:
-  - Hung, Yun-Ning
-  - Yang, Chao-Han Huck
-  - Chen, Pin-Yu
-  - Lerch, Alexander
+    - Hung, Yun-Ning
+    - Yang, Chao-Han Huck
+    - Chen, Pin-Yu
+    - Lerch, Alexander
   year: 2023
   venue: ICASSP
   url: '#low-resource-music-genre-classification-with-cross-modal-neural-model-reprogramming'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Cross-modal model reprogramming techniques for multi-domain adaptation
+
 - title: Reprogramming pretrained language models for antibody sequence infilling
   authors:
-  - Melnyk, Igor
-  - Chenthamarakshan, Vijil
-  - Chen, Pin-Yu
-  - Das, Payel
-  - Dhurandhar, Amit
-  - Padhi, Inkit
-  - Das, Devleena
+    - Melnyk, Igor
+    - Chenthamarakshan, Vijil
+    - Chen, Pin-Yu
+    - Das, Payel
+    - Dhurandhar, Amit
+    - Padhi, Inkit
+    - Das, Devleena
   year: 2023
   venue: ICML
   url: '#reprogramming-pretrained-language-models-for-antibody-sequence-infilling'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Applies model reprogramming to biological sequence modeling and protein design
+
 - title: Universal prompt tuning for graph neural networks
   authors:
-  - Fang, Taoran
-  - Zhang, Yunchao
-  - Yang, Yang
-  - Wang, Chunping
-  - Chen, Lei
+    - Fang, Taoran
+    - Zhang, Yunchao
+    - Yang, Yang
+    - Wang, Chunping
+    - Chen, Lei
   year: 2023
   venue: NeurIPS
   url: '#universal-prompt-tuning-for-graph-neural-networks'
   mechanism: prompt-tuning
   location: input-layer
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Graph-based prompt tuning methods for network representation learning
+
 - title: Visual instruction tuning
   authors:
-  - Liu, Haotian
-  - Li, Chunyuan
-  - Wu, Qingyang
-  - Lee, Yong Jae
+    - Liu, Haotian
+    - Li, Chunyuan
+    - Wu, Qingyang
+    - Lee, Yong Jae
   year: 2023
   venue: NeurIPS
   url: '#visual-instruction-tuning'
   mechanism: prompt-instruction
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Visual instruction tuning using prompt instruction for multimodal tasks
+
 - title: Adversarial Reprogramming Revisited
   authors:
-  - Englert, Matthias
-  - Lazic, Ranko
+    - Englert, Matthias
+    - Lazic, Ranko
   year: 2022
   venue: NeurIPS
   url: '#adversarial-reprogramming-revisited'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Improved analysis and methods for model reprogramming techniques
+
 - title: Cross-modal adversarial reprogramming
   authors:
-  - Neekhara, Paarth
-  - Hussain, Shehzeen
-  - Du, Jinglong
-  - Dubnov, Shlomo
-  - Koushanfar, Farinaz
-  - McAuley, Julian
+    - Neekhara, Paarth
+    - Hussain, Shehzeen
+    - Du, Jinglong
+    - Dubnov, Shlomo
+    - Koushanfar, Farinaz
+    - McAuley, Julian
   year: 2022
   venue: CVPR
   url: '#cross-modal-adversarial-reprogramming'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - computer-vision
+    - computer-vision
   tldr: Cross-modal model reprogramming techniques for multi-domain adaptation
+
 - title: Differentiable prompt makes pre-trained language models better few-shot learners
   authors:
-  - Zhang, Ningyu
-  - Li, Luoqiu
-  - Chen, Xiang
-  - Deng, Shumin
-  - Bi, Zhen
-  - Tan, Chuanqi
-  - Huang, Fei
-  - Chen, Huajun
+    - Zhang, Ningyu
+    - Li, Luoqiu
+    - Chen, Xiang
+    - Deng, Shumin
+    - Bi, Zhen
+    - Tan, Chuanqi
+    - Huang, Fei
+    - Chen, Huajun
   year: 2022
   venue: ICLR
   url: '#differentiable-prompt-makes-pre-trained-language-models-better-few-shot-learners'
   mechanism: prompt-tuning
   location: input-layer
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Improves few-shot learning performance via prompt tuning
+
 - title: Finetuned Language Models are Zero-Shot Learners
   authors:
-  - Wei, Jason
-  - Bosma, Maarten
-  - Zhao, Vincent Y.
-  - Guu, Kelvin
-  - Yu, Adams Wei
-  - Lester, Brian
-  - Du, Nan
-  - Dai, Andrew M.
-  - Le, Quoc V.
+    - Wei, Jason
+    - Bosma, Maarten
+    - Zhao, Vincent Y.
+    - Guu, Kelvin
+    - Yu, Adams Wei
+    - Lester, Brian
+    - Du, Nan
+    - Dai, Andrew M.
+    - Le, Quoc V.
   year: 2022
   venue: ICLR
   url: '#finetuned-language-models-are-zero-shot-learners'
   mechanism: prompt-instruction
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Enables zero-shot task generalization through prompt instruction
+
 - title: Learning to Prompt for Vision-Language Models
   authors:
-  - Zhou, Kaiyang
-  - Yang, Jingkang
-  - Loy, Chen Change
-  - Liu, Ziwei
+    - Zhou, Kaiyang
+    - Yang, Jingkang
+    - Loy, Chen Change
+    - Liu, Ziwei
   year: 2022
   venue: IJCV
   url: https://arxiv.org/abs/2109.01134
@@ -316,181 +347,103 @@
   mechanism: soft-prompts
   location: input-layer
   operator: addition
+  alignment: identity
   tags:
-  - computer-vision
-  - natural-language-processing
-  - multimodal
-  - prompt-tuning
-  summary: Introduces Context Optimization (CoOp) for learning continuous prompts
-    for vision-language models
+    - computer-vision
+    - natural-language-processing
+    - multimodal
+    - prompt-tuning
   datasets:
-  - ImageNet
-  - CIFAR-10
+    - ImageNet
+    - CIFAR-10
   architectures:
-  - CLIP
-  tldr: Learns soft prompts for vision-language model adaptation
+    - CLIP
+  tldr: Introduces Context Optimization (CoOp) for learning continuous prompts for vision-language models
+
 - title: Multitask Prompted Training Enables Zero-Shot Task Generalization
   authors:
-  - Sanh, Victor
-  - Webson, Albert
-  - Raffel, Colin
-  - Bach, Samuel
-  - Sutawika, Lintang
-  - Alyafeai, Zaid
-  - Chaffin, Joshua
-  - Liu, Kelly
-  - others
+    - Sanh, Victor
+    - Webson, Albert
+    - Raffel, Colin
+    - Bach, Samuel
+    - Sutawika, Lintang
+    - Alyafeai, Zaid
+    - Chaffin, Joshua
+    - Liu, Kelly
+    - others
   year: 2022
   venue: ICLR
   url: '#multitask-prompted-training-enables-zero-shot-task-generalization'
   mechanism: prompt-instruction
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Enables zero-shot task generalization through prompt instruction
-- title: 'P-Tuning: Prompt Tuning Can Be Comparable to Fine-Tuning Across Scales and
-    Tasks'
+
+- title: 'P-Tuning: Prompt Tuning Can Be Comparable to Fine-Tuning Across Scales and Tasks'
   authors:
-  - Liu, Xiao
-  - Ji, Kaixuan
-  - Fu, Yicheng
-  - Tam, Weng
-  - Du, Zhengxiao
-  - Yang, Zhilin
-  - Tang, Jie
+    - Liu, Xiao
+    - Ji, Kaixuan
+    - Fu, Yicheng
+    - Tam, Weng
+    - Du, Zhengxiao
+    - Yang, Zhilin
+    - Tang, Jie
   year: 2022
   venue: 'ACL, Volume 2: Short Papers'
   url: '#p-tuning-prompt-tuning-can-be-comparable-to-fine-tuning-across-scales-and-tasks'
   mechanism: prompt-tuning
   location: input-layer
   operator: multiplication
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: P-tuning approach to prompt tuning across different scales
+
 - title: 'PPT: Pre-trained Prompt Tuning for Few-shot Learning'
   authors:
-  - Gu, Yuxian
-  - Han, Xu
-  - Liu, Zhiyuan
-  - Huang, Minlie
+    - Gu, Yuxian
+    - Han, Xu
+    - Liu, Zhiyuan
+    - Huang, Minlie
   year: 2022
   venue: Proceedings of ACL
   url: '#ppt-pre-trained-prompt-tuning-for-few-shot-learning'
   mechanism: prompt-tuning
   location: input-layer
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Improves few-shot learning performance via prompt tuning
+
 - title: 'PTR: Prompt Tuning with Rules for Text Classification'
   authors:
-  - Xu Han
-  - Weilin Zhao
-  - Ning Ding
-  - Zhiyuan Liu
-  - Maosong Sun
+    - Xu Han
+    - Weilin Zhao
+    - Ning Ding
+    - Zhiyuan Liu
+    - Maosong Sun
   year: 2022
   venue: AI Open
   url: '#ptr-prompt-tuning-with-rules-for-text-classification'
   mechanism: prompt-tuning
   location: input-layer
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Rule-enhanced prompt tuning for text classification
-- title: Training language models to follow instructions with human feedback
-  authors:
-  - Ouyang, Long
-  - Wu, Jeffrey
-  - Jiang, Xu
-  - Almeida, Diogo
-  - Wainwright, Carroll L.
-  - Mishkin, Pamela
-  - Zhang, Chong
-  - Agarwal, Sandhini
-  - Slama, Katarina
-  - Ray, Alex
-  - Schulman, John
-  - Hilton, Jacob
-  - Kelton, Fraser
-  - Miller, Luke
-  - Simens, Maddie
-  - Askell, Amanda
-  - Welinder, Peter
-  - Christiano, Paul
-  - Leike, Jan
-  - Lowe, Ryan
-  year: 2022
-  venue: NeurIPS
-  url: '#training-language-models-to-follow-instructions-with-human-feedback'
-  mechanism: prompt-instruction
-  location: intermediate-layers
-  operator: addition
-  tags:
-  - natural-language-processing
-  tldr: Incorporates human feedback for better prompt instruction
-
-- title: 'Learning how to ask: Querying LMs with mixtures of soft prompts'
-  authors:
-  - Qin, Guanghui
-  - Eisner, Jason
-  year: 2021
-  venue: NAACL
-  url: https://arxiv.org/abs/2104.06599
-  mechanism: prompt-tuning
-  location: embedding-layer
-  operator: concatenation
-  alignment: identity
-  tags:
-  - prompt-tuning
-  - LM
-  tldr:  learning continuous "soft prompts" through gradient descent, including mixtures of prompts, to efficiently adapt pre-trained language models for various tasks by manipulating the input embeddings.
-
-- title: 'P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks'
-  authors:
-  - Liu, Xiao
-  - Ji, Kaixuan
-  - Fu, Yicheng
-  - Tam, Weng Lam
-  - Du, Zhengxiao
-  - Yang, Zhilin
-  - Tang, Jie
-  year: 2021
-  venue: ACL
-  url: https://arxiv.org/abs/2110.07602
-  mechanism: prompt-tuning
-  location: intermediate-layers
-  operator: concatenation
-  alignment: linear
-  tags:
-  - prompt-tuning
-  - LM
-  tldr: Learnable continuous prompts into multiple hidden layers of pre-trained language models via concatenation, achieving performance comparable to fine-tuning across various model scales and NLU tasks with significantly fewer trainable parameters.
-
-- title: 'Prefix-Tuning: Optimizing Continuous Prompts for Generation'
-  authors:
-  - Li, Xiang Lisa
-  - Liang, Percy
-  year: 2021
-  venue: ACL/IJCNLP
-  url: 'https://arxiv.org/abs/2101.00190'
-  mechanism: prompt-tuning
-  location: embedding-layer
-  operator: concatenation
-  alignment: identity
-  tags:
-  - prompt-tuning
-  - LM
-  tldr: Optimizing a small, continuous task-specific vector (prefix) that is prepended to the input embeddings
 
 - title: 'Spot: Better frozen model adaptation through soft prompt transfer'
   authors:
-  - Vu, Tu
-  - Lester, Brian
-  - Constant, Noah
-  - Al-Rfou, Rami
-  - Cer, Daniel
+    - Vu, Tu
+    - Lester, Brian
+    - Constant, Noah
+    - Al-Rfou, Rami
+    - Cer, Daniel
   year: 2022
   venue: ACL
   url: https://arxiv.org/abs/2110.07904
@@ -499,14 +452,101 @@
   operator: concatenation
   alignment: linear
   tags:
-  - prompt-tuning
-  - LM
-  tldr: Reuse task-specific prompts
+    - prompt-tuning
+    - LM
+  tldr: Transfers soft prompts learned on source tasks to initialize prompt tuning on a target, letting frozen T5 models match or beat full fine-tuning on SuperGLUE while using up to 27,000× fewer task-specific parameters
+
+- title: Training language models to follow instructions with human feedback
+  authors:
+    - Ouyang, Long
+    - Wu, Jeffrey
+    - Jiang, Xu
+    - Almeida, Diogo
+    - Wainwright, Carroll L.
+    - Mishkin, Pamela
+    - Zhang, Chong
+    - Agarwal, Sandhini
+    - Slama, Katarina
+    - Ray, Alex
+    - Schulman, John
+    - Hilton, Jacob
+    - Kelton, Fraser
+    - Miller, Luke
+    - Simens, Maddie
+    - Askell, Amanda
+    - Welinder, Peter
+    - Christiano, Paul
+    - Leike, Jan
+    - Lowe, Ryan
+  year: 2022
+  venue: NeurIPS
+  url: '#training-language-models-to-follow-instructions-with-human-feedback'
+  mechanism: prompt-instruction
+  location: intermediate-layers
+  operator: addition
+  alignment: identity
+  tags:
+    - natural-language-processing
+  tldr: Incorporates human feedback for better prompt instruction
+
+- title: 'Learning how to ask: Querying LMs with mixtures of soft prompts'
+  authors:
+    - Qin, Guanghui
+    - Eisner, Jason
+  year: 2021
+  venue: NAACL
+  url: https://arxiv.org/abs/2104.06599
+  mechanism: prompt-tuning
+  location: embedding-layer
+  operator: concatenation
+  alignment: identity
+  tags:
+    - prompt-tuning
+    - LM
+  tldr: Learning continuous "soft prompts" through gradient descent, including mixtures of prompts, to efficiently adapt pre-trained language models for various tasks by manipulating the input embeddings
+
+- title: 'P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks'
+  authors:
+    - Liu, Xiao
+    - Ji, Kaixuan
+    - Fu, Yicheng
+    - Tam, Weng Lam
+    - Du, Zhengxiao
+    - Yang, Zhilin
+    - Tang, Jie
+  year: 2021
+  venue: ACL
+  url: https://arxiv.org/abs/2110.07602
+  mechanism: prompt-tuning
+  location: intermediate-layers
+  operator: concatenation
+  alignment: linear
+  tags:
+    - prompt-tuning
+    - LM
+  tldr: Learnable continuous prompts into multiple hidden layers of pre-trained language models via concatenation, achieving performance comparable to fine-tuning across various model scales and NLU tasks with significantly fewer trainable parameters
+
+- title: 'Prefix-Tuning: Optimizing Continuous Prompts for Generation'
+  authors:
+    - Li, Xiang Lisa
+    - Liang, Percy
+  year: 2021
+  venue: ACL/IJCNLP
+  url: 'https://arxiv.org/abs/2101.00190'
+  mechanism: prompt-tuning
+  location: embedding-layer
+  operator: concatenation
+  alignment: identity
+  tags:
+    - prompt-tuning
+    - LM
+  tldr: Optimizing a small, continuous task-specific vector (prefix) that is prepended to the input embeddings
+
 - title: The Power of Scale for Parameter-Efficient Prompt Tuning
   authors:
-  - Lester, Brian
-  - Al-Rfou, Rami
-  - Constant, Noah
+    - Lester, Brian
+    - Al-Rfou, Rami
+    - Constant, Noah
   year: 2021
   venue: EMNLP
   url: https://arxiv.org/abs/2104.08691
@@ -514,85 +554,89 @@
   mechanism: soft-prompts
   location: input-layer
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
-  - prompt-tuning
-  - transformer
-  summary: Shows that prompt tuning becomes more competitive with model tuning as
-    model size increases
+    - natural-language-processing
+    - prompt-tuning
+    - transformer
   datasets:
-  - SuperGLUE
+    - SuperGLUE
   architectures:
-  - T5
-  tldr: Studies parameter-efficient soft prompts scaling properties
+    - T5
+  tldr: Shows that prompt tuning becomes more competitive with model tuning as model size increases
+
+- title: 'Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources'
+  authors:
+    - Tsai, Yun-Yun
+    - Chen, Pin-Yu
+    - Ho, Tsung-Yi
+  year: 2021
+  venue: ICML
+  url: 'https://arxiv.org/abs/2007.08714'
+  mechanism: model-reprogramming
+  location: input-layers
+  operator: statistical / linear
+  alignment: identity
+  tags:
+    - model-reprogramming
+    - VM
+  tldr: Repurposes black-box machine learning models for new tasks with scarce data
+
 - title: 'Voice2series: Reprogramming acoustic models for time series classification'
   authors:
-  - Yang, Chao-Han Huck
-  - Tsai, Yun-Yun
-  - Chen, Pin-Yu
+    - Yang, Chao-Han Huck
+    - Tsai, Yun-Yun
+    - Chen, Pin-Yu
   year: 2021
   venue: ICML
   url: '#voice2series-reprogramming-acoustic-models-for-time-series-classification'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Uses model reprogramming to adapt models for time series classification tasks
+
 - title: 'WARP: Word-level adversarial reprogramming'
   authors:
-  - Hambardzumyan, K
-  - Khachatrian, H
-  - May, J
+    - Hambardzumyan, K
+    - Khachatrian, H
+    - May, J
   year: 2021
   venue: ACL-IJCNLP
   url: '#warp-word-level-adversarial-reprogramming'
   mechanism: model-reprogramming
   location: intermediate-layers
   operator: addition
+  alignment: identity
   tags:
-  - natural-language-processing
+    - natural-language-processing
   tldr: Word-level model reprogramming for text classification tasks
 
 - title: Reprogramming Language Models for Molecular Representation Learning
   authors:
-  - Vinod, Ria
-  - Chen, Pin-Yu
-  - Das, Payel
+    - Vinod, Ria
+    - Chen, Pin-Yu
+    - Das, Payel
   year: 2020
   venue: NeurIPS Workshop
   url: 'https://arxiv.org/abs/2012.03460'
   mechanism: model-reprogramming
   location: input-layer
   operator: parametric
-  alignment: rule-based 
+  alignment: rule-based
   tags:
-  - model-reprogramming
-  - LM
-  tldr: Proposes representation reprogramming via dictiopnary learning, which repurposes pre-trained language models for molecular tasks by learning a parametric input transformation to bridge different data domains, followed by a structured output alignment.
-
-- title: 'Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources'
-  authors:
-  - Tsai, Yun-Yun
-  - Chen, Pin-Yu
-  - Ho, Tsung-Yi
-  year: 2020
-  venue: ICML
-  url: 'https://arxiv.org/abs/2007.08714'
-  mechanism: model-reprogramming
-  location: input-layers
-  operator: statistical / linear
-  tags:
-  - model-reprogramming
-  - VM
-  tldr: Repurposes black-box machine learning models for new tasks with scarce data
+    - model-reprogramming
+    - LM
+  tldr: Proposes representation reprogramming via dictionary learning, which repurposes pre-trained language models for molecular tasks by learning a parametric input transformation to bridge different data domains, followed by a structured output alignment
 
 - title: Adversarial Reprogramming of Text Classification Neural Networks
   authors:
-  - Neekhara, Paarth
-  - Hussain, Shehzeen
-  - Dubnov, Shlomo
-  - Koushanfar, Farinaz
+    - Neekhara, Paarth
+    - Hussain, Shehzeen
+    - Dubnov, Shlomo
+    - Koushanfar, Farinaz
   year: 2019
   venue: EMNLP/IJCNLP
   url: 'https://arxiv.org/abs/1809.01829'
@@ -601,30 +645,28 @@
   operator: parametric
   alignment: statistical / linear
   tags:
-  - model-reprogramming
+    - model-reprogramming
   tldr: Extends adversarial reprogramming to text classification by developing a learnable, context-based vocabulary remapping approach that modifies input embeddings to adapt pre-trained models for new tasks
 
 - title: Adversarial Reprogramming of Neural Networks
   authors:
-  - Elsayed, Gamaleldin F.
-  - Goodfellow, Ian
-  - Sohl-Dickstein, Jascha
+    - Elsayed, Gamaleldin F.
+    - Goodfellow, Ian
+    - Sohl-Dickstein, Jascha
   year: 2019
   venue: ICLR
   url: https://arxiv.org/abs/1806.11146
-  # code_url: https://github.com/tensorflow/cleverhans
   mechanism: adversarial-reprogramming
   location: input-layer
   operator: addition
   alignment: statistical
   tags:
-  - model-reprogramming
-  - VM
+    - model-reprogramming
+    - VM
   datasets:
-  - ImageNet
-  - MNIST
+    - ImageNet
+    - MNIST
   architectures:
-  - ResNet
-  - Inception
-  tldr: Introduces adversarial reprogramming to repurpose ImageNet classifiers
-    for counting squares and MNIST classification
+    - ResNet
+    - Inception
+  tldr: Introduces adversarial reprogramming to repurpose ImageNet classifiers for counting squares and MNIST classification
