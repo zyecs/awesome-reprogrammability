@@ -24,7 +24,7 @@ except ImportError:
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 README = REPO_ROOT / "README.md"
-PAPERS = REPO_ROOT / "lists" / "papers.yaml"
+PAPERS = REPO_ROOT / "papers" / "papers.yaml"
 META_TAXONOMY = REPO_ROOT / "meta" / "taxonomy.md"
 DOCS_SECTIONS = REPO_ROOT / "docs" / "sections"
 DOCS_TAXONOMY = DOCS_SECTIONS / "taxonomy.md"

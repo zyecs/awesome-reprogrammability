@@ -1,0 +1,196 @@
+/* Academic conference website styling */
+body { 
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6; 
+    color: #333;
+}
+
+h1, h2, h3 { 
+    color: #2c3e50; 
+    font-weight: 600; 
+    margin-bottom: 1rem;
+}
+
+.lead { 
+    font-size: 1.1rem; 
+    color: #555; 
+    margin-bottom: 1.5rem;
+}
+
+.card { 
+    border: none; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand { 
+    font-weight: bold; 
+    color: #2c3e50 !important; 
+}
+
+.btn-primary { 
+    background: #3498db; 
+    border: none; 
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-outline-primary {
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-outline-primary:hover {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+.text-muted { 
+    color: #666 !important; 
+}
+
+code { 
+    background: #f8f9fa; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+    font-family: 'Monaco', 'Consolas', monospace;
+    font-size: 0.9em;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.badges .badge {
+    font-size: 0.9em;
+    margin: 0 0.25rem;
+}
+
+.session-title {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.topics-list {
+    color: #555;
+    padding-left: 1.2rem;
+}
+
+.topics-list li {
+    margin-bottom: 0.3rem;
+}
+
+.speaker-photo {
+    margin-bottom: 1rem;
+}
+
+.speaker-name {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.speaker-affiliation {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.speaker-bio {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.list-group-item {
+    border: 1px solid #e9ecef;
+    border-radius: 4px !important;
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.material-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.material-format {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.reading-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.reading-authors {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.bibtex-content {
+    font-family: 'Monaco', 'Consolas', monospace;
+    font-size: 0.8rem;
+    width: 100%;
+    height: auto;
+    border: none;
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+footer {
+    border-top: 1px solid #e9ecef;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    
+    .btn-sm {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Navigation enhancements */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #2c3e50 !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #3498db !important;
+}
