@@ -77,9 +77,9 @@ function renderHome(data) {
         'tutorial-description': tutorial.description,
         'conference': tutorial.conference,
         'duration': tutorial.duration,
-        'quick-duration': tutorial.duration,
+        'quick-date': tutorial.date,
         'quick-venue': tutorial.venue,
-        'quick-contact': tutorial.contact
+        'quick-contact': tutorial.contact.map(c => `<a href="${c.homepage}" target="_blank">${c.name}</a>`).join(', ')
     };
 
     Object.entries(elements).forEach(([id, content]) => {
@@ -88,6 +88,8 @@ function renderHome(data) {
             // Handle description with line breaks
             if (id === 'tutorial-description') {
                 element.innerHTML = content.replace(/\n/g, '<br>');
+            } else if (id === 'quick-contact') {
+                element.innerHTML = content;
             } else {
                 element.textContent = content;
             }
@@ -98,8 +100,7 @@ function renderHome(data) {
     const officialLink = document.getElementById('official-link');
     if (officialLink) officialLink.href = tutorial.official_link;
 
-    const contactLink = document.getElementById('quick-contact');
-    if (contactLink) contactLink.href = `mailto:${tutorial.contact}`;
+    // Contact links are now handled in the elements mapping above
 
     // Render learning outcomes if element exists
     const outcomesList = document.getElementById('learning-outcomes');

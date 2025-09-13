@@ -5,7 +5,7 @@ let contentData = null;
 // Load content from JSON file
 async function loadContent() {
     if (contentData) return contentData;
-    
+
     try {
         const response = await fetch('data/content.json');
         contentData = await response.json();
@@ -20,7 +20,7 @@ async function loadContent() {
 function getCurrentPage() {
     const path = window.location.pathname;
     const filename = path.split('/').pop();
-    
+
     if (!filename || filename === 'index.html') return 'home';
     return filename.replace('.html', '');
 }
@@ -29,11 +29,11 @@ function getCurrentPage() {
 function setActiveNavLink() {
     const currentPage = getCurrentPage();
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         link.classList.remove('active');
-        
+
         if (currentPage === 'home' && href === 'index.html') {
             link.classList.add('active');
         } else if (href === `${currentPage}.html`) {
@@ -46,9 +46,9 @@ function setActiveNavLink() {
 async function renderPage() {
     const data = await loadContent();
     if (!data) return;
-    
+
     const currentPage = getCurrentPage();
-    
+
     switch (currentPage) {
         case 'home':
             renderHome(data);
@@ -63,37 +63,45 @@ async function renderPage() {
             renderMaterials(data);
             break;
     }
-    
+
     setActiveNavLink();
 }
 
 // Render home page content
 function renderHome(data) {
     const tutorial = data.tutorial;
-    
+
     // Update page elements
     const elements = {
         'tutorial-title': tutorial.title,
         'tutorial-description': tutorial.description,
         'conference': tutorial.conference,
         'duration': tutorial.duration,
-        'quick-duration': tutorial.duration,
+        'quick-date': tutorial.date,
         'quick-venue': tutorial.venue,
-        'quick-contact': tutorial.contact
+        'quick-contact': tutorial.contact.map(c => `<a href="${c.homepage}" target="_blank">${c.name}</a>`).join(', ')
     };
-    
+
     Object.entries(elements).forEach(([id, content]) => {
         const element = document.getElementById(id);
-        if (element) element.textContent = content;
+        if (element) {
+            // Handle description with line breaks
+            if (id === 'tutorial-description') {
+                element.innerHTML = content.replace(/\n/g, '<br>');
+            } else if (id === 'quick-contact') {
+                element.innerHTML = content;
+            } else {
+                element.textContent = content;
+            }
+        }
     });
-    
+
     // Update links
     const officialLink = document.getElementById('official-link');
     if (officialLink) officialLink.href = tutorial.official_link;
-    
-    const contactLink = document.getElementById('quick-contact');
-    if (contactLink) contactLink.href = `mailto:${tutorial.contact}`;
-    
+
+    // Contact links are now handled in the elements mapping above
+
     // Render learning outcomes if element exists
     const outcomesList = document.getElementById('learning-outcomes');
     if (outcomesList && data.learning_outcomes) {
@@ -110,25 +118,25 @@ function renderHome(data) {
 function renderProgram(data) {
     const sessionList = document.getElementById('session-list');
     const template = document.getElementById('session-template');
-    
+
     if (!sessionList || !template) return;
-    
+
     sessionList.innerHTML = '';
-    
+
     data.sessions.forEach(session => {
         const sessionCard = template.content.cloneNode(true);
-        
+
         sessionCard.querySelector('.session-title').textContent = `Session ${session.order}: ${session.title}`;
         sessionCard.querySelector('.presenter').textContent = session.presenter;
         sessionCard.querySelector('.duration').textContent = session.duration;
-        
+
         const topicsList = sessionCard.querySelector('.topics-list');
         session.topics.forEach(topic => {
             const li = document.createElement('li');
-            li.textContent = topic;
+            li.innerHTML = topic;
             topicsList.appendChild(li);
         });
-        
+
         sessionList.appendChild(sessionCard);
     });
 }
@@ -137,21 +145,21 @@ function renderProgram(data) {
 function renderSpeakers(data) {
     const speakersGrid = document.getElementById('speakers-grid');
     const template = document.getElementById('speaker-template');
-    
+
     if (!speakersGrid || !template) return;
-    
+
     speakersGrid.innerHTML = '';
-    
+
     data.speakers.forEach(speaker => {
         const speakerCard = template.content.cloneNode(true);
-        
+
         speakerCard.querySelector('.speaker-name').textContent = speaker.name;
         speakerCard.querySelector('.speaker-affiliation').textContent = speaker.affiliation;
         speakerCard.querySelector('.speaker-bio').textContent = speaker.bio;
-        
+
         const emailLink = speakerCard.querySelector('.speaker-email');
         emailLink.href = `mailto:${speaker.email}`;
-        
+
         speakersGrid.appendChild(speakerCard);
     });
 }
@@ -168,27 +176,27 @@ function renderMaterials(data) {
 function renderMaterialSection(type, materials) {
     const list = document.getElementById(`${type}-list`);
     const template = document.getElementById('material-template');
-    
+
     if (!list || !template) return;
-    
+
     list.innerHTML = '';
-    
+
     materials.forEach(material => {
         const item = template.content.cloneNode(true);
-        
+
         const link = item.querySelector('.list-group-item');
         link.href = material.url || '#';
-        
+
         item.querySelector('.material-title').textContent = material.title;
         item.querySelector('.material-format').textContent = material.format || material.platform || 'Link';
-        
+
         const description = item.querySelector('.material-description');
         if (description && material.description) {
             description.textContent = material.description;
         } else if (description) {
             description.style.display = 'none';
         }
-        
+
         list.appendChild(item);
     });
 }
@@ -197,14 +205,14 @@ function renderMaterialSection(type, materials) {
 function renderReadingList(readings) {
     const list = document.getElementById('reading-list');
     const template = document.getElementById('reading-template');
-    
+
     if (!list || !template) return;
-    
+
     list.innerHTML = '';
-    
+
     readings.forEach(paper => {
         const item = template.content.cloneNode(true);
-        
+
         const titleLink = item.querySelector('.reading-title');
         titleLink.textContent = paper.title;
         if (paper.url) {
@@ -217,12 +225,12 @@ function renderReadingList(readings) {
             titleLink.innerHTML = '';
             titleLink.appendChild(link);
         }
-        
+
         item.querySelector('.reading-authors').textContent = paper.authors;
-        
+
         const bibtexTextarea = item.querySelector('.bibtex-content');
         bibtexTextarea.value = paper.bibtex;
-        
+
         list.appendChild(item);
     });
 }
@@ -230,7 +238,7 @@ function renderReadingList(readings) {
 // Copy BibTeX to clipboard
 function copyBibtex(button) {
     const textarea = button.parentElement.querySelector('.bibtex-content');
-    
+
     if (navigator.clipboard) {
         navigator.clipboard.writeText(textarea.value).then(() => {
             button.textContent = 'Copied!';
@@ -249,7 +257,7 @@ function copyBibtex(button) {
 function addToCalendar() {
     const tutorial = contentData?.tutorial;
     if (!tutorial) return;
-    
+
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tutorial//Neural Network Reprogrammability//EN
@@ -262,7 +270,7 @@ DESCRIPTION:${tutorial.description}
 LOCATION:${tutorial.venue}
 END:VEVENT
 END:VCALENDAR`;
-    
+
     const blob = new Blob([icsContent], { type: 'text/calendar' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

@@ -18,7 +18,12 @@ serve:
 # Deploy to GitHub Pages by copying to docs/ directory
 deploy: validate
 	@echo "Deploying tutorial website..."
-	cp -r *.html css/ js/ data/ images/ docs/
+	mkdir -p docs/css docs/js docs/data docs/images
+	cp *.html docs/
+	cp -r css/* docs/css/
+	cp -r js/* docs/js/
+	cp -r data/* docs/data/
+	cp -r images/* docs/images/ 2>/dev/null || true
 	@echo "Files copied to docs/ directory"
 	@echo "Don't forget to commit and push the docs/ directory:"
 	@echo "  git add tutorial-website/docs/"
