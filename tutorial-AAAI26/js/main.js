@@ -131,11 +131,28 @@ function renderProgram(data) {
         sessionCard.querySelector('.duration').textContent = session.duration;
 
         const topicsList = sessionCard.querySelector('.topics-list');
-        session.topics.forEach(topic => {
-            const li = document.createElement('li');
-            li.innerHTML = topic;
-            topicsList.appendChild(li);
-        });
+
+        // Add the introductory paragraph (first topic)
+        if (session.topics.length > 0) {
+            const p = document.createElement('p');
+            p.innerHTML = session.topics[0];
+            p.className = 'mb-3 fs-6 fw-medium text-dark';
+            topicsList.appendChild(p);
+        }
+
+        // Add remaining topics as bullet points
+        if (session.topics.length > 1) {
+            const ul = document.createElement('ul');
+            ul.className = 'mb-0';
+
+            session.topics.slice(1).forEach(topic => {
+                const li = document.createElement('li');
+                li.innerHTML = topic;
+                ul.appendChild(li);
+            });
+
+            topicsList.appendChild(ul);
+        }
 
         sessionList.appendChild(sessionCard);
     });
