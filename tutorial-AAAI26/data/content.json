@@ -18,7 +18,7 @@
       }
     ],
     "official_link": "https://aaai.org/conference/aaai/aaai-26/",
-    "description": "A comprehensive introduction to <strong>Neural Network Reprogrammability</strong>, covering <em>theoretical foundations</em>, <em>practical implementation</em>, and <em>trustworthiness implications</em>.\nJoin us and learn how to leverage <strong>input transformations</strong> and <strong>output alignment</strong> to efficiently adapt frozen pre-trained models for new tasks!"
+    "description": "A comprehensive introduction to <strong>Neural Network Reprogrammability</strong>, covering <em>theoretical foundations</em>, <em>practical implementation</em>, and <em>trustworthiness implications</em>.\n\nJoin us and learn how to adapt frozen pre-trained models for new tasks with <strong>input transformation</strong> and <strong>output alignment</strong>!"
   },
   "sessions": [
     {

@@ -670,3 +670,800 @@
     - ResNet
     - Inception
   tldr: Introduces adversarial reprogramming to repurpose ImageNet classifiers for counting squares and MNIST classification
+
+- title: An Explanation of In-context Learning as Implicit Bayesian Inference
+  authors:
+  - unknown
+  year: 2021
+  venue: unknown
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'In-context Learning with Retrieved Demonstrations for Language Models: A
+    Survey},   author  ='
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: In-context learning and induction heads},   author  =
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive
+    Multi-Step Questions},   author  =
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: unknown
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - unknown
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Rethinking the Role of Demonstrations: What makes In-context Learning Work?'
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: What Makes Good Examples for Visual In-Context Learning?
+  authors:
+  - unknown
+  year: 2023
+  venue: NeurIPS},   publisher =
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Bayesian-guided Label Mapping for Visual Reprogramming
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: model-reprogramming
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - model-reprogramming
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Neural model reprogramming with similarity based mapping for low-resource
+    spoken command recognition
+  authors:
+  - unknown
+  year: 2021
+  venue: unknown
+  url: unknown
+  mechanism: model-reprogramming
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - model-reprogramming
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Sample-specific Masks for Visual Reprogramming-based Prompting
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: model-reprogramming
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - model-reprogramming
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'A Survey on Segment Anything Model (SAM): Vision Foundation Model Meets
+    Prompt Engineering},   author  ='
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models},   author  =
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: A simple zero-shot prompt weighting technique to improve prompt ensembling
+    in text-image models
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'ArGue: Attribute-Guided Prompt Tuning for Vision-Language Models'
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompt-tuning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Autovp: An automated visual prompting framework and benchmark'
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Blackvip: Black-box visual prompting for robust transfer learning'
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Conditional prompt learning for vision-language models
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Decomposed prompting: A modular approach for solving complex tasks},   author  ='
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Draw-and-understand: Leveraging visual prompts to enable mllms to comprehend
+    what you want},   author  ='
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Explicit visual prompting for low-level structure segmentations
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Exploring the Transferability of Visual Prompting for Multimodal Large Language
+    Models
+  authors:
+  - unknown
+  year: 2024
+  venue: CVPR},   pages     =
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Exploring visual prompts for adapting large-scale models},   author  =
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'InstructBLIP: towards general-purpose vision-language models with instruction
+    tuning'
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: instruction-tuning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Joint visual and text prompting for improved object-centric perception with
+    multimodal large language models},   author  =
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Learning to prompt for vision-language models},   author  =
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Least-to-most prompting enables complex reasoning in large language models
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Maple: Multi-modal prompt learning'
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: On the Role of Attention in Prompt-tuning},   author  =
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompt-tuning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Pivot: Iterative visual prompting elicits actionable knowledge for vlms},   author  ='
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Plot: Prompt learning with optimal transport for vision-language models'
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Promptkd: Unsupervised prompt distillation for vision-language models'
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Set-of-mark prompting unleashes extraordinary visual grounding in gpt-4v},   author  =
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - GPT
+  tldr: unknown
+- title: 'The Prompt Report: A Systematic Survey of Prompting Techniques},   author  ='
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Transhp: Image classification with hierarchical prompting'
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Tuning Multi-mode Token-level Prompt Alignment across Modalities
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Understanding and improving visual prompting: A label-mapping perspective'
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Unleashing the Power of Visual Prompting At the Pixel Level},   author  =
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Visual Prompting in Multimodal Large Language Models: A Survey},   author  ='
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Visual Prompting via Image Inpainting
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Visual prompt tuning
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompt-tuning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Visual prompting reimagined: The power of activation prompts},   author
+    ='
+  authors:
+  - unknown
+  year: 2024
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: What does a platypus look like? generating customized prompts for zero-shot
+    image classification
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: What does clip know about a red circle? visual prompt engineering for vlms
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: When Do Prompting and Prefix-Tuning Work? A Theory of Capabilities and Limitations
+  authors:
+  - unknown
+  year: 2023
+  venue: unknown
+  url: unknown
+  mechanism: prompt-tuning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Chain-of-thought prompting elicits reasoning in large language models
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: prompting
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: Learning To Retrieve Prompts for In-Context Learning},   author  =
+  authors:
+  - unknown
+  year: 2021
+  venue: unknown
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
+- title: 'Structured Prompting: Scaling In-Context Learning to 1,000 Examples},   author  ='
+  authors:
+  - unknown
+  year: 2022
+  venue: unknown
+  url: unknown
+  mechanism: in-context-learning
+  location: unknown
+  operator: unknown
+  alignment: unknown
+  tags:
+  - in-context-learning
+  - prompting
+  datasets:
+  - unknown
+  architectures:
+  - unknown
+  tldr: unknown
