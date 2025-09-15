@@ -673,23 +673,22 @@
 
 - title: An Explanation of In-context Learning as Implicit Bayesian Inference
   authors:
-  - unknown
-  year: 2021
-  venue: unknown
-  url: unknown
+  - Xie, Sang Michael
+  - Raghunathan, Aditi
+  - Liang, Percy
+  - Ma, Tengyu
+  year: 2022
+  venue: ICLR
+  url: https://arxiv.org/abs/2111.02080
   mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  location: input-layer
+  operator: concatenation
+  alignment: identitity
   tags:
   - in-context-learning
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
+  tldr: ICL emerges when pretraining data has long-range latent-concept coherence, enabling a language model (without parameter updates) to infer a shared prompt concept and predict the next token, which the authors formalize as implicit Bayesian inference and validate on a synthetic HMM-based dataset.
 - title: 'In-context Learning with Retrieved Demonstrations for Language Models: A
-    Survey},   author  ='
+    Survey'
   authors:
   - unknown
   year: 2024
