@@ -25,20 +25,20 @@
       "order": 1,
       "title": "Foundations of Reprogrammability",
       "presenter": "Feng Liu",
-      "duration": "70 min",
+      "duration": "70 min (60 min lecture + 10 min Q&A)",
       "topics": [
         "This session establishes the <strong>WHY</strong> and <strong>WHAT</strong> of the neural network reprogrammability framework.",
         "Adaptation bottleneck and paradigm shift from fully fine-tuning to parameter-efficient fine-tuning",
         "From vulnerability to strength: leveraging input sensitivity positively for model adaptation",
         "Examples of reprogrammability: in-context learning vs model reprogramming",
-        "Formal definition of reprogrammability across modalities, architectures, and applications."
+        "Definition of reprogrammability across modalities and architectures."
       ]
     },
     {
       "order": 2,
       "title": "Mechanics of Reprogrammability",
       "presenter": "Zesheng Ye",
-      "duration": "70 min",
+      "duration": "70 min (60 min lecture + 10 min Q&A)",
       "topics": [
         "This session introduces the <strong>HOW</strong> of the neural network reprogrammability framework.",
         "Comprehensive taxonomy of Input Manipulation.",
@@ -51,7 +51,7 @@
       "order": 3,
       "title": "Implications of Reprogrammability",
       "presenter": "Pin-Yu Chen",
-      "duration": "70 min",
+      "duration": "70 min (60 min lecture + 10 min Q&A)",
       "topics": [
         "This session discusses the <strong>SO WHAT</strong> of the neural network reprogrammability framework.",
         "Holistic trustworthiness evaluation: robustness, security, fairness perspectives",
@@ -66,7 +66,7 @@
       "name": "Feng Liu",
       "affiliation": "The University of Melbourne; RIKEN AIP",
       "email": "feng.liu1@unimelb.edu.au",
-      "bio": "Feng Liu is a researcher focusing on neural network adaptation and parameter efficiency. His work spans foundation model reprogramming, few-shot learning, and efficient transfer learning methods. He has published extensively on model reprogramming techniques and their theoretical foundations.",
+      "bio": "Dr. Feng Liu is a Senior Lecturer in Machine Learning and ARC DECRA Fellow at The University of Melbourne, where he directs the Trustworthy Machine Learning and Reasoning Lab. He is also a Visiting Scientist at RIKEN AIP. His research focuses on hypothesis testing and trustworthy machine learning. He has served as an area chair for ICML, NeurIPS, ICLR, and AISTATS, and as an editor or action editor for several leading journals. His work has been recognized with the NeurIPS 2022 Outstanding Paper Award and multiple Outstanding Reviewer Awards.",
       "sessions": [
         1
       ]
@@ -75,7 +75,7 @@
       "name": "Zesheng Ye",
       "affiliation": "The University of Melbourne",
       "email": "zesheng.ye@unimelb.edu.au",
-      "bio": "Zesheng Ye specializes in input manipulation and output alignment mechanisms for neural network reprogramming. His research focuses on developing practical implementation frameworks and understanding the mechanics behind successful model reprogramming.",
+      "bio": "Dr. Zesheng Ye is a NIPG Postdoctoral Research Fellow at The University of Melbourne, working on trustworthy machine learning, with a focus on the robustness, efficiency, privacy of Foundation Model deployment. He received his Ph.D. from the University of New South Wales and serves as Area Chair/Senior PC Member for conferences including TheWebConf, IJCNN, and CIKM. He is also a regular reviewer for ICML, NeurIPS, ICLR, AAAI, CVPR, KDD, and SIGIR, and has been recognized with the PRCV 2024 Best Reviewer Award and the ICML 2025 Top Reviewer Award.",
       "sessions": [
         2
       ]
@@ -84,7 +84,7 @@
       "name": "Pin-Yu Chen",
       "affiliation": "IBM Research AI; MIT-IBM Watson AI Lab",
       "email": "pin-yu.chen@ibm.com",
-      "bio": "Pin-Yu Chen researches trustworthy AI and adversarial machine learning. He explores the security and robustness implications of neural network reprogramming, with particular focus on adversarial reprogramming and defense mechanisms.",
+      "bio": "Dr. Pin-Yu Chen is a Principal Research Scientist at the IBM Thomas J. Watson Research Center and Chief Scientist of the RPI-IBM AI Research Collaboration. His research focuses on trustworthy machine learning, with emphasis on AI safety and robustness. He is a co-author of Adversarial Robustness for Machine Learning and recipient of the 2023 IJCAI Computers and Thought Award. Dr. Chen has published widely at top AI/ML conferences, given tutorials at NeurIPS, AAAI, CVPR, and others, and serves as area chair for major venues. He is an IEEE Fellow, ACM Distinguished Lecturer, and IBM Master Inventor.",
       "sessions": [
         3
       ]
