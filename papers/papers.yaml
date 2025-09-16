@@ -1,23 +1,3 @@
-- title: Attribute-based Visual Reprogramming for Vision-Language Models
-  authors:
-    - Cai, Chengyi
-    - Ye, Zesheng
-    - Feng, Lei
-    - Qi, Jianzhong
-    - Liu, Feng
-  year: 2025
-  venue: ICLR
-  url: '#attribute-based-visual-reprogramming-for-vision-language-models'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - computer-vision
-    - natural-language-processing
-    - multimodal
-  tldr: Attribute-driven model reprogramming for vision-language model adaptation
-
 - title: 'Model Reprogramming Demystified: A Neural Tangent Kernel Perspective'
   authors:
     - Chung, Ming-Yu
@@ -29,14 +9,15 @@
     - Chen, Pin-Yu
     - Kuo, Sy-Yen
   year: 2025
-  venue: arXiv preprint arXiv:2506.0620
+  venue: arXiv
   url: https://arxiv.org/abs/2506.0620
   mechanism: model-reprogramming
-  location: intermediate-layers
+  location: input-layers
   operator: addition
   alignment: identity
   tags:
-    - natural-language-processing
+    - model-reprogramming
+    - theory
   tldr: Theoretical analysis of model reprogramming through Neural Tangent Kernel perspective
 
 - title: 'Refine: Inversion-free backdoor defense via model reprogramming'
@@ -50,13 +31,14 @@
     - Ren, Kui
   year: 2025
   venue: ICLR
-  url: '#refine-inversion-free-backdoor-defense-via-model-reprogramming'
+  url: 'https://arxiv.org/abs/2502.18508'
   mechanism: model-reprogramming
-  location: intermediate-layers
+  location: input-layers
   operator: addition
   alignment: identity
   tags:
-    - natural-language-processing
+    - model-reprogramming
+    - safety
   tldr: Uses model reprogramming as a defense mechanism against backdoor attacks
 
 - title: Reprogramming pretrained language models for protein sequence representation learning
@@ -66,196 +48,15 @@
     - Das, Payel
   year: 2025
   venue: Digital Discovery
-  url: '#reprogramming-pretrained-language-models-for-protein-sequence-representation-learning'
+  url: 'https://arxiv.org/abs/2301.02120'
   mechanism: model-reprogramming
-  location: intermediate-layers
+  location: input-layers
   operator: addition
   alignment: identity
   tags:
-    - natural-language-processing
-  tldr: Applies model reprogramming to biological sequence modeling and protein design
-
-- title: Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts
-  authors:
-    - Cai, Chengyi
-    - Ye, Zesheng
-    - Feng, Lei
-    - Qi, Jianzhong
-    - Liu, Feng
-  year: 2025
-  venue: ICML
-  url: '#understanding-model-reprogramming-for-clip-via-decoupling-visual-prompts'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - multimodal
-  tldr: Visual model reprogramming methods for adapting CLIP models
-
-- title: Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders
-  authors:
-    - Geng, Andrew
-    - Chen, Pin-Yu
-  year: 2024
-  venue: SaTML
-  url: '#model-reprogramming-outperforms-fine-tuning-on-out-of-distribution-data-in-text-image-encoders'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - computer-vision
-  tldr: Shows model reprogramming outperforms fine-tuning on out-of-distribution data
-
-- title: 'Model reprogramming: Resource-efficient cross-domain machine learning'
-  authors:
-    - Chen, Pin-Yu
-  year: 2024
-  venue: AAAI
-  url: '#model-reprogramming-resource-efficient-cross-domain-machine-learning'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Introduces model reprogramming technique for neural network adaptation
-
-- title: 'Time-llm: Time series forecasting by reprogramming large language models'
-  authors:
-    - Jin, Ming
-    - Wang, Shiyu
-    - Ma, Lintao
-    - Chu, Zhixuan
-    - Zhang, James Y
-    - Shi, Xiaoming
-    - Chen, Pin-Yu
-    - Liang, Yuxuan
-    - Li, Yuan-Fang
-    - Pan, Shirui
-    - others
-  year: 2024
-  venue: ICLR
-  url: '#time-llm-time-series-forecasting-by-reprogramming-large-language-models'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Uses model reprogramming to adapt models for time series classification tasks
-
-- title: Deep graph reprogramming
-  authors:
-    - Jing, Yongcheng
-    - Yuan, Chongbin
-    - Ju, Li
-    - Yang, Yiding
-    - Wang, Xinchao
-    - Tao, Dacheng
-  year: 2023
-  venue: CVPR
-  url: '#deep-graph-reprogramming'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - computer-vision
-  tldr: Graph-based model reprogramming methods for network representation learning
-
-- title: 'From english to more languages: Parameter-efficient model reprogramming for cross-lingual speech recognition'
-  authors:
-    - Yang, Chao-Han Huck
-    - Li, Bo
-    - Zhang, Yu
-    - Chen, Nanxin
-    - Prabhavalkar, Rohit
-    - Sainath, Tara N
-    - Strohman, Trevor
-  year: 2023
-  venue: ICASSP
-  url: '#from-english-to-more-languages-parameter-efficient-model-reprogramming-for-cross-lingual-speech-recognition'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Parameter-efficient model reprogramming for cross-lingual speech recognition
-
-- title: Low-resource music genre classification with cross-modal neural model reprogramming
-  authors:
-    - Hung, Yun-Ning
-    - Yang, Chao-Han Huck
-    - Chen, Pin-Yu
-    - Lerch, Alexander
-  year: 2023
-  venue: ICASSP
-  url: '#low-resource-music-genre-classification-with-cross-modal-neural-model-reprogramming'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Cross-modal model reprogramming techniques for multi-domain adaptation
-
-- title: Reprogramming pretrained language models for antibody sequence infilling
-  authors:
-    - Melnyk, Igor
-    - Chenthamarakshan, Vijil
-    - Chen, Pin-Yu
-    - Das, Payel
-    - Dhurandhar, Amit
-    - Padhi, Inkit
-    - Das, Devleena
-  year: 2023
-  venue: ICML
-  url: '#reprogramming-pretrained-language-models-for-antibody-sequence-infilling'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Applies model reprogramming to biological sequence modeling and protein design
-
-- title: Universal prompt tuning for graph neural networks
-  authors:
-    - Fang, Taoran
-    - Zhang, Yunchao
-    - Yang, Yang
-    - Wang, Chunping
-    - Chen, Lei
-  year: 2023
-  venue: NeurIPS
-  url: '#universal-prompt-tuning-for-graph-neural-networks'
-  mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Graph-based prompt tuning methods for network representation learning
-
-- title: Visual instruction tuning
-  authors:
-    - Liu, Haotian
-    - Li, Chunyuan
-    - Wu, Qingyang
-    - Lee, Yong Jae
-  year: 2023
-  venue: NeurIPS
-  url: '#visual-instruction-tuning'
-  mechanism: prompt-instruction
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Visual instruction tuning using prompt instruction for multimodal tasks
+    - model-reprogramming
+    - cross-modal
+  tldr: Cross-modal reprogramming, repurposes a language model for biological sequence modeling and protein design
 
 - title: Adversarial Reprogramming Revisited
   authors:
@@ -263,16 +64,17 @@
     - Lazic, Ranko
   year: 2022
   venue: NeurIPS
-  url: '#adversarial-reprogramming-revisited'
+  url: https://arxiv.org/abs/2206.03466
   mechanism: model-reprogramming
-  location: intermediate-layers
+  location: input-layer
   operator: addition
-  alignment: identity
+  alignment: statistical
   tags:
-    - natural-language-processing
-  tldr: Improved analysis and methods for model reprogramming techniques
+    - model-reprogramming
+  tldr: Shows that even randomly initialized two-layer ReLU networks can be adversarially reprogrammed via input perturbation (without changing weights) to achieve high accuracy on certain tasks, but training in some settings can prevent successful reprogramming.
 
-- title: Cross-modal adversarial reprogramming
+
+- title: Cross-modal Adversarial Reprogramming
   authors:
     - Neekhara, Paarth
     - Hussain, Shehzeen
@@ -281,15 +83,24 @@
     - Koushanfar, Farinaz
     - McAuley, Julian
   year: 2022
-  venue: CVPR
-  url: '#cross-modal-adversarial-reprogramming'
-  mechanism: model-reprogramming
-  location: intermediate-layers
+  venue: WACV
+  url: https://arxiv.org/abs/2102.07325
+  mechanism: adversarial-reprogramming
+  location: input-layer
   operator: addition
-  alignment: identity
+  alignment: linear
   tags:
-    - computer-vision
-  tldr: Cross-modal model reprogramming techniques for multi-domain adaptation
+    - cross-modal
+    - model-reprogramming
+  datasets:
+    - AG News
+    - DBPedia
+    - DNA / protein / other sequence classification benchmarks
+  architectures:
+    - Vision Transformer (ViT)
+    - CNNs
+  tldr: You can repurpose image classifiers to do sequence classification by mapping discrete token sequences into images and using label remappings, without re-training the classifier.
+
 
 - title: Differentiable prompt makes pre-trained language models better few-shot learners
   authors:
@@ -502,7 +313,16 @@
   alignment: identity
   tags:
     - prompt-tuning
-    - LM
+    - soft-prompts
+    - knowledge-extraction
+  datasets:
+    - LAMA
+    - ConceptNet
+    - factual-knowledge-benchmarks
+  architectures:
+    - BERT
+    - RoBERTa
+    - language-models
   tldr: Learning continuous "soft prompts" through gradient descent, including mixtures of prompts, to efficiently adapt pre-trained language models for various tasks by manipulating the input embeddings
 
 - title: 'P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks'
@@ -589,30 +409,42 @@
     - Chen, Pin-Yu
   year: 2021
   venue: ICML
-  url: '#voice2series-reprogramming-acoustic-models-for-time-series-classification'
+  url: 'https://arxiv.org/abs/2106.09296'
   mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
+  location: input-layer
+  operator: parametric
+  alignment: statistical
   tags:
-    - natural-language-processing
-  tldr: Uses model reprogramming to adapt models for time series classification tasks
+    - model-reprogramming
+    - cross-modal
+  datasets:
+    - UCR Time Series Classification Archive
+  architectures:
+    - ResNet-50
+  tldr: Repurpose pre-trained acoustic models for time-series classification by learning an input transformation and an output label mapping.
 
-- title: 'WARP: Word-level adversarial reprogramming'
+- title: 'WARP: Word-level Adversarial ReProgramming'
   authors:
-    - Hambardzumyan, K
-    - Khachatrian, H
-    - May, J
+    - Karen Hambardzumyan
+    - Hrant Khachatrian
+    - Jonathan May
   year: 2021
-  venue: ACL-IJCNLP
-  url: '#warp-word-level-adversarial-reprogramming'
-  mechanism: model-reprogramming
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
+  venue: ACL / ACL-IJCNLP
+  url: https://arxiv.org/abs/2101.00121
+  mechanism: adversarial-reprogramming
+  location: input-layer
+  operator: concat
+  alignment: linear
   tags:
-    - natural-language-processing
-  tldr: Word-level model reprogramming for text classification tasks
+    - model-reprogramming
+    - few-shot
+  datasets:
+    - GLUE
+    - SuperGLUE
+  architectures:
+    - RoBERTa-large
+    - ALBERT-xxlarge-v2
+  tldr: WARP learns a small number of prompt and verbalizer embeddings that are concatenated to input text to steer frozen pretrained masked language models to perform downstream tasks efficiently.
 
 - title: Reprogramming Language Models for Molecular Representation Learning
   authors:
@@ -687,782 +519,1503 @@
   tags:
   - in-context-learning
   tldr: ICL emerges when pretraining data has long-range latent-concept coherence, enabling a language model (without parameter updates) to infer a shared prompt concept and predict the next token, which the authors formalize as implicit Bayesian inference and validate on a synthetic HMM-based dataset.
-- title: 'In-context Learning with Retrieved Demonstrations for Language Models: A
-    Survey'
+
+- title: In-context Learning and Induction Heads
   authors:
-  - unknown
-  year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - in-context-learning
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: In-context learning and induction heads},   author  =
-  authors:
-  - unknown
+    - OLSSON, Catherine
+    - ELHAGE, Nelson
+    - NANDA, Neel
+    - JOSEPH, Nicholas
+    - DASSARMA, Nova
+    - HENIGHAN, Tom
+    - MANN, Ben
+    - ASKELL, Amanda
+    - BAI, Yuntao
+    - CHEN, Anna
+    - CONERLY, Tom
+    - DRAIN, Dawn
+    - GANGULI, Deep
+    - HATFIELD-DODDS, Zac
+    - HERNANDEZ, Danny
+    - JOHNSTON, Scott
+    - JONES, Andy
+    - KERNION, Jackson
+    - LOVITT, Liane
+    - NDOUSSE, Kamal
+    - AMODEI, Dario
+    - BROWN, Tom
+    - CLARK, Jack
+    - KAPLAN, Jared
+    - MCCANDLISH, Sam
+    - OLAH, Chris
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: arXiv
+  url: https://arxiv.org/abs/2209.11895
+  mechanism: prompt-instruction # Fixed prompts used to elicit behavior “without re-training,” i.e., in-context learning via prompting (p.3 L23–L24); the work studies how prompts drive behavior rather than learning new parameters. 
+  location: input-layer # The prompt/examples are part of the raw input token sequence; behavior is analyzed over token indices in the context window (definition of ICL over positions, 50th→500th tokens) (pp.3–4). 
+  operator: concat # In-context learning is instantiated by concatenating demonstrations/instructions to the input sequence (few-shot framing), not by addition or parametric input transforms (p.3 L24–L28). 
+  alignment: identity # Outputs are directly next-token predictions in the model’s native label space; no explicit post-hoc label mapping or head is introduced (per-token loss analysis and ablations, pp.6–7, 23–24, 59–60). 
   tags:
-  - in-context-learning
+    - in-context learning
+    - mechanistic interpretability
   datasets:
-  - unknown
+    - Filtered Common Crawl mixture # (incl. internet books, ~10% Python code) Training data description for small/smeared-key models (p.28 L136–L139). 
+    - Internet books only (variant for small models) # Additional dataset variant used to probe dataset effects (p.28 L136–L139). 
   architectures:
-  - unknown
-  tldr: unknown
-- title: Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive
-    Multi-Step Questions},   author  =
+    - Decoder-only transformers # (1-6 layers, attention-only), (1-6 layers with MLPs)
+    - Full-scale models # (4–40 layers, 13M–13B params; dense+local attention; context 8192; vocab 216) # Model table and details (p.38–39; table on p.38–39). 
+  tldr: The paper presents six converging lines of mechanistic evidence across 34 transformer LMs—phase-change co-occurrence, architectural perturbations, and ablations—supporting the claim that “induction heads” are the primary mechanism underlying in-context learning. 
+
+
+- title: Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions
   authors:
-  - unknown
-  year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: unknown
-  location: unknown
-  operator: unknown
-  alignment: unknown
+    - TRIVEDI, Harsh
+    - BALASUBRAMANIAN, Niranjan
+    - KHOT, Tushar
+    - SABHARWAL, Ashish
+  year: 2023
+  venue: ACL
+  url: https://arxiv.org/abs/2212.10509
+  mechanism: prompt-instruction # Uses manually written few-shot CoT prompts and no trainable parameters; retrieval and reasoning are orchestrated via prompting rather than learned adapters/tuning (§3, Fig. 2; arXiv v2, pp. 1–3).
+  location: input-layer # All control signals (question, retrieved paragraphs, and evolving CoT sentences) are concatenated as textual input to the LM; no embedding/hidden-layer hooks (§3.1 prompt templates; Fig. 2).
+  operator: concat # The method prepends/appends retrieved paragraphs and CoT sentences to the question as a single prompt string for each step—pure concatenation of tokens (§3.1; prompt template snippet).
+  alignment: identity # In the main system, a separate reader LM directly outputs the answer given retrieved context (direct or CoT prompting), with no parametric label map; ablation extracts “answer is …” via rules (§3.1–§3.2; App. F).
   tags:
-  - unknown
+    - in-context learning
+    - chain-of-thought
+    - multi-hop reasoning
   datasets:
-  - unknown
+    - HotpotQA
+    - 2WikiMultihopQA
+    - MuSiQue
+    - IIRC
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Rethinking the Role of Demonstrations: What makes In-context Learning Work?'
+    - GPT-3 # (code-davinci-002, 175B)
+    - Flan-T5 # (base/large/XL/XXL)
+  tldr: IRCoT interleaves retrieval with chain-of-thought prompting—using retrieved evidence to guide stepwise reasoning and vice versa—to substantially improve few-shot, multi-hop open-domain QA across HotpotQA, 2WikiMultihopQA, MuSiQue, and IIRC without additional training.
+
+
+- title: 'Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?'
   authors:
-  - unknown
+    - MIN, Sewon
+    - LYU, Xinxi
+    - HOLTZMAN, Ari
+    - ARTETXE, Mikel
+    - LEWIS, Mike
+    - HAJISHIRZI, Hannaneh
+    - ZETTLEMOYER, Luke
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: EMNLP
+  url: https://arxiv.org/abs/2202.12837
+  mechanism: prompt-instruction # Uses fixed, non-trainable demonstrations concatenated to the input to elicit task behavior “via inference alone … without any gradient updates.”
+  location: input-layer # Demonstrations are concatenations of input–label pairs fed as text prompts to the model’s input stream (direct/channel methods).
+  operator: concat # The prompt is formed by concatenating multiple (x, y) pairs followed by the query example; ablations vary presence/order/format but remain concatenative.
+  alignment: rule-based # Prediction selects among a small discrete label set using direct p(y|x) or channel scoring—i.e., a deterministic post-processing/selection rule over label tokens.
   tags:
-  - in-context-learning
+    - in-context learning
+    - label-space effects
   datasets:
-  - unknown
+    - MRPC
+    - RTE
+    - TweetEval-Hate
+    - SICK
+    - Poem-Sentiment
+    - OpenBookQA
+    - CommonsenseQA
+    - COPA
+    - ARC
+    - GLUE/SuperGLUE subsets # (broader pool across 26 tasks)
   architectures:
-  - unknown
-  tldr: unknown
+    - GPT-2 Large # (774M)
+    - MetaICL # (meta-trained GPT-2 Large)
+    - GPT-J # (6B)
+    - fairseq LMs # (6.7B, 13B)
+    - GPT-3 # (175B, API)
+  tldr: In-context learning gains arise primarily from demonstrations conveying label space, input distribution, and formatting—rather than correct input-label pairings—across many LMs and tasks, reshaping how demonstrations are designed and interpreted.
+
+
 - title: What Makes Good Examples for Visual In-Context Learning?
   authors:
-  - unknown
+    - ZHANG, Yuanhan
+    - ZHOU, Kaiyang
+    - LIU, Ziwei
   year: 2023
-  venue: NeurIPS},   publisher =
-  url: unknown
-  mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: arXiv
+  url: https://arxiv.org/abs/2301.13670
+  mechanism: prompt-instruction # No model parameters are updated; the method conditions on example-query prompts and learns only a separate retriever (not the frozen LVM). (“…without updating the model parameters.” §Abstract; §2.1)
+  location: input-layer # Examples and query are composed as a grid image fed to the model—manipulation occurs at the raw input. (Fig. 1; “create a large grid… fit 8 examples…”, §3.3)
+  operator: concat # The prompt is constructed by concatenating example input–output pairs with the query in a single grid/canvas. (Fig. 1; §2.1, §3.3 “varying the number of in-context examples”)
+  alignment: identity # Outputs (segmentation mask, detection, colorization) are read directly from the model’s prediction for the query tile—no label remapping required. (Table 1 setup; §3.1)
   tags:
-  - in-context-learning
+    - in-context learning
+    - visual prompting
   datasets:
-  - unknown
+    - Pascal-5^i # (few-shot segmentation)
+    - Pascal VOC # (single-object detection)
+    - ImageNet-2012 # (colorization)
+    - MSCOCO # (shifted evaluation for segmentation)
   architectures:
-  - unknown
-  tldr: unknown
+    - Visual prompting image-inpainting model # (Bar et al., 2022) as frozen LVM
+    - CLIP vision encoder # (unsupervised and supervised retriever backbones)
+    - EVA # (self-supervised backbone, analysis)
+    - ViT # (supervised backbone, analysis)
+  tldr: Visual in-context learning is highly sensitive to example choice and introduces unsupervised and supervised prompt-retrieval methods that reliably select effective examples, yielding consistent gains across segmentation, detection, and colorization tasks without updating the large vision model.
+
+
 - title: Bayesian-guided Label Mapping for Visual Reprogramming
   authors:
-  - unknown
+    - CAI, Chengyi
+    - YE, Zesheng
+    - FENG, Lei
+    - QI, Jianzhong
+    - LIU, Feng
   year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: model-reprogramming
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2410.24018
+  mechanism: model-reprogramming # The paper studies visual reprogramming (repurposing a frozen model) and proposes a gradient-free output label mapping method (BLM/BLM+) without modifying pretrained parameters.
+  location: input-space # Input VR is applied via padding/watermarking at the raw image interface, while the paper’s main contribution operates at the output alignment stage between pretrained and downstream label spaces.
+  operator: addition # Padding/watermarking introduce trainable noise patterns as overlays/masks on images, which is an additive manipulation of pixels before passing to the frozen model.
+  alignment: statistical # BLM/BLM+ build a probabilistic many-to-many label mapping matrix estimated from empirical joint/conditional statistics (Bayesian-guided), with no trainable parameters in the mapping.
   tags:
-  - model-reprogramming
+    - probabilistic label mapping
   datasets:
-  - unknown
+    - FGVC
+    - VTAB-1k
   architectures:
-  - unknown
-  tldr: unknown
-- title: Neural model reprogramming with similarity based mapping for low-resource
-    spoken command recognition
+    - ResNet  # ResNet-18
+    - ResNeXt  # ResNeXt-101-32x8d
+    - ViT # ViT-B32
+  tldr: Introduces a gradient-free probabilistic label mapping that enables many-to-many alignment between label spaces in model reprogramming, improving output alignment and is pretrained model and input manipulation agnostic. 
+
+
+- title: Neural Model Reprogramming with Similarity Based Mapping for Low-Resource Spoken Command Recognition
   authors:
-  - unknown
-  year: 2021
-  venue: unknown
-  url: unknown
-  mechanism: model-reprogramming
-  location: unknown
-  operator: unknown
-  alignment: unknown
+    - Yen, Hao
+    - Ku, Pin-Jui
+    - Yang, Chao-Han Huck
+    - Hu, Hu
+    - Siniscalchi, Sabato Marco
+    - Chen, Pin-Yu
+    - Tsao, Yu
+  year: 2023
+  venue: Interspeech
+  url: https://arxiv.org/abs/2110.03894
+  mechanism: learnable
+  location: input-space
+  operator: additive
+  alignment: statistical
   tags:
-  - model-reprogramming
+    - model-reprogramming
+    - adversarial-reprogramming
+    - transfer-learning
+    - spoken-command-recognition
   datasets:
-  - unknown
+    - Arabic Speech Commands
+    - Lithuanian Speech Commands
+    - Dysarthric Mandarin Speech Commands
   architectures:
-  - unknown
-  tldr: unknown
+    - TDNN-F
+  tldr: Proposes an adversarial reprogramming method that adapts a pretrained spoken command model to low-resource languages by adding a learnable perturbation to the input audio and aligning labels using a novel similarity-based mapping technique.
+
 - title: Sample-specific Masks for Visual Reprogramming-based Prompting
   authors:
-  - unknown
+    - Cai, Chengyi
+    - Ye, Zesheng
+    - Feng, Lei
+    - Qi, Jianzhong
+    - Liu, Feng
   year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: model-reprogramming
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: ICML
+  url: https://arxiv.org/abs/2406.03150
+  mechanism: model-reprogramming # Learns sample-specific mask parameters with a lightweight ConvNet rather than using a fixed/shared mask.
+  location: input-layer # Manipulation is applied directly to target images; VR adds patterns to the input space of the frozen source model.
+  operator: addition # The reprogramming pattern is added to the image (mask-weighted pattern addition), consistent with VR “added into input images.”
+  alignment: statistical # Uses non-parametric/iterative label mapping from source-label space to target-label space (e.g., ILM), rather than identity or purely rule-based parsing.
   tags:
-  - model-reprogramming
-  - prompting
+    - soft visual prompting
   datasets:
-  - unknown
+    - FGVC
+    - VTAB-1k
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'A Survey on Segment Anything Model (SAM): Vision Foundation Model Meets
-    Prompt Engineering},   author  ='
+    - ResNet  # ResNet-18, ResNet-50
+    - ViT # ViT-B32
+  tldr: Uses a ConvNet to generate per-sample multi-channel masks, together with universally-initialized noise perturbations (i.e., soft visual prompts), added to inputs, theoretically reducing approximation error and empirically improving visual reprogramming across diverse datasets and backbones without tuning the frozen model.
+
+- title: A Simple Zero-shot Prompt Weighting Technique to Improve Prompt Ensembling in Text-Image Models
   authors:
-  - unknown
+    - ALLINGHAM, James Urquhart
+    - REN, Jie
+    - DUSENBERRY, Michael W.
+    - GU, Xiuye
+    - CUI, Yin
+    - TRAN, Dustin
+    - LIU, Jeremiah Zhe
+    - LAKSHMINARAYANAN, Balaji
   year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: ICML
+  url: https://arxiv.org/abs/2302.06235
+  mechanism: prompt-instruction # No model or prompt parameter training; prompts are selected/weighted in a zero-shot, optimization-free manner (Algorithm 2; Sec. 3, Fig. 1). :contentReference[oaicite:0]{index=0}
+  location: input-layer # Manipulation occurs at the input text level by composing natural-language templates with class names before encoding (Eq. 2; “A photo of {}.”). :contentReference[oaicite:1]{index=1}
+  operator: concat # Class descriptors are formed by concatenating template and class name; multiple prompt-specific text embeddings are concatenated/pooled then ensembled (Eq. 2–4). :contentReference[oaicite:2]{index=2}
+  alignment: identity # Model logits over target classes are used directly; no post-hoc label remapping—ensemble acts in logit space with identity label space (Eq. 3–5, Tables 1–2). :contentReference[oaicite:3]{index=3}
   tags:
-  - prompting
+    - zero-shot prediction
+    - prompt ensembling
+    - vision-language models
   datasets:
-  - unknown
+    - ImageNet
+    - ImageNet variants
+    - FGVC
+    - VTAB-1k
+    # - LAION400M (20k subset for normalization)
   architectures:
-  - unknown
-  tldr: unknown
-- title: A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models},   author  =
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: A simple zero-shot prompt weighting technique to improve prompt ensembling
-    in text-image models
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
+    - CLIP # ViT-B/16
+    - LiT # ViT-L/16
+    # - contrastive text–image encoders (family-wide)
+  tldr: Introduces a zero-shot, training-free prompt scoring and weighting method that corrects pretrain/test-frequency biases to build stronger prompt ensembles for contrastive text-image models, improving zero-shot accuracy across ImageNet variants and 11 fine-grained datasets.
+
+
 - title: 'ArGue: Attribute-Guided Prompt Tuning for Vision-Language Models'
   authors:
-  - unknown
+    - TIAN, Xinyu
+    - ZOU, Shu
+    - YANG, Zhaoyuan
+    - ZHANG, Jing
   year: 2024
-  venue: unknown
-  url: unknown
+  venue: CVPR
+  url: https://arxiv.org/abs/2311.16494
+  mechanism: prompt-tuning # The method learns soft textual prompts for CLIP (prompt tuning), rather than updating backbone weights
+  location: embedding # Prompts are concatenated with class-name and attribute word embeddings and fed to the text encoder (embedding/interface level). 
+  operator: concat # The learnable tokens are concatenated with class and attribute embeddings to form the textual prompt. 
+  alignment: identity # Classification remains in the original label space; logits over attribute-conditioned text features are averaged per class with no extra label remapping.
+  tags:
+    - text prompt-tuning
+    - vision-language models
+    - OOD-generalization
+    - few-shot
+  datasets:
+    - ImageNet
+    - ImageNet variants
+    - FGVC
+    - VTAB-1k
+  architectures:
+    - CLIP # ViT-B/16
+  tldr: Attribute-guided prompt tuning can leverage LLM-derived visual attributes, attribute sampling, and negative prompting to learn more causal text prompts for CLIP, leading to better OOD generalization.
+
+
+- title: 'AutoVP: An Automated Visual Prompting Framework and Benchmark'
+  authors:
+    - TSAO, Hsi-Ai
+    - HSIUNG, Lei
+    - CHEN, Pin-Yu
+    - LIU, Sijia
+    - HO, Tsung-Yi
+  year: 2024
+  venue: ICLR
+  url: https://arxiv.org/abs/2310.08381
+  mechanism: model-reprogramming # Visual prompting is framed as in-domain model reprogramming adapting inputs/outputs of a frozen model.
+  location: input-layer # “adds a universal trainable data frame to the target samples at the model-input stage.”
+  operator: concatenation # Prompts are “padded” as a frame around the image (structural concatenation of pixels at input).
+  alignment: statistical / linear # AutoVP searches nonparametric label mapping (FreqMap, SemanticMap) and trainable mapping incl. IterMap and a linear FC head (FullyMap).
+  tags:
+    - soft visual prompting
+    - model-reprogramming
+    - hyperparameter search
+  datasets:
+    - FGVC
+    - VTAB-1k
+    - FMoW # The paper evaluates on 12 downstream datasets.
+  architectures:
+    - ResNet # ResNet-18
+    - ResNeXt # ResNeXt-101-32x8d
+    - Swin-T
+    - CLIP # Pre-trained classifier choices enumerated in the framework.
+  tldr: AutoVP is an end-to-end framework that jointly tunes visual prompts, pre-trained model choice, and label-mapping strategies to automate visual prompting and establish a 12-dataset benchmark, outperforming prior VP baselines while keeping the backbone frozen. :contentReference[oaicite:7]{index=7}
+
+
+- title: 'BlackVIP: Black-Box Visual Prompting for Robust Transfer Learning'
+  authors:
+    - OH, Changdae
+    - HWANG, Hyeji
+    - LEE, Hee-young
+    - LIM, YongTaek
+    - JUNG, Geunyoung
+    - JUNG, Jiyoung
+    - CHOI, Hosik
+    - SONG, Kyungwoo
+  year: 2023
+  venue: CVPR
+  url: https://arxiv.org/abs/2303.14773
+  mechanism: model-reprogramming # Uses learnable input-space prompts optimized via zeroth-order (SPSA-GC) while keeping the PTM frozen; explicitly targets black-box settings without parameter access.
+  location: input-space # The method “augments an input image by attaching a visual prompt per pixel,” designing an image-shaped prompt that covers the entire view.
+  operator: add # The visual prompt is applied as a pixel-level perturbation to the input image (perturbed image = original image plus prompt), consistent with visual prompting/reprogramming formulations.
+  alignment: rule-based # Classification head is defined by manual text templates in CLIP; the paper restricts to VLMs so the target label space is specified via templates rather than a learned head.
+  tags:
+    - black-box
+    - visual prompting
+    - model reprogramming
+    - zeroth-order optimization
+    - SPSA-GC
+    - few-shot adaptation
+    - distribution/location shift robustness
+    - CLIP
+  datasets:
+    - FGVC
+    - VTAB-1k
+    - ImageNet
+    - Biased-MNIST
+    - Loc-MNIST
+  architectures:
+    - CLIP # ViT-B/16 image encoder
+    # - Coordinator (autoencoder-style prompt generator: ViT-MAE encoder + DSC-based CNN decoder)
+  tldr: BlackVIP introduces an input-dependent, image-shaped visual prompt generator optimized with a gradient-free SPSA-GC algorithm to adapt frozen, black-box CLIP models for few-shot transfer across diverse datasets, achieving robust performance under distribution and location shifts without accessing model parameters.
+
+
+- title: Attribute-based Visual Reprogramming for Vision-Language Models
+  authors:
+    - Cai, Chengyi
+    - Ye, Zesheng
+    - Feng, Lei
+    - Qi, Jianzhong
+    - Liu, Feng
+  year: 2025
+  venue: ICLR
+  url: 'https://arxiv.org/abs/2501.13982'
+  mechanism: model-reprogramming
+  location: input
+  operator: addition / concatenation
+  alignment: rule-based  # Classification head is defined by manual text templates in CLIP; the paper restricts to VLMs so the target label space is specified via templates rather than a learned head.
+  tags:
+    - model-reprogramming
+    - soft visual prompting
+    - vision-language models
+    - LLM-generated prompts
+  tldr: Soft visual prompting for VLM can be improved with more semantically meaningful LLM-generated text prompts.
+
+- title: Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts
+  authors:
+    - CAI, Chengyi
+    - YE, Zesheng
+    - FENG, Lei
+    - QI, Jianzhong
+    - LIU, Feng
+  year: 2025
+  venue: ICML 2025
+  url: https://arxiv.org/abs/2506.01000
+  mechanism: model-reprogramming # Visual Reprogramming (a form of model reprogramming) that adapts CLIP by modifying only input/output spaces without changing core parameters.
+  location: input # Adds trainable visual prompts to input images; padding + prompt is applied at the input space. Eq./notation: f_in(x_T|δ)=pad(x_T)+δ; extended to Δ for DVP. (Tables 19–20; App. D.2.2–D.2.3; p. 23–24)
+  operator: add # The prompt is added to (overlaid on) the padded image: pad(x_T)+δ / +Δ (additive operator). (Table 19; p. 24)
+  alignment: linear # Uses a learned probabilistic reweighting matrix ω to linearly map description similarities to class logits (ŷ = a^T ω), optimized via MLE. (Table 19: ω; Table 20; p. 24)
+  tags:
+    - model-reprogramming
+    - soft visual prompting
+    - vision-language models
+  datasets:
+    - FGVC
+    - VTAB-1k
+  architectures:
+    - CLIP # RN50, RN101, ViT-B/32, ViT-B/16
+  tldr: Decouples a single visual prompt into multiple cause- or cluster-specific prompts and linearly reweights their contributions via a probabilistic matrix, yielding stronger accuracy across 11 datasets with theoretical risk-bound reductions and interpretable class-level attributions. 
+
+
+- title: 'Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders'
+  authors:
+    - GENG, Andrew
+    - CHEN, Pin-Yu
+  year: 2024
+  venue: SatML
+  url: https://arxiv.org/abs/2403.10800
+  mechanism: model-reprogramming # The method (“REPROGRAMMER/RESIDUAL REPROGRAMMER”) reuses a frozen CLIP model and learns reprogramming functions without changing pre-trained parameters; see “no adjustments to any pre-trained model parameters” and predictions via zero-shot-style similarity (Eq. (3); Sec. 3.3). 
+  location: input-layer / embedding-layer # Image reprogramming is applied at the raw input (upsample+pad+additive mask) before the image encoder (Eq. (1); Sec. 3.1), while text reprogramming operates on token embeddings via a lookup and bias before the text encoder (Sec. 3.2; Fig. 2). 
+  operator: addition / parametric # Image path uses explicit addition (U(X) + tanh(W⊙M)) → “add”; text path uses a learnable embedding lookup with additive bias Φ_{θ,b} → a parametric transform (with additive bias). (Eqs. (1), Sec. 3.2). 
+  alignment: identity # No separate learnable label-mapping head is trained; predictions are made by cosine similarity between reprogrammed image features and reprogrammed class-text features, as in zero-shot CLIP (Eq. (3)). 
+  tags:
+    - model reprogramming
+    - multi-modal prompting
+    - OOD
+  datasets:
+    - CIFAR-10
+    - CIFAR10.1
+    - STL10
+    - ImageNet
+    - ImageNet variants
+    - iSUN
+    - LSUN-Resize
+    - Places365
+    - Textures
+    - iNaturalist
+    - SUN
+    - Places
+    - Textures
+  architectures:
+    - CLIP # B/32 (joint text–image encoder)
+  tldr: The paper introduces Reprogrammer and a residual variant that reprogram frozen CLIP encoders via input- and embedding-level modules to preserve pre-training representations, yielding stronger holistic performance across ID accuracy, OOD generalization, and OOD detection than common fine-tuning baselines. :contentReference[oaicite:4]{index=4}
+
+
+- title: Time-LLM: Time Series Forecasting by Reprogramming Large Language Models
+  authors:
+    - JIN, Ming
+    - WANG, Shiyu
+    - MA, Lintao
+    - CHU, Zhixuan
+    - ZHANG, James Y.
+    - SHI, Xiaoming
+    - CHEN, Pin-Yu
+    - LIANG, Yuxuan
+    - LI, Yuan-Fang
+    - PAN, Shirui
+    - WEN, Qingsong
+  year: 2024
+  venue: ICLR
+  url: https://arxiv.org/abs/2310.01728
+  mechanism: model-reprogramming # The paper “reprograms” a frozen LLM for forecasting via input reprogramming and prompt-as-prefix, explicitly keeping the backbone intact—canonical Model Reprogramming.
+  location: embedding-layer # Manipulation occurs at the embedding interface: time series are patched/embedded, reprogrammed with learned text prototypes, and augmented by prefix prompts before entering the LLM.
+  operator: parametric # Core manipulation is a learned parametric transform mapping patch embeddings to the LLM’s embedding space (plus prefixes); the principal operator is parametric.
+  alignment: linear # The model uses a linear output projection from LLM outputs to numeric forecasts, i.e., linear alignment.
+  tags:
+    - time-series forecasting
+    - large-language-models
+    - model-reprogramming
+  datasets:
+    - ETTh1  # h1, h2, m1, m2
+    - Weather
+    - Electricity
+    - Traffic
+    - ILI
+    - M4
+  architectures:
+    - Llama-7B
+    - GPT-2
+  tldr: A frozen-LLM reprogramming framework maps time-series patches into text-prototype embeddings and steers them with prompt-as-prefix, then linearly projects LLM outputs to numeric forecasts, yielding strong few/zero-shot performance across standard benchmarks.
+
+
+- title: Deep Graph Reprogramming
+  authors:
+    - JING, Yongcheng
+    - YUAN, Chongbin
+    - JU, Li
+    - YANG, Yiding
+    - WANG, Xinchao
+    - TAO, Dacheng
+  year: 2023
+  venue: CVPR
+  url: https://arxiv.org/abs/2304.14593
+  mechanism: model-reprogramming # Reuses a frozen GNN via Data Reprogramming (Meta-FeatPadding/Edge-Slimming/Meta-GraPadding) and Model Reprogramming (Reprogrammable-Aggregator) without changing model parameters.
+  location: input-layer / intermediate-layers # Manipulates inputs/graph structure (features, edges, meta-graph) at the input interface (X^S); additionally reprograms aggregation behavior inside the model (hidden interface H) via ReAgg.
+  operator: concatenation / parametric # Uses concatenation-based feature padding in MetaFP; uses parametric transforms to modify adjacency (edge deletion) and to insert a learned meta-graph.
+  alignment: rule-based # Output handled by a rule/selection: “use the corresponding part of the pre-trained neurons at the final linear layer” to match downstream output dimensions.
+  tags:
+    - model-reprogramming
+    - graph neural networks
+  datasets:
+    - AmazonCoBuy # Used in adversarial reprogramming analysis and experiments.
+    - OGBG-MOLBBBP # As above.
+    - OGBG-MOLESOL # As above.
+    - QM7b # Mentioned for inductive tasks/meta-graph padding context.
+  architectures:
+    - frozen pre-trained GNN (generic) # Paper targets reuse of a single frozen GNN across node/graph tasks.
+    - Reprogrammable-Aggregator (ReAgg) wrapper # Task-adaptive aggregation without changing original model parameters.
+  tldr: Introduces deep graph reprogramming, a data- and model-side framework (feature/structure padding and a reprogrammable aggregator) that reuses a single frozen GNN across heterogeneous, cross-level tasks without retraining, achieving performance comparable to training from scratch.
+
+
+- title: 'From English to More Languages: Parameter-Efficient Model Reprogramming for Cross-Lingual Speech Recognition'
+  authors:
+    - YANG, Chao-Han Huck
+    - LI, Bo
+    - ZHANG, Yu
+    - CHEN, Nanxin
+    - PRABHAVALKAR, Rohit
+    - SAINATH, Tara N.
+    - STROHMAN, Trevor
+  year: 2023
+  venue: ICASSP
+  url: https://arxiv.org/abs/2301.07851
+  mechanism: model-reprogramming # Trains small, auxiliary modules while keeping the large ASR backbone frozen; explicitly proposes parameter-efficient reprogramming blocks optimized end-to-end.
+  location: input-layer / intermediate-layers # Manipulation occurs at the raw input (acoustic feature) level via input reprogramming and within hidden/latent layers via bridged reprogramming blocks inserted between Conformer encoders.
+  operator: addition # Both input-level and latent-level modules generate additive features that are injected into the backbone representations; no concatenation is described.
+  alignment: rule-based # Uses a unified multilingual grapheme vocabulary as the output space; no post-hoc label mapping/probe is required (linear probe baseline is reported but not adopted).
+  tags:
+    - speech-recognition
+    - cross-lingual
+    - model-reprogramming
+  datasets:
+    - Multilingual LibriSpeech # en, de, nl, fr, es, it, pt, pl
+  architectures:
+    - Conformer RNN-Transducer
+  tldr: Introduces model reprogramming for cross-lingual ASR that injects learnable additive modules at input and hidden layers of a frozen Conformer RNN-T, leveraging a multilingual grapheme vocabulary to achieve strong multilingual WER with an order-of-magnitude fewer trainable parameters.
+
+
+- title: Low-Resource Music Genre Classification with Cross-Modal Neural Model Reprogramming
+  authors:
+    - HUNG, Yun-Ning
+    - YANG, Chao-Han Huck
+    - CHEN, Pin-Yu
+    - LERCH, Alexander
+  year: 2023
+  venue: ICASSP
+  url: https://arxiv.org/abs/2211.01317
+  mechanism: MR # The paper explicitly proposes Neural Model Reprogramming (NMR) to repurpose frozen source models for a target task without updating base parameters (Abs.; Sec. 3; Fig. 1). 
+  location: X^S # The reprogramming module H operates before the frozen model by transforming input waveforms/features; all base preprocessing/DNN/classifier remain untouched (Sec. 3; Fig. 1a–c).
+  operator: param # Main contribution is input-dependent, non-linear transformations via learnable conv layers (ID-NMR/IDS-NMR); baseline II-NMR uses additive noise, but proposed methods are parametric (Sec. 3.1–3.2; Fig. 1b–c).
+  alignment: SA # Uses a many-to-one label mapping layer that averages source-class probabilities into target classes (statistical, fixed mapping) (Sec. 3, lines on “many-to-one label mapping”; Fig. 1).
+  tags:
+    - model-reprogramming
+    - cross-modal
+  datasets:
+    - GTZAN # (fault-filtered split)
+    - Google Speech Commands # (pretraining)
+    - AudioSet # (pretraining)
+    - ImageNet # (via AST joint pretraining noted)
+  architectures:
+    - Audio Spectrogram Transformer # AST
+    - SpeechATT # attention-based speech model
+    - Convolutional reprogramming module # ID-NMR/IDS-NMR
+  tldr: Input-dependent neural model reprogramming—learnable, non-linear input transforms plus statistical label mapping—repurposes frozen speech/audio models (AST, SpeechATT) to achieve state-of-the-art low-resource music genre classification on GTZAN, outperforming fine-tuning.
+
+
+- title: Reprogramming Pretrained Language Models for Antibody Sequence Infilling
+  authors:
+    - MELNYK, Igor
+    - CHENTHAMARAKSHAN, Vijil
+    - CHEN, Pin-Yu
+    - DAS, Payel
+    - DHURANDHAR, Amit
+    - PADHI, Inkit
+    - DAS, Devleena
+  year: 2023
+  venue: ICML
+  url: https://arxiv.org/abs/2210.07144
+  mechanism: model-reprogramming # The paper explicitly frames the approach as Model Reprogramming, repurposing a frozen English BERT for protein sequence infilling. (Sec. Abstract; Sec. 2)
+  location: embedding-layer # Manipulation occurs at the embedding level: protein tokens are linearly projected and then mapped onto the English BERT embedding matrix before transformer layers. (Sec. 2, Eq. (9))
+  operator: parametric # The input and output transformations are learned linear projections (parametric transforms), not additive or concatenative prompts. (Sec. 2, Eqs. (5)–(8))
+  alignment: linear # Output alignment is a learned linear projection that maps BERT’s output space back to protein tokens. (Sec. 2, Eqs. (5)–(8))
+  tags:
+    - model-reprogramming
+    - cross-modal 
+    - antibody design
+    - protein sequence infilling
+  datasets:
+    - SAbDab # (template-constrained CDR design)
+    - Rosetta Antibody Design (RabD)
+    - CoV-AbDab # (neutralization tasks)
+  architectures:
+    - ReprogBert # frozen English BERT + learned linear projections
+    - ProtBert # baseline
+    - EnglishBert # with amino-acid embeddings (baseline)
+  tldr: Reprograms a frozen English BERT via learned linear mappings to perform antibody CDR sequence infilling, achieving high recovery with substantially improved diversity on SAbDab/RabD/CoV-AbDab benchmarks under data-scarce conditions. :contentReference[oaicite:10]{index=10}
+
+
+- title: Universal Prompt Tuning for Graph Neural Networks
+  authors:
+    - FANG, Taoran
+    - ZHANG, Yunchao
+    - YANG, Yang
+    - WANG, Chunping
+    - CHEN, Lei
+  year: 2023
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2209.15240
+  mechanism: prompt-tuning # Prompt Tuning: adapts a frozen pre-trained GNN by optimizing task-specific prompts rather than updating backbone parameters. “freeze the parameters… and modify the input data.” (Sec. 3.2)
+  location: input-layer # Input feature space: GPF “operates on the input graph’s feature space… adding a shared learnable vector to all node features.” (Intro/Method)
+  operator: addition # Additive prompt: GPF adds a learnable vector; GPF-plus derives node-wise vectors (linear combination) then adds them to features. (Sec. 3.3)
+  alignment: linear # Learnable alignment head: uses a (linear/MLP) projection head for downstream prediction; theory instantiated with a linear head. (Sec. 3.2–3.4; Impl.)
+  tags:
+    - prompt-tuning
+    - graph neural networks
+  datasets:
+    - BBBP
+    - Tox21
+    - ToxCast
+    - SIDER
+    - ClinTox
+    - MUV
+    - HIV
+    - BACE
+    - PPI
+    - IMDB-BINARY
+    - IMDB-MULTI
+  architectures:
+    - GIN (5-layer) # “We adopt the widely used 5-layer GIN as the underlying architecture.” (Exp. setup)
+  tldr: A universal prompt-tuning method (GPF/GPF-plus) that adds learnable feature prompts to node inputs to adapt frozen pre-trained GNNs across diverse pre-training strategies, with theoretical guarantees and empirical gains over fine-tuning. 
+
+
+- title: Visual Instruction Tuning
+  authors:
+    - LIU, Haotian
+    - LI, Chunyuan
+    - WU, Qingyang
+    - LEE, Yong Jae
+  year: 2023
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2304.08485
+  mechanism: prompt-tuning # The model is trained to follow instructions by fine-tuning with GPT-4–generated multimodal instruction–following data; it is not a frozen-model reprogramming setup but an instruction-tuned multimodal LLM (arXiv v2, Intro & Sec. 4). 
+  location: embedding-layer # Visual features from CLIP ViT-L/14 are projected into the LLM’s word-embedding space and fed as visual tokens to the language model (Sec. 4.1: “convert into language embedding tokens… same dimensionality as the word embedding space”). 
+  operator: concatenation / parametric # A trainable projection (parametric mapping) produces visual tokens that are concatenated with text tokens at the LLM input (Sec. 4.1: trainable projection matrix + sequence of visual tokens). 
+  alignment: identity # Outputs are directly natural-language responses; no explicit post-hoc label mapping is used (multimodal chat/ScienceQA generation; alignment is via standard language decoding). 
+  tags:
+    - LVLM
+    - LLaVA
+    - GPT-4-generated data
+    - Vicuna/LLaMA
+  datasets:
+    - COCO # (images used to construct instruction–following data)
+    - LLaVA 158K # multimodal instruction–following data
+    - ScienceQA
+    - LLaVA-Bench # (evaluation benchmark)
+  architectures:
+    - CLIP ViT-L/14 # (vision encoder)
+    - Vicuna # (LLaMA-based LLM)
+    # - Linear/MLP projection connector to embedding space # (projection connector to embedding space)
+  tldr: Introduces LLaVA, an end-to-end large multimodal model that instruction-tunes a CLIP-Vicuna stack using GPT-4-synthesized image-text instruction data, yielding strong general-purpose visual–language instruction-following and state-of-the-art ScienceQA performance.
+
+
+- title: Conditional Prompt Learning for Vision-Language Models
+  authors:
+    - Zhou, Kaiyang
+    - Yang, Jingkang
+    - Loy, Chen Change
+    - Liu, Ziwei
+  year: 2022
+  venue: CVPR
+  url: https://arxiv.org/abs/2203.05557
   mechanism: prompt-tuning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  location: embedding
+  operator: concat
+  alignment: identity / linear
   tags:
-  - prompting
+    - prompt-tuning
+    - VLM
+    - generalization to unseen classes
   datasets:
-  - unknown
+    - ImageNet
+    - FGVC
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Autovp: An automated visual prompting framework and benchmark'
+    - CLIP
+  tldr: CoCoOp adds an input-conditional token generator to static context prompts so that prompts adapt per instance, greatly improving generalization to unseen classes while keeping the CLIP model frozen.
+
+- title: 'Decomposed Prompting: A Modular Approach for Solving Complex Tasks'
   authors:
-  - unknown
+    - Khot, Tushar
+    - Trivedi, Harsh
+    - Finlayson, Matthew
+    - Fu, Yao
+    - Richardson, Kyle
+    - Clark, Peter
+    - Sabharwal, Ashish
   year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: ICLR
+  url: https://arxiv.org/abs/2210.02406
+  mechanism: prompt-instruction
+  location: input
+  operator: concat         # the prompt consists of concatenated few‐shot examples + decomposer prompt etc.
+  alignment: identity            # identity / rule‐based, since no learnable mapping beyond prompt text
   tags:
-  - prompting
+    - prompt-instruction
+    - in-context learning
+    - few-shot prompting
   datasets:
-  - unknown
+    - symbolic reasoning tasks
+    - multi-hop QA (long context and open domain)
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Blackvip: Black-box visual prompting for robust transfer learning'
+    - GPT-3
+  tldr: Decomposed Prompting (DecomP) breaks complex tasks into simpler sub-tasks via modular prompting (decomposer + sub-task handlers) to improve performance over standard few-shot or chain-of-thought methods.
+
+
+- title: 'Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want'
   authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Conditional prompt learning for vision-language models
-  authors:
-  - unknown
-  year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: 'Decomposed prompting: A modular approach for solving complex tasks},   author  ='
-  authors:
-  - unknown
-  year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: 'Draw-and-understand: Leveraging visual prompts to enable mllms to comprehend
-    what you want},   author  ='
-  authors:
-  - unknown
-  year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Explicit visual prompting for low-level structure segmentations
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Exploring the Transferability of Visual Prompting for Multimodal Large Language
-    Models
-  authors:
-  - unknown
-  year: 2024
-  venue: CVPR},   pages     =
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Exploring visual prompts for adapting large-scale models},   author  =
-  authors:
-  - unknown
-  year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: 'InstructBLIP: towards general-purpose vision-language models with instruction
-    tuning'
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: instruction-tuning
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Joint visual and text prompting for improved object-centric perception with
-    multimodal large language models},   author  =
-  authors:
-  - unknown
-  year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Learning to prompt for vision-language models},   author  =
-  authors:
-  - unknown
-  year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Least-to-most prompting enables complex reasoning in large language models
-  authors:
-  - unknown
-  year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: 'Maple: Multi-modal prompt learning'
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: On the Role of Attention in Prompt-tuning},   author  =
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
+    - Lin, Weifeng
+    - Wei, Xinyu
+    - An, Ruichuan
+    - Gao, Peng
+    - Zou, Bocheng
+    - Luo, Yulin
+    - Huang, Siyuan
+    - Zhang, Shanghang
+    - Li, Hongsheng
+  year: 2025
+  venue: ICLR
+  url: https://arxiv.org/abs/2403.20271
   mechanism: prompt-tuning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  configuration: learnable
+  location: embedding-level   # (visual prompt encoder + LLM input interface)
+  operator: parametric
+  alignment: linear  # learned alignment (task-supervised, output in text aligned with prompt + image + region)
   tags:
-  - prompting
+    - multimodal
+    - visual prompt encoder
+    - pixel-level referring
+    - free-form shape support
+    - region-level captioning
   datasets:
-  - unknown
+    - MDVP-Data
+    - MDVP-Bench
+    - detection / segmentation public datasets (natural images, OCR, screenshots, remote sensing, etc)
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Pivot: Iterative visual prompting elicits actionable knowledge for vlms},   author  ='
+    - SPHINX-V (vision encoder + visual prompt encoder + LLM)
+    - Compatible with prior MLLMs (SPHINX-X, LLaVA) in evaluation
+  tldr: Enables multimodal LLMs to understand visual prompts (points, bounding boxes, free-form shapes) via a learnable visual prompt encoder, training on diverse image-prompt-text data to yield fine-grained, region-aware understanding without modifying the backbone vision or LLM encoders.
+
+
+- title: Explicit Visual Prompting for Low-Level Structure Segmentations
   authors:
-  - unknown
+    - Liu, Weihuang
+    - Shen, Xi
+    - Pun, Chi-Man
+    - Cun, Xiaodong
+  year: 2023
+  venue: CVPR
+  url: https://arxiv.org/abs/2303.10883
+  mechanism: visual-prompting
+  configuration: learnable
+  location: embedding / hidden
+  operator: parametric   # (linear layers / adaptor + embeddings + high-frequency component tuning)
+  alignment: linear alignment
+  tags:
+    - prompt-tuning
+    - low-level structure segmentation
+  datasets:
+    - CASIA
+    - IMD20
+    - ISTD
+    - SBU
+    - CUHK
+    - DUT
+    - COD10K
+    - CAMO
+    - Chameleon
+  architectures:
+    - Vision Transformer # (SegFormer)
+  tldr: Adapt a frozen transformer backbone via learnable explicit prompts from patch embeddings and high-frequency components to unify several low-level segmentation tasks with high efficiency and competitive performance.
+
+
+- title: Exploring the Transferability of Visual Prompting for Multimodal Large Language Models
+  authors:
+    - Zhang, Yichi
+    - Dong, Yinpeng
+    - Zhang, Siyuan
+    - Min, Tianzan
+    - Su, Hang
+    - Zhu, Jun
   year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: CVPR
+  url: https://arxiv.org/abs/2404.11207
+  mechanism: visual-prompting
+  location: input-layer
+  operator: addition
+  alignment: statistical
   tags:
-  - prompting
+    - visual-prompting
+    - black-box-compatible
   datasets:
-  - unknown
+    - object recognition
+    - counting
+    - multimodal reasoning
+    - hallucination correction
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Plot: Prompt learning with optimal transport for vision-language models'
+    - Multimodal Large Language Models
+  tldr: TVP trains a visual prompt in pixel space on one MLLM and transfers it to others, improving performance with feature consistency and task semantics regularization.
+
+
+- title: Exploring Visual Prompts for Adapting Large-Scale Models
   authors:
-  - unknown
+    - Bahng, Hyojin
+    - Jahanian, Ali
+    - Sankaranarayanan, Swami
+    - Isola, Phillip
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: arXiv
+  url: https://arxiv.org/abs/2203.17274
+  mechanism: visual-prompting
+  location: input-layer
+  operator: addition
+  alignment: statistical
   tags:
-  - prompting
+    - model-reprogramming
+    - prompt-tuning
   datasets:
-  - unknown
+    - CIFAR-10
+    - CIFAR-100
+    - ImageNet
+    - FGVC
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Promptkd: Unsupervised prompt distillation for vision-language models'
+    - CLIP
+    - ResNet
+    - ResNeXt
+    - Big-Transfer (BiT)
+  tldr: A learned universal pixel perturbation added to inputs can steer a frozen large-vision model to new classification tasks with performance competitive to linear probes, especially for CLIP, and is robust under distribution shifts.
+
+
+- title: 'InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning'
   authors:
-  - unknown
-  year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Set-of-mark prompting unleashes extraordinary visual grounding in gpt-4v},   author  =
-  authors:
-  - unknown
+    - Dai, Wenliang
+    - Li, Junnan
+    - Li, Dongxu
+    - Tiong, Anthony Meng Huat
+    - Zhao, Junqi
+    - Wang, Weisheng
+    - Li, Boyang
+    - Fung, Pascale
+    - Hoi, Steven
   year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2305.06500
+  mechanism: soft-prompt
+  location: embedding
+  operator: parametric
+  alignment: identity / rule / linear   # depending on task (mostly generate responses; classification via ranking)
   tags:
-  - prompting
+    - prompt-tuning
+    - vision-language
+    - zero-shot generalization
   datasets:
-  - unknown
+    - ScienceQA
+    - OKVQA
+    - VQAv2
+    - GQA
+    - IconQA
+    - VizWiz
   architectures:
-  - GPT
-  tldr: unknown
-- title: 'The Prompt Report: A Systematic Survey of Prompting Techniques},   author  ='
+    - BLIP-2
+  tldr: By instruction-tuning only the Q-Former module (keeping image encoder and LLM frozen), InstructBLIP achieves strong zero-shot and downstream performance on diverse vision-language tasks through an instruction-aware visual feature extraction mechanism.
+
+
+- title: Joint Visual and Text Prompting for Improved Object-Centric Perception with Multimodal Large Language Models
   authors:
-  - unknown
+    - Jiang, Songtao
+    - Zhang, Yan
+    - Zhou, Chenyi
+    - Jin, Yeying
+    - Feng, Yang
+    - Wu, Jian
+    - Liu, Zuozhu
   year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: arXiv
+  url: https://arxiv.org/abs/2404.04514
+  mechanism: prompt-instruction
+  location: input / embedding
+  operator: addition / concatenation
+  alignment: identity       # the model’s output is directly the answer; no separate learnable aligning head is trained
   tags:
-  - prompting
+    - prompt-instruction
+    - multimodal prompting
+    - visual prompt
+    - text prompt
   datasets:
-  - unknown
+    - MME
+    - MMB
+    - POPE
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Transhp: Image classification with hierarchical prompting'
+    - GPT-4V
+    - Gemini
+  tldr: Combines visual cues (bounding boxes) and refined text prompts to better guide multimodal large language models in object-centric VQA, significantly reducing object hallucination and improving performance.
+
+- title: Learning to Prompt for Vision-Language Models
   authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+    - Zhou, Kaiyang
+    - Yang, Jingkang
+    - Loy, Chen Change
+    - Liu, Ziwei
+  year: 2022
+  venue: IJCV
+  url: https://arxiv.org/abs/2109.01134
+  mechanism: prompt-tuning
+  location: embedding
+  operator: concat
+  alignment: linear
   tags:
-  - prompting
+    - prompt-tuning
+    - vision-language models
+    - few-shot learning
   datasets:
-  - unknown
+    - ImageNet
+    - FGVC
   architectures:
-  - unknown
-  tldr: unknown
+    - CLIP
+  tldr: CoOp makes prompt engineering automatic for CLIP-like vision-language models by learning continuous context vectors prepended to class names, keeping model weights frozen, achieving strong few-shot and domain generalization performance.
+
+
+- title: Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
+  authors:
+    - Zhou, Denny
+    - Schärli, Nathanael
+    - Hou, Le
+    - Wei, Jason
+    - Scales, Nathan
+    - Wang, Xuezhi
+    - Schuurmans, Dale
+    - Cui, Claire
+    - Bousquet, Olivier
+    - Le, Quoc
+    - Chi, Ed
+  year: 2022
+  venue: ICLR
+  url: https://arxiv.org/abs/2205.10625
+  mechanism: prompt-instruction
+  location: input-layer
+  operator: concat
+  alignment: identity
+  tags:
+    - prompt-instruction
+    - few-shot
+    - reasoning
+    - compositional generalization
+  datasets:
+    - SCAN
+    - GSM8K
+    - DROP
+    - Symbolic Manipulation (last-letter-concatenation)
+  architectures:
+    - GPT-3 (code-davinci-002)
+  tldr: Least-to-most prompting breaks hard tasks into simpler subproblems, using only few-shot prompts (no training), and vastly improves generalization on reasoning tasks vs chain-of-thought.
+
+- title: "MaPLe: Multi-modal Prompt Learning"
+  authors:
+    - Khattak, Muhammad Uzair
+    - Rasheed, Hanoona
+    - Maaz, Muhammad
+    - Khan, Salman
+    - Khan, Fahad Shahbaz
+  year: 2023
+  venue: CVPR
+  url: https://arxiv.org/abs/2210.03117
+  mechanism: prompt-tuning
+  location: embedding / intermediate
+  operator: concat
+  alignment: linear
+  tags:
+    - multi-modal prompting
+    - CLIP adaptation
+  datasets:
+    - ImageNet
+    - FGVC
+  architectures:
+    - CLIP
+  tldr: Learns learnable prompt tokens in both the text and image encoders of CLIP across multiple transformer layers, jointly with coupling between the two modalities, to improve generalization to novel classes and domain shifts.
+
+- title: On the Role of Attention in Prompt-tuning
+  authors:
+    - OYMAK, Samet
+    - RAWAT, Ankit Singh
+    - SOLTANOLKOTABI, Mahdi
+    - THRAMPOULIDIS, Christos
+  year: 2023
+  venue: ICML 2023
+  url: https://arxiv.org/abs/2306.03435
+  mechanism: prompt-tuning # The paper studies and formalizes prompt-tuning with learnable prompt vectors and analyzes its expressivity/optimization in attention models (prompt-tuning variants I–III).
+  location: embedding / hidden # Prompts are inserted at the input embedding (E) and at the inputs of every transformer layer (hidden interfaces, H) across variants I–III.
+  operator: concat # Prompts are concatenated to token sequences (XP := [P; X]) rather than added element-wise, i.e., learnable tokens are prepended/inserted.
+  alignment: linear # A learnable linear prediction head (classifier) is optimized jointly/after prompting to map representations to labels.
+  tags:
+    - prompt-tuning
+    - theory
+    - vision-transformer
+  datasets:
+    - CIFAR-10 (FULL-TILED)
+  architectures:
+    - Vision Transformer (tiny variant; 12 layers, d=192, 3 heads)
+  tldr: A theoretical and empirical study showing how softmax-based prompt-attention with concatenated learnable prompts can surpass self-attention/fine-tuning in specific regimes, with gradient dynamics and finite-sample analyses plus ViT experiments on CIFAR-10 variants.
+
+- title: 'PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs'
+  authors:
+    - NASIRIANY, Soroush
+    - XIA, Fei
+    - YU, Wenhao
+    - XIAO, Ted
+    - LIANG, Jacky
+    - DASGUPTA, Ishita
+    - XIE, Annie
+    - DRIESS, Danny
+    - WAHID, Ayzaan
+    - XU, Zhuo
+    - VUONG, Quan
+    - ZHANG, Tingnan
+    - LEE, Tsang-Wei Edward
+    - LEE, Kuang-Huei
+    - XU, Peng
+    - KIRMANI, Sean
+    - ZHU, Yuke
+    - ZENG, Andy
+    - HAUSMAN, Karol
+    - HEESS, Nicolas
+    - FINN, Chelsea
+    - LEVINE, Sergey
+    - ICHTER, Brian
+  year: 2024
+  venue: ICML
+  url: https://arxiv.org/abs/2402.07872
+  mechanism: prompt-instruction # Zero-shot prompting with no model modification or finetuning; prompts are iteratively constructed but not learned as parameters (ar5iv L21, L23, L65; PMLR page).
+  location: input-layer # Manipulation occurs at the raw input by annotating the image with visual markers/numbers before inference (“annotated image” visual prompts) (ar5iv L12, L41–L43).
+  operator: add # Visual prompts are overlaid/drawn onto the pixels of the input image (arrows, numbers), i.e., additive modification to the image content (ar5iv L41–L43, Fig. 1).
+  alignment: rule-based # The VLM outputs a textual reference (e.g., a number) which is parsed to select the indexed candidate action/coordinate; deterministic rule-based mapping from text → proposal (ar5iv L12, L41–L44).
+  tags:
+    - visual prompting
+    - zero-shot control
+    - VLM
+    - spatial reasoning
+  datasets:
+    - RAVENS simulator (tabletop pick-and-place) # mentioned explicitly
+    - Real-world mobile manipulator navigation/manipulation tasks # described with quantitative success evaluation
+    - Franka arm real-world manipulation suite # 4D action space; online evaluation
+    - RefCOCO spatial reasoning examples # qualitative rollouts
+    - Synthetic arrow-annotation robustness datasets (toy & object-referential) # for VLM annotation understanding
+  architectures:
+    - GPT-4V / GPT-4 # used as state-of-the-art VLM
+    - Gemini # used as state-of-the-art VLM
+  tldr: Introduces an iterative visual prompting procedure that overlays proposal annotations on images and repeatedly queries a frozen VLM to select and refine actions, enabling zero-shot extraction of continuous, grounded controls for navigation, manipulation, and spatial reasoning without any finetuning. 
+
+- title: 'PLOT: Prompt Learning with Optimal Transport for Vision-Language Models'
+  authors:
+    - CHEN, Guangyi
+    - YAO, Weiran
+    - SONG, Xiangchen
+    - LI, Xinyue
+    - RAO, Yongming
+    - ZHANG, Kun
+  year: 2023
+  venue: ICLR
+  url: https://arxiv.org/abs/2210.01253
+  mechanism: prompt-tuning # The method learns multiple prompt vectors (context tokens) optimized from few-shot supervision; “set…context words…as continuous learnable parameters… learn multiple prompts.” (Sec. 3.1–3.3). :contentReference[oaicite:0]{index=0}
+  location: embedding # Manipulation is on text input embeddings: prompt tk = {ω1,…,ωL, ck} where ω are learnable token embeddings fed to the text encoder. (Sec. 3.1). :contentReference[oaicite:1]{index=1}
+  operator: concat # Prompts are concatenated with the class-name token (context tokens prepended/attached to the template sentence). (Sec. 3.1). :contentReference[oaicite:2]{index=2}
+  alignment: identity # Classification uses CLIP similarity between image feature f and text feature g_k with softmax; no extra label remapping or learned head. (Eq. 1 / Sec. 3.1). :contentReference[oaicite:3]{index=3}
+  tags:
+    - prompt-tuning
+    - few-shot classification
+    - vision-language
+  datasets:
+    - FGVC
+    - ImageNet variants
+  architectures:
+    - CLIP # Implementation follows CoOp settings; RN50 chosen as backbone
+  tldr: PLOT learns multiple complementary textual prompts for CLIP and uses optimal transport to align local visual features with prompt sets, yielding consistent few-shot gains across 11 datasets and improved robustness without modifying the pretrained model. :contentReference[oaicite:6]{index=6}
+
+- title: 'PromptKD: Unsupervised Prompt Distillation for Vision-Language Models'
+  authors:
+    - LI, Zheng
+    - LI, Xiang
+    - FU, Xinyi
+    - ZHANG, Xin
+    - WANG, Weiqiang
+    - CHEN, Shuo
+    - YANG, Jian
+  year: 2024
+  venue: CVPR
+  url: https://arxiv.org/abs/2403.02781
+  mechanism: prompt-tuning # Learns prompts while keeping CLIP weights frozen; student is optimized via learnable prompts, not full fine-tuning.
+  location: embedding # Prompts are applied to the image encoder as visual prompt tokens at the embedding/interface level.
+  operator: concat # Visual prompts are concatenated to the patch/token embeddings of the image encoder.
+  alignment: identity # Teacher and student share the same label space; training aligns logits via KL without label remapping (identity mapping at output).
+  tags:
+    - prompt-tuning
+    - knowledge distillation
+    - vision-language models
+    - unsupervised
+    - transductive setting
+  datasets:
+    - ImageNet
+    - FGVC
+  architectures:
+    - CLIP  # (ViT-B/16 image encoder)
+  tldr: PromptKD freezes CLIP weights and distills domain knowledge into learnable visual prompts by aligning student and teacher logits—using pre-stored teacher text features—achieving strong unsupervised adaptation across 11 recognition benchmarks.
+
+
+- title: Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V
+  authors:
+    - YANG, Jianwei
+    - ZHANG, Hao
+    - LI, Feng
+    - ZOU, Xueyan
+    - LI, Chunyuan
+    - GAO, Jianfeng
+  year: 2023
+  venue: arXiv
+  url: https://arxiv.org/abs/2310.11441
+  mechanism: prompt-instruction # Pure prompting with no model training; SoM overlays “speakable” visual marks and queries GPT-4V in zero-shot mode (no parameter updates).
+  location: input-layer # Manipulation occurs directly on the input image: marks/masks/boxes are drawn onto pixels before feeding to the model. 
+  operator: addition # The paper “simply” overlays (adds) alphanumeric marks, masks, and boxes to the image; no concatenated tokens or parametric transforms are learned.
+  alignment: rule-based # Outputs are interpreted by rule-based parsing of the model’s text (e.g., “the lamp is 12”) to a region/mark ID, i.e., deterministic post-processing.
+  tags:
+    - visual prompting
+    - visual grounding
+    - GPT-4V
+    - zero-shot
+    - SoM
+  datasets:
+    - COCO (generic segmentation subset)
+    - ADE20K (open-vocabulary segmentation subset)
+    - Flickr30K (phrase grounding subset)
+    - RefCOCO (referring comprehension/segmentation subsets)
+    - DAVIS (video object segmentation subset)
+  architectures:
+    - GPT-4V   # (closed LMM under test)
+    - LLaVA-1.5   # (open-source comparison)
+    - MiniGPT-v2   # (qualitative comparison)
+    - MaskDINO / SEEM / SAM / Semantic-SAM  # (segmentation tools to generate regions)
+  tldr: Proposes Set-of-Mark visual prompting—overlaying speakable marks on segmented image regions—to unlock GPT-4V's fine-grained visual grounding, achieving strong zero-shot performance across segmentation, phrase grounding, and referring tasks without any model fine-tuning.
+
+
+- title: "TransHP: Image Classification with Hierarchical Prompting"
+  authors:
+    - WANG, Wenhao
+    - SUN, Yifan
+    - LI, Wei
+    - YANG, Yi
+  year: 2023
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2304.06385
+  mechanism: prompt-tuning # Learns a set of prompt tokens and trains end-to-end to optimize losses (“learn a set of prompt tokens…”, “our end-to-end pipeline”).
+  location: embedding / hidden # Injects the prompt token at an intermediate transformer block into the intermediate feature.
+  operator: concat # “TransHP concatenates the prompt tokens with feature tokens … and then feeds them into the prompting block.”
+  alignment: linear # Uses a standard final classification loss/head for fine labels; prompts condition features but label mapping remains via the classifier layer.
+  tags:
+    - hierarchical prompting
+    - vision transformer
+  datasets:
+    - ImageNet
+    - iNaturalist-2018
+    - iNaturalist-2019
+    - CIFAR-100
+    - DeepFashion-inshop
+  architectures:
+    - ViT  # (B/16, L/16)
+    - DeiT  # (S, B)
+  tldr: TransHP introduces learnable coarse-class prompt tokens injected at intermediate transformer blocks to condition feature extraction for hierarchical image classification, yielding consistent accuracy, data-efficiency, and explainability gains across ViT/DeiT backbones and multiple datasets.
+
 - title: Tuning Multi-mode Token-level Prompt Alignment across Modalities
   authors:
-  - unknown
+    - WANG, Dongsheng
+    - LI, Miaoge
+    - LIU, Xinyang
+    - XU, MingSheng
+    - CHEN, Bo
+    - ZHANG, Hanwang
   year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: NeurIPS 2023
+  url: https://arxiv.org/abs/2309.13847
+  mechanism: prompt-tuning # Learns continuous prompt vectors and optimizes them end-to-end with cross-entropy and Sinkhorn-based OT; model weights of the backbone remain frozen.
+  location: embedding # Prompts are inserted as tokens at the embedding level for both text and image encoders (textual prompts; visual prompts as extra patch embeddings).
+  operator: concat # Prompts/patch tokens are prepended/concatenated to the token sequence (both TPT and VPT styles).
+  alignment: identity # Final prediction uses CLIP-style similarity without an extra label-mapping head; OT shapes similarity computation but no separate output label mapping is introduced.
   tags:
-  - prompting
+    - prompt-tuning
+    - multi-modal
+    - few-shot learning
+    - zero-shot generalization
+    - vision-language models
   datasets:
-  - unknown
+    - ImageNet
+    - ImageNet variants
+    - FGVC
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Understanding and improving visual prompting: A label-mapping perspective'
+    - CLIP  # (ViT-B/16 backbone)
+  tldr: ALIGN discovers multiple prompts per modality and aligns them at token and prompt levels via hierarchical optimal transport to improve few-/zero-shot recognition across diverse datasets.
+
+
+- title: "Understanding and Improving Visual Prompting: A Label-Mapping Perspective"
   authors:
-  - unknown
+    - CHEN, Aochuan
+    - YAO, Yuguang
+    - CHEN, Pin-Yu
+    - ZHANG, Yihua
+    - LIU, Sijia
   year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: CVPR
+  url: https://arxiv.org/abs/2211.11635
+  mechanism: model-reprogramming # Input-based visual prompting (a form of model reprogramming) reuses a frozen source model and jointly optimizes prompts and label mapping without updating backbone weights (Sec. 3–4; ILM-VP).
+  location: input-layer # Manipulation occurs on the raw input/image space by injecting a universal perturbation template (Eq. (1); “input prompting operation”).
+  operator: addition # The prompt is implemented as an additive perturbation (with padding/template) applied to inputs during training and inference (discussion around Eq. (1) and Fig. 1).
+  alignment: statistical # Output alignment is a data-driven label mapping from source labels to target labels; paper contrasts Random/Frequency LMs and proposes Iterative LM (BLO-based), all statistical mappings.
   tags:
-  - prompting
+    - model-reprogramming
+    - label mapping
   datasets:
-  - unknown
+    - FGVC
+    - CIFAR10
+    - CIFAR100
+    - ABIDE
   architectures:
-  - unknown
-  tldr: unknown
-- title: Unleashing the Power of Visual Prompting At the Pixel Level},   author  =
+    - ResNet-18   # (ImageNet-1K)
+    - ResNet-50   # (ImageNet-1K)
+    - ResNeXt-101-32x8d   # (Instagram-pretrained)
+    - CLIP   # (for VP + text-prompt selection)
+  tldr: Analyzes how label mapping governs visual prompting and introduces an iterative, statistically grounded label-mapping procedure that co-optimizes prompts and mappings to reprogram frozen vision (and vision–language) models, yielding consistent accuracy gains across diverse target datasets.
+
+
+- title: Unleashing the Power of Visual Prompting At the Pixel Level
   authors:
-  - unknown
-  year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+    - WU, Junyang
+    - LI, Xianhang
+    - WEI, Chen
+    - WANG, Huiyu
+    - YUILLE, Alan
+    - ZHOU, Yuyin
+    - XIE, Cihang
+  year: 2022
+  venue: arXiv
+  url: https://arxiv.org/abs/2212.10556
+  mechanism: model-reprogramming # Frozen backbone with a learnable input-space prompt to adapt downstream tasks; no backbone updates (Sec. 3, Fig. 2; “adapting pre-trained models… pixel-level visual prompting”) :contentReference[oaicite:0]{index=0}
+  location: input-layer # Manipulation occurs in pixel/input space by shrinking the image and padding a learnable border prompt (Sec. 3.2; Fig. 2c) :contentReference[oaicite:1]{index=1}
+  operator: concat # Prompt is not added to pixels but concatenated around the shrunken image (non-overlapping padding), contrasted with prior additive VP (Sec. 3.2: “pad the prompt around [the image]”) :contentReference[oaicite:2]{index=2}
+  alignment: identity / statistical # For CLIP, predictions are directly over target labels via text prompts (identity). For non-CLIP, they build a frequency-based class correspondence (statistical alignment) (Sec. 4.1–4.2) :contentReference[oaicite:3]{index=3}
   tags:
-  - prompting
+    - soft visual prompting
+    - CLIP
   datasets:
-  - unknown
+    - CIFAR10
+    - CIFAR100
+    - FGVC
+    - CLEVR
+    - DMLab
+    - Camelyon17   # (OOD)
+    - FMoW   # (OOD)
+    - iWildCAM   # (OOD)
+    - CIFAR10-C   # (corruptions)
+    - CIFAR100-C   # (corruptions)
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Visual Prompting in Multimodal Large Language Models: A Survey},   author  ='
-  authors:
-  - unknown
-  year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
+    - CLIP  # (ViT-B/32)
+    - ResNet-50   # (ImageNet-trained)
+    - Instagram-pretrained CNN   # (as referenced)
+  tldr: Learns a border prompt concatenated around a shrunken image—augmented with input-diversity and gradient-normalization tricks—adapts frozen vision backbones (notably CLIP) to downstream classification, surpassing prior visual prompting and often linear probing across 12 benchmarks.
+
+
 - title: Visual Prompting via Image Inpainting
   authors:
-  - unknown
+    - BAR, Amir
+    - GANDELSMAN, Yossi
+    - DARRELL, Trevor
+    - GLOBERSON, Amir
+    - EFROS, Alexei A.
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2209.00647
+  mechanism: prompt-instruction # No task-specific finetuning or model modification; adaptation is done by test-time prompts only (“without … finetuning or any model modification”, abstract). :contentReference[oaicite:0]{index=0}
+  location: input-layer # The prompt is a grid-like input image constructed from example pairs and a query; the inpainting model consumes this concatenated image as raw input. :contentReference[oaicite:1]{index=1}
+  operator: concat # Tasks are posed by concatenating example(s) and query into a single image with a hole for completion (“simply concatenate … into a single image with a hole”). :contentReference[oaicite:2]{index=2}
+  alignment: identity # The model directly outputs the inpainted region as the task result; no separate label-space mapping is applied (“output a plausible completion … take the part … corresponding to the mask”). :contentReference[oaicite:3]{index=3}
   tags:
-  - prompting
+    - hard visual prompting
+    - few-shot
+    - examples-in-prompt
   datasets:
-  - unknown
+    - Computer Vision Figures (88k figures from arXiv)
+    - ImageNet   # (for additional pretraining)
+    - Pascal 5i   # (evaluation for FG segmentation & single-object detection)
+    - Synthetic study prompts   # (paper’s synthetic tasks)
   architectures:
-  - unknown
-  tldr: unknown
-- title: Visual prompt tuning
+    - MAE-VQGAN   # (ViT-based MAE with VQGAN codebook)
+    - Vision Transformer   # (backbone for MAE)
+  tldr: A single inpainting model, pretrained on a curated “Figures” dataset, can be prompted at test time by concatenated example–query grids to solve diverse image-to-image tasks without any finetuning.
+
+# - title: 'Visual prompting reimagined: The power of activation prompts
+#   authors:
+#   - unknown
+#   year: 2024
+#   venue: unknown
+#   url: unknown
+#   mechanism: prompting
+#   location: unknown
+#   operator: unknown
+#   alignment: unknown
+#   tags:
+#   - prompting
+#   datasets:
+#   - unknown
+#   architectures:
+#   - unknown
+#   tldr: unknown
+
+- title: Visual Prompt Tuning
   authors:
-  - unknown
+    - JIA, Menglin
+    - TANG, Luming
+    - CHEN, Bor-Chun
+    - CARDIE, Claire
+    - BELONGIE, Serge
+    - HARIHARAN, Bharath
+    - LIM, Ser-Nam
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompt-tuning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: ECCV
+  url: https://arxiv.org/abs/2203.12119
+  mechanism: prompt-instruction # The method prepends task-specific learnable prompts while keeping the backbone frozen, i.e., prompt tuning for vision transformers (see Fig. 2 caption and “only the parameters of prompts and linear head are updated while the whole Transformer encoder is frozen”). :contentReference[oaicite:0]{index=0}
+  location: embedding / hidden # VPT-shallow inserts prompts “in the input space after the Embed layer” (embedding interface E); VPT-deep “prepend[s] … to each Transformer encoder layer’s input” (hidden interface H). :contentReference[oaicite:1]{index=1}
+  operator: concat # Prompts are “prepended into the input sequence” (i.e., concatenation of prompt tokens with patch tokens at the sequence dimension). :contentReference[oaicite:2]{index=2}
+  alignment: linear # A “linear head” maps the final [CLS] embedding to class probabilities; prompts + linear head are trained while the backbone is frozen → linear alignment. :contentReference[oaicite:3]{index=3}
   tags:
-  - prompting
+    - prompt-tuning
+    - soft visual prompting
+    - vision transformers
   datasets:
-  - unknown
+    - FGVC # (CUB-200-2011, NABirds, Oxford Flowers, Stanford Dogs, Stanford Cars)
+    - VTAB-1k # (Natural/Specialized/Structured; e.g., CIFAR-100, Caltech101, DTD, Pets, SVHN, SUN397, EuroSAT, Resisc45, Retinopathy, CLEVR-count/distance, dSprites, SmallNORB)
+    - ADE20K # (semantic segmentation, with SETR)
   architectures:
-  - unknown
-  tldr: unknown
-- title: 'Visual prompting reimagined: The power of activation prompts},   author
-    ='
+    - ViT # (B/16, L/16, H/14)
+    - Swin-B
+    # - ConvNeXt-Base # (for comparisons)
+    - SETR # (ViT-L encoder with PUP head)
+  tldr: Introduces Visual Prompt Tuning, which adapts frozen vision transformers by concatenating a small set of learnable prompt tokens—trained with a linear head—to achieve parameter-efficient transfer that often matches or surpasses full fine-tuning across diverse tasks and model scales.
+
+
+- title: What Does a Platypus Look Like? Generating Customized Prompts for Zero-Shot Image Classification
   authors:
-  - unknown
+    - PRATT, Sarah
+    - COVERT, Ian
+    - LIU, Rosanne
+    - FARHADI, Ali
+  year: 2023
+  venue: ICCV
+  url: https://arxiv.org/abs/2209.03320
+  mechanism: prompt-instruction # No training or parameter updates to the vision-language model; prompts are generated by an external LLM and then held constant during zero-shot inference (“requires no additional training and remains completely zero-shot”).
+  location: input-layer # Manipulation occurs at the source input interface as natural-language strings fed to CLIP’s text encoder (prompt engineering at input level).
+  operator: concat # Category names are inserted into sentence templates and used as full prompts; operationally this concatenates label tokens with template tokens to form input sequences.
+  alignment: identity # The class label space for prompts equals the target label space; predictions are taken by cosine similarity over prompts without a learned label-map (identity alignment).
+  tags:
+    - zero-shot
+    - CLIP
+    - LLM-generated-prompts
+  datasets:
+    - ImageNet
+    - FGVC # (CUB-200-2011, NABirds, Oxford Flowers, Stanford Dogs, Stanford Cars)
+    - VTAB-1k # (Natural/Specialized/Structured; e.g., CIFAR-100, Caltech101, DTD, Pets, SVHN, SUN397, EuroSAT, Resisc45, Retinopathy, CLEVR-count/distance, dSprites, SmallNORB)
+    - Kinetics-700
+    - Birdsnap
+  architectures:
+    - CLIP # (ViT-L/14)
+    # - GPT-3 # (prompt generator)
+  tldr: Proposes CuPL, a zero-shot method that uses a large language model to generate class-specific descriptive prompts for CLIP, improving open-vocabulary image classification accuracy without any additional training.
+
+
+- title: 'When Do Prompting and Prefix-Tuning Work? A Theory of Capabilities and Limitations'
+  authors:
+    - PETROV, Aleksandar
+    - TORR, Philip H. S.
+    - BIBI, Adel
   year: 2024
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: ICLR
+  url: https://arxiv.org/pdf/2310.19698
+  mechanism: prompt-tuning / prompt-instruction # The paper develops a formal theory for prefix-tuning (a learnable prefix added to attention blocks) and analyzes prompting/in-context learning as its special case; see “Published as a conference paper at ICLR 2024” and “Prompting and in-context learning are a special case of prefix-tuning.” (pp. 8–9). :contentReference[oaicite:0]{index=0}
+  location: input / embedding / hidden # It focuses on soft prompting/prefix-tuning that operate in embedding/hidden spaces, and explicitly states prompting acts at the input (context tokens); e.g., limitations tied to the first attention layer over “content following it.” (pp. 6–8). :contentReference[oaicite:1]{index=1}
+  operator: concat # Both prompting and prefix-tuning prepend learned/fixed tokens or prefix states (key/value) to the sequence—i.e., concatenation to inputs/hidden states; experiments vary prefix length n_S (e.g., 1, 12, 10–100). (pp. 6–7, 21). :contentReference[oaicite:2]{index=2}
+  alignment: identity # Outputs are evaluated in the same task label space (sequence prediction); no separate output label mapping or post-hoc relabeling is introduced—accuracy reported directly on target tasks. (Tables 1–3, pp. 6–7). :contentReference[oaicite:3]{index=3}
   tags:
-  - prompting
+    - theory
+    - prompt-tuning
+    - in-context learning
   datasets:
-  - unknown
+    - 'Synthetic algorithmic sequences (digits 0–7, length 10): sorting ↑/↓, +1, +2' # Tasks constructed over discrete digit sequences for controlled analysis. (p. 6). :contentReference[oaicite:4]{index=4}
+    - 'Synthetic combinations/new tasks: ↑+1, Double Histogram (H), Modulo, FilterAtLeastNTimes' # Used to test skill composition vs. novel skills. (pp. 7, 21). :contentReference[oaicite:5]{index=5}
   architectures:
-  - unknown
-  tldr: unknown
-- title: What does a platypus look like? generating customized prompts for zero-shot
-    image classification
+    - Transformer # 1-layer 1-head, 1-layer 4-head, 4-layer 4-head, 40-layer 4-head
+    # - Transformer (minGPT-style), 1-layer 1-head # Used in initial sorting↑→sorting↓ transfer test. (p. 6). :contentReference[oaicite:6]{index=6}
+    # - Transformer, 1-layer 4-head # Used for multi-skill pretraining (↑, ↓, +1, +2). (p. 6). :contentReference[oaicite:7]{index=7}
+    # - Transformer, 4-layer 4-head # Used in LoRA vs prefix comparison on H task. (p. 8). :contentReference[oaicite:8]{index=8}
+    # - Transformer, 40-layer 4-head # Used for composition test (↑+1) vs novel H task. (p. 7). :contentReference[oaicite:9]{index=9}
+  tldr: A theory showing that prompting and prefix-tuning, which act by concatenating inputs/prefixes in embedding/hidden spaces, can bias and combine pretrained skills but are fundamentally less expressive than full fine-tuning—explaining when they succeed or fail across controlled algorithmic tasks. 
+
+
+- title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
   authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: What does clip know about a red circle? visual prompt engineering for vlms
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: When Do Prompting and Prefix-Tuning Work? A Theory of Capabilities and Limitations
-  authors:
-  - unknown
-  year: 2023
-  venue: unknown
-  url: unknown
-  mechanism: prompt-tuning
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: Chain-of-thought prompting elicits reasoning in large language models
-  authors:
-  - unknown
+    - Wei, Jason
+    - Wang, Xuezhi
+    - Schuurmans, Dale
+    - Bosma, Maarten
+    - Ichter, Brian
+    - Xia, Fei
+    - Chi, Ed
+    - Le, Quoc
+    - Zhou, Denny
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: prompting
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2201.11903
+  mechanism: prompt-instruction
+  location: input-space
+  operator: concat
+  alignment: identity
   tags:
-  - prompting
+    - prompt-instruction
+    - few-shot
+    - reasoning
   datasets:
-  - unknown
+    - GSM8K
+    - CSQA
+    - StrategyQA
+    - Symbolic reasoning tasks (e.g. Last-Letter, Coin-Flip)
   architectures:
-  - unknown
-  tldr: unknown
-- title: Learning To Retrieve Prompts for In-Context Learning},   author  =
+    - PaLM 540B
+    - Other large language models
+  tldr: Using "chain-of-thought" few-shot prompting (i.e. showing exemplars with reasoning steps) markedly improves large language models' performance on arithmetic, commonsense, and symbolic reasoning without parameter updates.
+
+- title: Learning To Retrieve Prompts for In-Context Learning
   authors:
-  - unknown
-  year: 2021
-  venue: unknown
-  url: unknown
-  mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
-  tags:
-  - in-context-learning
-  - prompting
-  datasets:
-  - unknown
-  architectures:
-  - unknown
-  tldr: unknown
-- title: 'Structured Prompting: Scaling In-Context Learning to 1,000 Examples},   author  ='
-  authors:
-  - unknown
+    - Rubin, Ohad
+    - Herzig, Jonathan
+    - Berant, Jonathan
   year: 2022
-  venue: unknown
-  url: unknown
-  mechanism: in-context-learning
-  location: unknown
-  operator: unknown
-  alignment: unknown
+  venue: NAACL
+  url: https://arxiv.org/abs/2112.08633
+  mechanism: prompt-retrieval
+  location: input-space
+  operator: concatenation
+  alignment: identity
   tags:
-  - in-context-learning
-  - prompting
+    - prompt-instruction
+    - in-context-learning
+    - dense-retrieval
   datasets:
-  - unknown
+    - MTOP
+    - SMCalFlow
+    - Break
   architectures:
-  - unknown
-  tldr: unknown
+    - GPT-Neo
+    - GPT-J
+    - GPT-3
+    - Codex
+  tldr: Proposes training a dense retriever using language model feedback to automatically select high-quality demonstration examples for in-context learning, substantially improving performance over random or similarity-based selection methods.
+
+- title: 'Structured Prompting: Scaling In-Context Learning to 1,000 Examples'
+  authors:
+    - HAO, Yaru
+    - SUN, Yutao
+    - DONG, Li
+    - HAN, Zhixiong
+    - GU, Yuxian
+    - WEI, Furu
+  year: 2022
+  venue: arXiv
+  url: https://arxiv.org/abs/2212.06713
+  mechanism: prompt-instruction # No parameter updates; scales in-context learning via prompting rather than fine-tuning (“without updating the parameters”; method focuses on prompting). :contentReference[oaicite:0]{index=0}
+  location: hidden # Demonstration groups are encoded separately and injected by concatenating their keys/values with the test input at each Transformer layer (“in each layer... K̂=[K_Z1,...,K_ZM,K_x], V̂=[...]”). :contentReference[oaicite:1]{index=1}
+  operator: concat # The mechanism concatenates attention keys/values from exemplar groups and test input before attention is computed. :contentReference[oaicite:2]{index=2}
+  alignment: identity # Predictions are taken directly from the LM (multi-choice scored by LM likelihood; text classification treated as multi-choice with token options; no label remapping). :contentReference[oaicite:3]{index=3}
+  tags:
+    - in-context learning
+    - long-context
+    - rescaled attention
+  datasets:
+    - SST-2
+    - SST-5
+    - MR
+    - Subj
+    - DBPedia
+    - AGNews
+    - TREC
+    - CB
+    - RTE
+    - BoolQ
+    - HellaSwag
+    - StoryCloze
+    - PIQA
+    - OpenBookQA
+    - ARC-Easy
+    - ARC-Challenge
+    - COPA
+    - Natural Questions
+    - WebQuestions
+    - TriviaQA
+    - SQuAD
+    - SQuADv2
+  architectures:
+    - GPT-like decoder-only Transformers # (1.3B, 6.7B, 13B) “open-source GPT-like (decoder-only Transformer) models.”
+    - BLOOM-176B # Large-scale evaluation on BLOOM-176B. 
+  tldr: Introduces structured prompting—separately encoding large sets of exemplars and concatenating their representations into each layer with rescaled attention—to scale in-context learning to thousands of examples, yielding higher accuracy and markedly lower variance across diverse tasks and model sizes. :contentReference[oaicite:7]{index=7}
+

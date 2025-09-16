@@ -163,9 +163,10 @@ def map_mechanism_to_configuration(mechanism):
     format_mapping = {
         "model-reprogramming": "Learnable",
         "adversarial-reprogramming": "Learnable",
+        "visual-prompting": "Learnable",
         "prompt-tuning": "Learnable",
         "soft-prompts": "Learnable",
-        "hard-prompts": "Learnable",
+        "hard-prompts": "Fixed",
         "prompt-instruction": "Fixed",
     }
     return format_mapping.get(mechanism, "Learnable")
@@ -183,6 +184,10 @@ def map_location_to_greek(location):
         "embedding": "Embedding ($\\mathcal{E}$)",
         "embedding-layer": "Embedding ($\\mathcal{E}$)",
     }
+
+    # Handle case where location is a list
+    if isinstance(location, list):
+        return " / ".join([location_mapping.get(loc.strip(), loc.strip()) for loc in location])
 
     if "/" in location:
         locations = location.split("/")
