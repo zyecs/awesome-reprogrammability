@@ -102,48 +102,50 @@
   tldr: You can repurpose image classifiers to do sequence classification by mapping discrete token sequences into images and using label remappings, without re-training the classifier.
 
 
-- title: Differentiable prompt makes pre-trained language models better few-shot learners
+- title: Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners
   authors:
-    - Zhang, Ningyu
-    - Li, Luoqiu
-    - Chen, Xiang
-    - Deng, Shumin
-    - Bi, Zhen
-    - Tan, Chuanqi
-    - Huang, Fei
-    - Chen, Huajun
+    - ZHANG, Ningyu
+    - LI, Luoqiu
+    - CHEN, Xiang
+    - DENG, Shumin
+    - BI, Zhen
+    - TAN, Chuanqi
+    - HUANG, Fei
+    - CHEN, Huajun
   year: 2022
   venue: ICLR
-  url: '#differentiable-prompt-makes-pre-trained-language-models-better-few-shot-learners'
-  mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
-  alignment: identity
+  url: https://arxiv.org/abs/2108.13161
+  mechanism: prompt-instruction # The method (DART) learns continuous prompts and label tokens for frozen PLMs, matching the prompt-tuning family rather than full fine-tuning or purely fixed prompting.
+  location: embedding # The prompt tokens are realized as learnable embeddings inserted into the input sequence; manipulation occurs at the embedding/interface level of the model.
+  operator: concat # The approach concatenates (prepends/appends) continuous prompt embeddings to the tokenized input sequence/template.
+  alignment: statistical # Class prediction is obtained via a verbalizer mapping masked-LM token probabilities to task labels, with label tokens optimized but still constituting a (data-driven) label-word assignment.
   tags:
-    - natural-language-processing
-  tldr: Improves few-shot learning performance via prompt tuning
+    - prompt tuning
+    - few-shot learning
+    - differentiable prompts
+  datasets:
+    - SST-2
+    - MR
+    - CR
+    - Subj
+    - TREC
+    - MNLI
+    - SNLI
+    - QNLI
+    - MRPC
+    - QQP
+    - SemEval-2010 Task 8
+    - TACRED-Revisit
+    - WiKi80
+    - ChemProt
+    - ACE-2005
+  architectures:
+    - RoBERTa-large
+    - BERT-large
+    - SciBERT
+    - GPT-2-medium
+  tldr: DART jointly optimizes continuous prompt templates and label tokens for frozen language models, delivering strong few-shot performance across diverse NLP tasks via concatenated prompt embeddings and a verbalizer-based label mapping.
 
-- title: Finetuned Language Models are Zero-Shot Learners
-  authors:
-    - Wei, Jason
-    - Bosma, Maarten
-    - Zhao, Vincent Y.
-    - Guu, Kelvin
-    - Yu, Adams Wei
-    - Lester, Brian
-    - Du, Nan
-    - Dai, Andrew M.
-    - Le, Quoc V.
-  year: 2022
-  venue: ICLR
-  url: '#finetuned-language-models-are-zero-shot-learners'
-  mechanism: prompt-instruction
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Enables zero-shot task generalization through prompt instruction
 
 - title: Learning to Prompt for Vision-Language Models
   authors:
@@ -171,82 +173,122 @@
     - CLIP
   tldr: Introduces Context Optimization (CoOp) for learning continuous prompts for vision-language models
 
-- title: Multitask Prompted Training Enables Zero-Shot Task Generalization
-  authors:
-    - Sanh, Victor
-    - Webson, Albert
-    - Raffel, Colin
-    - Bach, Samuel
-    - Sutawika, Lintang
-    - Alyafeai, Zaid
-    - Chaffin, Joshua
-    - Liu, Kelly
-    - others
-  year: 2022
-  venue: ICLR
-  url: '#multitask-prompted-training-enables-zero-shot-task-generalization'
-  mechanism: prompt-instruction
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Enables zero-shot task generalization through prompt instruction
+# - title: Multitask Prompted Training Enables Zero-Shot Task Generalization
+#   authors:
+#     - SANH, Victor
+#     - WEBSON, Albert
+#     - RAFFEL, Colin
+#     - BACH, Stephen H.
+#     - SUTAWIKA, Lintang
+#     - ALYAFEAI, Zaid
+#     - CHAFFIN, Antoine
+#     - STIEGLER, Arnaud
+#     - LE SCAO, Teven
+#     - RAJA, Arun
+#   year: 2022
+#   venue: ICLR
+#   url: https://arxiv.org/abs/2110.08207
+#   mechanism: prompt-instruction # Fixed natural-language prompt templates convert datasets to prompted input–target pairs; the prompts themselves are not learned (model weights are fine-tuned), i.e., instruction prompting.
+#   location: input # Prompting occurs at the raw text input: an input template forms the textual instruction/context consumed by the encoder (see Fig. 1 and §4 “A Unified Prompt Format”).
+#   operator: concat # Instructions and example fields are concatenated/prepended as text to form the model’s input sequence; targets are templated text strings.
+#   alignment: identity # Outputs are generated directly in the target natural-language format specified by the target template; no post-hoc label remapping is required. :contentReference[oaicite:4]{index=4}
+#   tags:
+#     - instruction-tuning
+#     - multitask-learning
+#     - zero-shot-generalization
+#   datasets:
+#     - super_glue/cb
+#     - super_glue/rte
+#     - anli
+#     - super_glue/wic
+#     - winogrande/winogrande_xl
+#     - hellaswag
+#     - squad_v2
+#     - trivia_qa/unfiltered
+#     - cnn_dailymail/3.0.0
+#     - xsum
+#     - ag_news
+#     - dbpedia_14
+#     - race/high
+#     - race/middle
+#     - super_glue/boolq
+#     - super_glue/multirc
+#     - quoref
+#     - wiki_bio
+#     - social_i_qa
+#     - samsum :contentReference[oaicite:5]{index=5}
+#   architectures:
+#     - T5+LM (encoder–decoder Transformer)
+#     - T0 / T0+ / T0++ (initialized from T5+LM; 3B and 11B variants) :contentReference[oaicite:6]{index=6}
+#   tldr: The paper shows that fine-tuning a pretrained encoder–decoder model on a large, diverse mixture of natural-language prompted tasks (T0) yields strong zero-shot generalization to entirely held-out tasks, often rivaling much larger models while improving robustness to prompt wording. :contentReference[oaicite:7]{index=7}
 
-- title: 'P-Tuning: Prompt Tuning Can Be Comparable to Fine-Tuning Across Scales and Tasks'
-  authors:
-    - Liu, Xiao
-    - Ji, Kaixuan
-    - Fu, Yicheng
-    - Tam, Weng
-    - Du, Zhengxiao
-    - Yang, Zhilin
-    - Tang, Jie
-  year: 2022
-  venue: 'ACL, Volume 2: Short Papers'
-  url: '#p-tuning-prompt-tuning-can-be-comparable-to-fine-tuning-across-scales-and-tasks'
-  mechanism: prompt-tuning
-  location: input-layer
-  operator: multiplication
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: P-tuning approach to prompt tuning across different scales
 
 - title: 'PPT: Pre-trained Prompt Tuning for Few-shot Learning'
   authors:
-    - Gu, Yuxian
-    - Han, Xu
-    - Liu, Zhiyuan
-    - Huang, Minlie
+    - GU, Yuxian
+    - HAN, Xu
+    - LIU, Zhiyuan
+    - HUANG, Minlie
   year: 2022
-  venue: Proceedings of ACL
-  url: '#ppt-pre-trained-prompt-tuning-for-few-shot-learning'
-  mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
-  alignment: identity
+  venue: ACL
+  url: https://arxiv.org/abs/2109.04332
+  mechanism: prompt-tuning # Freezes PLM and tunes only soft prompts; proposes pre-training soft prompts (PPT) for few-shot settings
+  location: embedding # Inserts learnable soft tokens as continuous embeddings (prepended prompts) rather than modifying hidden layers or raw inputs
+  operator: concat # Realizes prompting by concatenating/prepending learned prompt embeddings to the input embedding sequence
+  alignment: rule-based # Uses pattern–verbalizer pairs mapping labels to words/options; downstream label is read via rule/templated verbalizer decoding
   tags:
-    - natural-language-processing
-  tldr: Improves few-shot learning performance via prompt tuning
+    - few-shot learning
+    - soft prompt tuning
+  datasets:
+    - SST-2
+    - SST-5
+    - YahooAnswer
+    - RACE-m
+    - RACE-h
+    - BoolQ
+    - RTE
+    - CB
+    - ChnSent
+    - Amazon
+    - TNews
+    - CCPM
+    - C3
+    - LCQMC
+    - CMNLI
+    - OCNLI
+  architectures:
+    - T5-XXL
+    - mT5-XXL
+    - CPM-2
+  tldr: Pretrains soft prompts on unlabeled corpora and unifies tasks into common formats, enabling frozen large PLMs to achieve strong few-shot performance comparable to or surpassing full fine-tuning with far fewer trainable parameters.
+
 
 - title: 'PTR: Prompt Tuning with Rules for Text Classification'
   authors:
-    - Xu Han
-    - Weilin Zhao
-    - Ning Ding
-    - Zhiyuan Liu
-    - Maosong Sun
-  year: 2022
-  venue: AI Open
-  url: '#ptr-prompt-tuning-with-rules-for-text-classification'
-  mechanism: prompt-tuning
-  location: input-layer
-  operator: addition
-  alignment: identity
+    - HAN, Xu
+    - ZHAO, Weilin
+    - DING, Ning
+    - LIU, Zhiyuan
+    - SUN, Maosong
+  year: 2021
+  venue: arXiv preprint (cs.CL)
+  url: https://arxiv.org/abs/2105.11259
+  mechanism: prompt-tuning # Uses prompt tuning with learnable prompt tokens and rule-composed sub-prompts rather than updating the PLM architecture; see Fig. 1 and §3.
+  location: embedding # Learnable “special prompt tokens” are inserted before encoding (embedding-level soft prompts); see Fig. 1 caption and concatenation of sub-prompts in §3.3.
+  operator: concat # The method “directly concatenate[s] the sub-prompts of all rule-related functions” to form the task prompt;
+  alignment: rule-based # Class prediction is obtained by a deterministic verbalizer mapping from label words to classes (possibly multiple [MASK]s); §2.2 and Eq. (5).
   tags:
-    - natural-language-processing
-  tldr: Rule-enhanced prompt tuning for text classification
+    - soft prompt tuning
+  datasets:
+    - TACRED
+    - TACREV
+    - ReTACRED
+    - SemEval 2010 Task 8
+  architectures:
+    - RoBERTa-large # Baseline and backbone in results tables; §4.2–4.3, Tables 4–5
+    - BERT-large # Mentioned as alternative backbone in Table 5 note
+  tldr: PTR composes logic-rule-driven sub-prompts with learnable prompt tokens to transform many-class relation classification into a cloze-style prediction in PLMs, delivering consistent SOTA gains on TACRED/TACREV/ReTACRED/SemEval without adding task-specific layers.
+
 
 - title: 'Spot: Better frozen model adaptation through soft prompt transfer'
   authors:
@@ -258,47 +300,22 @@
   year: 2022
   venue: ACL
   url: https://arxiv.org/abs/2110.07904
-  mechanism: prompt-tuning
-  location: embedding-layer / intermediate-layers
-  operator: concatenation
-  alignment: linear
+  mechanism: prompt-tuning # Learns task-specific soft prompts for a frozen pretrained LM; SPoT transfers a learned prompt to initialize a target prompt (Sec. 1–2).
+  location: embedding # The prompt is “prepended to each (embedded) input sequence”; only prompt embeddings are trained (Sec. 2.1.4).
+  operator: concat # Soft prompt tokens are concatenated to the input (as a prefix) to condition the frozen model (Intro; Sec. 2.1.4).
+  alignment: identity # T5’s text-to-text setup directly generates target text/labels without an added classification head; no separate label map is introduced (Sec. 2.1.2 & 2.1.4).
   tags:
-    - prompt-tuning
-    - LM
+    - soft prompt tuning
+  datasets:
+    - GLUE (CoLA, SST-2, MRPC, STS-B, QQP, MNLI, QNLI, RTE) 
+    - SuperGLUE (CB, WSC, COPA, WiC, MultiRC, ReCoRD, BoolQ)
+    # - C4 # (prefix LM) as unsupervised source
+    # - SQuAD # (as source)
+    # - MRQA, RAINBOW, GEM mixtures # (as sources)
+  architectures:
+    - T5 1.1 # (Small, Base, Large, XL, XXL; LM-adapted checkpoints)
   tldr: Transfers soft prompts learned on source tasks to initialize prompt tuning on a target, letting frozen T5 models match or beat full fine-tuning on SuperGLUE while using up to 27,000× fewer task-specific parameters
 
-- title: Training language models to follow instructions with human feedback
-  authors:
-    - Ouyang, Long
-    - Wu, Jeffrey
-    - Jiang, Xu
-    - Almeida, Diogo
-    - Wainwright, Carroll L.
-    - Mishkin, Pamela
-    - Zhang, Chong
-    - Agarwal, Sandhini
-    - Slama, Katarina
-    - Ray, Alex
-    - Schulman, John
-    - Hilton, Jacob
-    - Kelton, Fraser
-    - Miller, Luke
-    - Simens, Maddie
-    - Askell, Amanda
-    - Welinder, Peter
-    - Christiano, Paul
-    - Leike, Jan
-    - Lowe, Ryan
-  year: 2022
-  venue: NeurIPS
-  url: '#training-language-models-to-follow-instructions-with-human-feedback'
-  mechanism: prompt-instruction
-  location: intermediate-layers
-  operator: addition
-  alignment: identity
-  tags:
-    - natural-language-processing
-  tldr: Incorporates human feedback for better prompt instruction
 
 - title: 'Learning how to ask: Querying LMs with mixtures of soft prompts'
   authors:
@@ -334,7 +351,7 @@
     - Du, Zhengxiao
     - Yang, Zhilin
     - Tang, Jie
-  year: 2021
+  year: 2022
   venue: ACL
   url: https://arxiv.org/abs/2110.07602
   mechanism: prompt-tuning
@@ -952,7 +969,7 @@
   tldr: The paper introduces Reprogrammer and a residual variant that reprogram frozen CLIP encoders via input- and embedding-level modules to preserve pre-training representations, yielding stronger holistic performance across ID accuracy, OOD generalization, and OOD detection than common fine-tuning baselines. :contentReference[oaicite:4]{index=4}
 
 
-- title: Time-LLM: Time Series Forecasting by Reprogramming Large Language Models
+- title: 'Time-LLM: Time Series Forecasting by Reprogramming Large Language Models'
   authors:
     - JIN, Ming
     - WANG, Shiyu
@@ -961,7 +978,7 @@
     - ZHANG, James Y.
     - SHI, Xiaoming
     - CHEN, Pin-Yu
-    - LIANG, Yuxuan
+    - LIANG, Yuxuans
     - LI, Yuan-Fang
     - PAN, Shirui
     - WEN, Qingsong

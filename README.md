@@ -21,7 +21,7 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 
 ### Model Reprogramming
 
-*25 papers*
+*24 papers*
 
 - [Attribute-based Visual Reprogramming for Vision-Language Models (2025) — ICLR](https://arxiv.org/abs/2501.13982)
 - [Model Reprogramming Demystified: A Neural Tangent Kernel Perspective (2025) — arXiv](https://arxiv.org/abs/2506.0620)
@@ -30,14 +30,13 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts (2025) — ICML 2025](https://arxiv.org/abs/2506.01000)
 - [AutoVP: An Automated Visual Prompting Framework and Benchmark (2024) — ICLR](https://arxiv.org/abs/2310.08381)
 - [Bayesian-guided Label Mapping for Visual Reprogramming (2024) — NeurIPS](https://arxiv.org/abs/2410.24018)
-- [Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders (2024) — SatML 2024](https://arxiv.org/abs/2403.10800)
+- [Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders (2024) — SatML](https://arxiv.org/abs/2403.10800)
 - [Sample-specific Masks for Visual Reprogramming-based Prompting (2024) — ICML](https://arxiv.org/abs/2406.03150)
-- [Time-llm: Time series forecasting by reprogramming large language models (2024) — ICLR](#time-llm-time-series-forecasting-by-reprogramming-large-language-models)
+- [Time-LLM: Time Series Forecasting by Reprogramming Large Language Models (2024) — ICLR](https://arxiv.org/abs/2310.01728)
 - [BlackVIP: Black-Box Visual Prompting for Robust Transfer Learning (2023) — CVPR](https://arxiv.org/abs/2303.14773)
-- [Deep graph reprogramming (2023) — CVPR](#deep-graph-reprogramming)
-- [From english to more languages: Parameter-efficient model reprogramming for cross-lingual speech recognition (2023) — ICASSP](#from-english-to-more-languages-parameter-efficient-model-reprogramming-for-cross-lingual-speech-recognition)
-- [Low-resource music genre classification with cross-modal neural model reprogramming (2023) — ICASSP](#low-resource-music-genre-classification-with-cross-modal-neural-model-reprogramming)
-- [Reprogramming pretrained language models for antibody sequence infilling (2023) — ICML](#reprogramming-pretrained-language-models-for-antibody-sequence-infilling)
+- [Deep Graph Reprogramming (2023) — CVPR](https://arxiv.org/abs/2304.14593)
+- [From English to More Languages: Parameter-Efficient Model Reprogramming for Cross-Lingual Speech Recognition (2023) — ICASSP](https://arxiv.org/abs/2301.07851)
+- [Reprogramming Pretrained Language Models for Antibody Sequence Infilling (2023) — ICML](https://arxiv.org/abs/2210.07144)
 - [Understanding and Improving Visual Prompting: A Label-Mapping Perspective (2023) — CVPR](https://arxiv.org/abs/2211.11635)
 - [Adversarial Reprogramming Revisited (2022) — NeurIPS](https://arxiv.org/abs/2206.03466)
 - [Cross-modal Adversarial Reprogramming (2022) — WACV](https://arxiv.org/abs/2102.07325)
@@ -51,7 +50,7 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 
 ### Prompt Tuning
 
-*21 papers*
+*20 papers*
 
 - [Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want (2025) — ICLR](https://arxiv.org/abs/2403.20271)
 - [ArGue: Attribute-Guided Prompt Tuning for Vision-Language Models (2024) — CVPR](https://arxiv.org/abs/2311.16494)
@@ -61,23 +60,22 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [PLOT: Prompt Learning with Optimal Transport for Vision-Language Models (2023) — ICLR](https://arxiv.org/abs/2210.01253)
 - [TransHP: Image Classification with Hierarchical Prompting (2023) — NeurIPS](https://arxiv.org/abs/2304.06385)
 - [Tuning Multi-mode Token-level Prompt Alignment across Modalities (2023) — NeurIPS 2023](https://arxiv.org/abs/2309.13847)
-- [Universal prompt tuning for graph neural networks (2023) — NeurIPS](#universal-prompt-tuning-for-graph-neural-networks)
+- [Universal Prompt Tuning for Graph Neural Networks (2023) — NeurIPS](https://arxiv.org/abs/2209.15240)
+- [Visual Instruction Tuning (2023) — NeurIPS](https://arxiv.org/abs/2304.08485)
 - [Conditional Prompt Learning for Vision-Language Models (2022) — CVPR](https://arxiv.org/abs/2203.05557)
-- [Differentiable prompt makes pre-trained language models better few-shot learners (2022) — ICLR](#differentiable-prompt-makes-pre-trained-language-models-better-few-shot-learners)
 - [Learning to Prompt for Vision-Language Models (2022) — IJCV](https://arxiv.org/abs/2109.01134) · [code](https://github.com/KaiyangZhou/CoOp)
 - [Learning to Prompt for Vision-Language Models (2022) — IJCV](https://arxiv.org/abs/2109.01134)
-- [P-Tuning: Prompt Tuning Can Be Comparable to Fine-Tuning Across Scales and Tasks (2022) — ACL, Volume 2: Short Papers](#p-tuning-prompt-tuning-can-be-comparable-to-fine-tuning-across-scales-and-tasks)
-- [PPT: Pre-trained Prompt Tuning for Few-shot Learning (2022) — Proceedings of ACL](#ppt-pre-trained-prompt-tuning-for-few-shot-learning)
-- [PTR: Prompt Tuning with Rules for Text Classification (2022) — AI Open](#ptr-prompt-tuning-with-rules-for-text-classification)
+- [P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks (2022) — ACL](https://arxiv.org/abs/2110.07602)
+- [PPT: Pre-trained Prompt Tuning for Few-shot Learning (2022) — ACL](https://arxiv.org/abs/2109.04332)
 - [Spot: Better frozen model adaptation through soft prompt transfer (2022) — ACL](https://arxiv.org/abs/2110.07904)
 - [Learning how to ask: Querying LMs with mixtures of soft prompts (2021) — NAACL](https://arxiv.org/abs/2104.06599)
-- [P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks (2021) — ACL](https://arxiv.org/abs/2110.07602)
+- [PTR: Prompt Tuning with Rules for Text Classification (2021) — arXiv preprint (cs.CL)](https://arxiv.org/abs/2105.11259)
 - [Prefix-Tuning: Optimizing Continuous Prompts for Generation (2021) — ACL/IJCNLP](https://arxiv.org/abs/2101.00190)
 - [The Power of Scale for Parameter-Efficient Prompt Tuning (2021) — EMNLP](https://arxiv.org/abs/2104.08691) · [code](https://github.com/google-research/prompt-tuning)
 
 ### Prompt Instruction
 
-*19 papers*
+*16 papers*
 
 - [Joint Visual and Text Prompting for Improved Object-Centric Perception with Multimodal Large Language Models (2024) — arXiv](https://arxiv.org/abs/2404.04514)
 - [PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs (2024) — ICML](https://arxiv.org/abs/2402.07872)
@@ -85,17 +83,14 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [Decomposed Prompting: A Modular Approach for Solving Complex Tasks (2023) — ICLR](https://arxiv.org/abs/2210.02406)
 - [Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions (2023) — ACL](https://arxiv.org/abs/2212.10509)
 - [Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V (2023) — arXiv](https://arxiv.org/abs/2310.11441)
-- [Visual instruction tuning (2023) — NeurIPS](#visual-instruction-tuning)
 - [What Does a Platypus Look Like? Generating Customized Prompts for Zero-Shot Image Classification (2023) — ICCV](https://arxiv.org/abs/2209.03320)
 - [What Makes Good Examples for Visual In-Context Learning? (2023) — arXiv](https://arxiv.org/abs/2301.13670)
 - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (2022) — NeurIPS](https://arxiv.org/abs/2201.11903)
-- [Finetuned Language Models are Zero-Shot Learners (2022) — ICLR](#finetuned-language-models-are-zero-shot-learners)
+- [Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners (2022) — ICLR](https://arxiv.org/abs/2108.13161)
 - [In-context Learning and Induction Heads (2022) — arXiv](https://arxiv.org/abs/2209.11895)
 - [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models (2022) — ICLR](https://arxiv.org/abs/2205.10625)
-- [Multitask Prompted Training Enables Zero-Shot Task Generalization (2022) — ICLR](#multitask-prompted-training-enables-zero-shot-task-generalization)
 - [Rethinking the Role of Demonstrations: What Makes In-Context Learning Work? (2022) — EMNLP](https://arxiv.org/abs/2202.12837)
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples (2022) — arXiv](https://arxiv.org/abs/2212.06713)
-- [Training language models to follow instructions with human feedback (2022) — NeurIPS](#training-language-models-to-follow-instructions-with-human-feedback)
 - [Visual Prompt Tuning (2022) — ECCV](https://arxiv.org/abs/2203.12119)
 - [Visual Prompting via Image Inpainting (2022) — NeurIPS](https://arxiv.org/abs/2209.00647)
 
@@ -110,6 +105,18 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 *1 papers*
 
 - [Neural Model Reprogramming with Similarity Based Mapping for Low-Resource Spoken Command Recognition (2023) — Interspeech](https://arxiv.org/abs/2110.03894)
+
+### Mr
+
+*1 papers*
+
+- [Low-Resource Music Genre Classification with Cross-Modal Neural Model Reprogramming (2023) — ICASSP](https://arxiv.org/abs/2211.01317)
+
+### Pi
+
+*1 papers*
+
+- [Multitask Prompted Training Enables Zero-Shot Task Generalization (2022) — ICLR 2022 (Spotlight) :contentReference[oaicite:0]{index=0}](https://arxiv.org/abs/2110.08207)
 
 ### Prompt Retrieval
 
@@ -138,7 +145,7 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 - [Exploring Visual Prompts for Adapting Large-Scale Models (2022) — arXiv](https://arxiv.org/abs/2203.17274)
 
 
-_Generated: 2025-09-16 20:40 UTC_
+_Generated: 2025-09-16 23:53 UTC_
 
 <!-- AUTO:END -->
 
