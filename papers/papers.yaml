@@ -918,7 +918,7 @@
     - QI, Jianzhong
     - LIU, Feng
   year: 2025
-  venue: ICML 2025
+  venue: ICML
   url: https://arxiv.org/abs/2506.01000
   mechanism: model-reprogramming # Visual Reprogramming (a form of model reprogramming) that adapts CLIP by modifying only input/output spaces without changing core parameters.
   location: input # Adds trainable visual prompts to input images; padding + prompt is applied at the input space. Eq./notation: f_in(x_T|δ)=pad(x_T)+δ; extended to Δ for DVP. (Tables 19–20; App. D.2.2–D.2.3; p. 23–24)
@@ -1517,7 +1517,7 @@
     - SOLTANOLKOTABI, Mahdi
     - THRAMPOULIDIS, Christos
   year: 2023
-  venue: ICML 2023
+  venue: ICML
   url: https://arxiv.org/abs/2306.03435
   mechanism: prompt-tuning # The paper studies and formalizes prompt-tuning with learnable prompt vectors and analyzes its expressivity/optimization in attention models (prompt-tuning variants I–III).
   location: embedding / hidden # Prompts are inserted at the input embedding (E) and at the inputs of every transformer layer (hidden interfaces, H) across variants I–III.
@@ -2040,3 +2040,70 @@
     - BLOOM-176B # Large-scale evaluation on BLOOM-176B. 
   tldr: Introduces structured prompting—separately encoding large sets of exemplars and concatenating their representations into each layer with rescaled attention—to scale in-context learning to thousands of examples, yielding higher accuracy and markedly lower variance across diverse tasks and model sizes. :contentReference[oaicite:7]{index=7}
 
+
+- title: Language Models are Few-Shot Learners
+  authors:
+    - BROWN, Tom
+    - MANN, Benjamin
+    - RYDER, Nick
+    - SUBBIAH, Melanie
+    - KAPLAN, Jared
+    - DHARIWAL, Prafulla
+    - NEELAKANTAN, Arvind
+    - SHYAM, Pranav
+    - SASTRY, Girish
+    - ASKELL, Amanda
+    - AGARWAL, Sandhini
+    - HERBERT-VOSS, Ariel
+    - KRUEGER, Gretchen
+    - HENIGHAN, Tom
+    - CHILD, Rewon
+    - RAMESH, Aditya
+    - ZIEGLER, Daniel M.
+    - WU, Jeffrey
+    - WINTER, Clemens
+    - HESSE, Christopher
+    - CHEN, Mark
+    - SIGLER, Eric
+    - LITWIN, Mateusz
+    - GRAY, Scott
+    - CHESS, Benjamin
+    - CLARK, Jack
+    - BERNER, Christopher
+    - MCCANDLISH, Sam
+    - RADFORD, Alec
+    - SUTSKEVER, Ilya
+    - AMODEI, Dario
+  year: 2020
+  venue: NeurIPS
+  url: https://arxiv.org/abs/2005.14165
+  mechanism: prompt-instruction # Task specified purely via natural-language instructions and a few demonstrations; no parameter updates or fine-tuning (“applied without any gradient updates or fine-tuning… specified purely via text interaction”). :contentReference[oaicite:0]{index=0}
+  location: input-space # Prompts/demonstrations are concatenated to the raw text input sequence given to the model (in-context learning within the forward pass). :contentReference[oaicite:1]{index=1}
+  operator: concat # The task description and K examples are appended/concatenated to the input context window to condition generation (“zero/one/few-shot” via examples in context). :contentReference[oaicite:2]{index=2}
+  alignment: identity # Outputs are read directly as task answers without adding trainable heads; evaluation reads the model’s continuation/probabilities (identity or simple scoring). :contentReference[oaicite:3]{index=3}
+  tags:
+    - in-context learning
+    - few-shot
+    - zero-shot
+    - large language model
+  datasets:
+    - Common Crawl # (filtered)
+    - WebText2
+    - Books1
+    - Books2
+    - Wikipedia # (English)
+    - SuperGLUE # (aggregate)
+    - CoQA
+    - TriviaQA
+    - Natural Questions # (closed-book)
+    - LAMBADA
+    - Winograd/Winogrande
+    - RACE
+    - QuAC
+    - WMT # (Fr-En, De-En)
+    - ANLI
+  architectures:
+    - GPT-3
+    # - Transformer # (decoder-only, GPT-3)
+    # - Alternating dense and locally banded sparse attention
+  tldr: GPT-3 demonstrates that scaling a decoder-only language model enables instruction- and example-conditioned in-context learning—without task-specific fine-tuning—to achieve strong zero/one/few-shot performance across diverse NLP benchmarks.

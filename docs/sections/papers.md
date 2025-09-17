@@ -45,7 +45,7 @@ Paper | Configuration ($\lambda$) | Location ($\ell$) | Operator ($\tau$) | Alig
 [Low-Resource Music Genre Classification with Cross-Modal Neural Model Reprogramming](https://arxiv.org/abs/2211.01317) HUNG et al. (2023) | Learnable | Input ($\mathcal{X}_S$) | Parametric (PR) | Statistical (SA) | ICASSP
 [MaPLe: Multi-modal Prompt Learning](https://arxiv.org/abs/2210.03117) Khattak et al. (2023) | Learnable | Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$) | Concatenative (CO) | Linear (LA) | CVPR
 [Neural Model Reprogramming with Similarity Based Mapping for Low-Resource Spoken Command Recognition](https://arxiv.org/abs/2110.03894) Yen et al. (2023) | Learnable | input-space | Additive (AD) | Statistical (SA) | Interspeech
-[On the Role of Attention in Prompt-tuning](https://arxiv.org/abs/2306.03435) OYMAK et al. (2023) | Learnable | Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$) | Concatenative (CO) | Linear (LA) | ICML 2023
+[On the Role of Attention in Prompt-tuning](https://arxiv.org/abs/2306.03435) OYMAK et al. (2023) | Learnable | Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$) | Concatenative (CO) | Linear (LA) | ICML
 [PLOT: Prompt Learning with Optimal Transport for Vision-Language Models](https://arxiv.org/abs/2210.01253) CHEN et al. (2023) | Learnable | Embedding ($\mathcal{E}$) | Concatenative (CO) | Identity (ID) | ICLR
 [Reprogramming Pretrained Language Models for Antibody Sequence Infilling](https://arxiv.org/abs/2210.07144) MELNYK et al. (2023) | Learnable | Embedding ($\mathcal{E}$) | Parametric (PR) | Linear (LA) | ICML
 [Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V](https://arxiv.org/abs/2310.11441) YANG et al. (2023) | Fixed | Input ($\mathcal{X}_S$) | Additive (AD) | Rule-based (RA) | arXiv
@@ -72,4 +72,4 @@ Paper | Configuration ($\lambda$) | Location ($\ell$) | Operator ($\tau$) | Alig
 [Model Reprogramming Demystified: A Neural Tangent Kernel Perspective](https://arxiv.org/abs/2506.0620) Chung et al. (2025) | Learnable | input-layers | Additive (AD) | Identity (ID) | arXiv
 [Refine: Inversion-free backdoor defense via model reprogramming](https://arxiv.org/abs/2502.18508) Chen et al. (2025) | Learnable | input-layers | Additive (AD) | Identity (ID) | ICLR
 [Reprogramming pretrained language models for protein sequence representation learning](https://arxiv.org/abs/2301.02120) Vinod et al. (2025) | Learnable | input-layers | Additive (AD) | Identity (ID) | Digital Discovery
-[Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts](https://arxiv.org/abs/2506.01000) CAI et al. (2025) | Learnable | Input ($\mathcal{X}_S$) | Additive (AD) | Linear (LA) | ICML 2025
+[Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts](https://arxiv.org/abs/2506.01000) CAI et al. (2025) | Learnable | Input ($\mathcal{X}_S$) | Additive (AD) | Linear (LA) | ICML

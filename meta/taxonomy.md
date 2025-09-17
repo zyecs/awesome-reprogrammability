@@ -101,7 +101,9 @@ Note that this is a **rough** categorization for the *existing* studies.
 
 ## Common Evaluation Scenarios
 
-### Few-Shot Learning
+Under construction ...
+
+<!-- ### Few-Shot Learning
 - Performance with limited training examples (1-shot, 5-shot, etc.)
 - Evaluating adaptation efficiency with minimal data
 
@@ -115,7 +117,7 @@ Note that this is a **rough** categorization for the *existing* studies.
 
 ### Cross-Task Transfer
 - Transferring between different task types
-- Task similarity impact on performance
+- Task similarity impact on performance -->
 
 ## Usage in Papers Table
 

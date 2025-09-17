@@ -22,7 +22,7 @@ modifying downstream tasks to align with models rather than changing the models 
 <img src="assets/purpose.jpg" alt="Neural Network Reprogrammability Overview" width="80%">
 </div>
 
-This encompasses three core paradigms:
+This encompasses three popular paradigms:
 
 - 🔧 **Model Reprogramming**: Learning input transformation (e.g., learnable noises) to repurpose frozen models
 - 🎯 **Prompt Tuning**: Optimizing continuous token prompts (e.g., soft ) to guide model behavior
@@ -31,7 +31,7 @@ This encompasses three core paradigms:
 
 ## 🗂️ Contents
 
-- [🏗️ Theoretical Framework](#-theoretical-framework)
+- [🏗️ Overall Framework](#-overall-framework)
 - [📚 Resources by Type](#-resources-by-type)
   - [📄 Research Papers](#-research-papers)
   - [🛠️ Tools & Libraries](#-tools--libraries)
@@ -44,7 +44,7 @@ This encompasses three core paradigms:
 
 ---
 
-## 🏗️ Theoretical Framework
+## 🏗️ Overall Framework
 
 Neural network reprogrammability operates across **four key dimensions**, providing a unified way to understand all adaptation approaches:
 
@@ -93,7 +93,7 @@ Where:
 • <strong>Identity</strong>: Direct mapping<br>
 • <strong>Rule-based</strong>: Structured rules
 • <strong>Linear</strong>: Linear transformations<br>
-• <strong>Statistical</strong>: Counting-based relation<br>
+• <strong>Statistical</strong>: Counting-based matching<br>
 </td>
 </tr>
 </table>
@@ -102,11 +102,11 @@ Where:
 
 | Method | Configuration | Typical Location | Common Operators | Alignment |
 |--------|---------------|------------------|------------------|-----------|
-| **Model Reprogramming** | Learnable | Input, Embedding | Additive, Parametric | Statistical, Linear |
+| **Model Reprogramming** | Learnable | Input, Embedding | Additive, Concatenative, Parametric | Statistical, Linear |
 | **Prompt Tuning** | Learnable | Embedding, Hidden | Concatenative | Linear, Identity |
 | **Prompt Instruction** | Fixed | Input | Concatenative | Rule-based, Identity |
 
-> 📖 **Learn More**: [Complete Taxonomy Guide](meta/taxonomy.md) • [Survey Paper](https://arxiv.org/html/2506.04650v2)
+> 📖 **Learn More**: [Taxonomy Guide](meta/taxonomy.md) • [Complete Survey Paper](https://arxiv.org/html/2506.04650v2)
 
 ---
 
@@ -116,8 +116,10 @@ Where:
 
 #### 🏆 Foundational Papers
 
-- **[Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146)** (Elsayed et al., 2019, ICLR) - The seminal work introducing adversarial reprogramming
+- **[Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146)** (Elsayed et al., 2019, ICLR) - Introducing the concept of model reprogramming
 - **[The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)** (Lester et al., 2021, EMNLP) - Foundational prompt tuning research
+- **[Learning to Prompt for Vision-Language Models](https://arxiv.org/abs/2109.01134)** (Zhou et al. 2022, IJCV) - Soft prompting tuning for Vision-Language Models on the textual branch
+- **[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)** (Brown et al., 2020, NeurIPS) - First work that demonstrates that scaling LLMs can elicit in-context learning capability
 - **[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)** (Wei et al., 2022, NeurIPS) - Breakthrough in instruction-based reasoning
 
 <!-- AUTO:START -->
@@ -132,7 +134,7 @@ Where:
 - [Model Reprogramming Demystified: A Neural Tangent Kernel Perspective](https://arxiv.org/abs/2506.0620) (2025, arXiv)
 - [Refine: Inversion-free backdoor defense via model reprogramming](https://arxiv.org/abs/2502.18508) (2025, ICLR)
 - [Reprogramming pretrained language models for protein sequence representation learning](https://arxiv.org/abs/2301.02120) (2025, Digital Discovery)
-- [Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts](https://arxiv.org/abs/2506.01000) (2025, ICML 2025)
+- [Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts](https://arxiv.org/abs/2506.01000) (2025, ICML)
 - [AutoVP: An Automated Visual Prompting Framework and Benchmark](https://arxiv.org/abs/2310.08381) (2024, ICLR)
 - [Bayesian-guided Label Mapping for Visual Reprogramming](https://arxiv.org/abs/2410.24018) (2024, NeurIPS)
 - [Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders](https://arxiv.org/abs/2403.10800) (2024, SatML)
@@ -158,7 +160,7 @@ Where:
 - [Explicit Visual Prompting for Low-Level Structure Segmentations](https://arxiv.org/abs/2303.10883) (2023, CVPR)
 - [InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning](https://arxiv.org/abs/2305.06500) (2023, NeurIPS)
 - [MaPLe: Multi-modal Prompt Learning](https://arxiv.org/abs/2210.03117) (2023, CVPR)
-- [On the Role of Attention in Prompt-tuning](https://arxiv.org/abs/2306.03435) (2023, ICML 2023)
+- [On the Role of Attention in Prompt-tuning](https://arxiv.org/abs/2306.03435) (2023, ICML)
 - [PLOT: Prompt Learning with Optimal Transport for Vision-Language Models](https://arxiv.org/abs/2210.01253) (2023, ICLR)
 - [TransHP: Image Classification with Hierarchical Prompting](https://arxiv.org/abs/2304.06385) (2023, NeurIPS)
 - [Tuning Multi-mode Token-level Prompt Alignment across Modalities](https://arxiv.org/abs/2309.13847) (2023, NeurIPS 2023)
@@ -190,7 +192,7 @@ Where:
 
 > 📋 **Complete List**: [All Papers with Taxonomy Classification](docs/sections/papers.md)
 
-_Last updated: 2025-09-17 15:49 UTC_
+_Last updated: 2025-09-17 23:03 UTC_
 
 <!-- AUTO:END -->
 
@@ -272,20 +274,20 @@ Navigate resources by the four-dimensional taxonomy:
 - **[Input Space](docs/sections/taxonomy.md#input)** - Raw input modifications
 - **[Embedding Space](docs/sections/taxonomy.md#embedding)** - Token/feature embeddings
 - **[Hidden Space](docs/sections/taxonomy.md#hidden)** - Intermediate representations
-- **[Output Space](docs/sections/taxonomy.md#output)** - Final layer adaptations
+<!-- - **[Output Space](docs/sections/taxonomy.md#output)** - Final layer adaptations -->
 
 ### ⚙️ By Operator
 
 - **[Additive](docs/sections/taxonomy.md#additive)** - Adding new components
 - **[Concatenative](docs/sections/taxonomy.md#concatenative)** - Joining elements
 - **[Parametric](docs/sections/taxonomy.md#parametric)** - Learned transformations
-- **[Replacement](docs/sections/taxonomy.md#replacement)** - Component substitution
+<!-- - **[Replacement](docs/sections/taxonomy.md#replacement)** - Component substitution -->
 
 ### 🎯 By Alignment
 
 - **[Identity Mapping](docs/sections/taxonomy.md#identity)** - Direct output use
 - **[Linear Alignment](docs/sections/taxonomy.md#linear)** - Linear transformations
-- **[Statistical Alignment](docs/sections/taxonomy.md#statistical)** - Distribution matching
+- **[Statistical Alignment](docs/sections/taxonomy.md#statistical)** - Counting-based matching
 - **[Rule-based Alignment](docs/sections/taxonomy.md#rule-based)** - Structured mapping
 
 ---
