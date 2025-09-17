@@ -157,18 +157,18 @@
   venue: IJCV
   url: https://arxiv.org/abs/2109.01134
   code_url: https://github.com/KaiyangZhou/CoOp
-  mechanism: soft-prompts
+  mechanism: prompt-tuning
   location: input-layer
   operator: addition
   alignment: identity
   tags:
-    - computer-vision
-    - natural-language-processing
-    - multimodal
-    - prompt-tuning
+    - soft prompt tuning
+    - text prompt tuning
+    - vision-language models
   datasets:
     - ImageNet
-    - CIFAR-10
+    - FGVC
+    - VTAB-1k
   architectures:
     - CLIP
   tldr: Introduces Context Optimization (CoOp) for learning continuous prompts for vision-language models
@@ -529,12 +529,13 @@
   year: 2022
   venue: ICLR
   url: https://arxiv.org/abs/2111.02080
-  mechanism: in-context-learning
+  mechanism: prompt-instruction
   location: input-layer
   operator: concatenation
   alignment: identitity
   tags:
   - in-context-learning
+  - theory
   tldr: ICL emerges when pretraining data has long-range latent-concept coherence, enabling a language model (without parameter updates) to infer a shared prompt concept and predict the next token, which the authors formalize as implicit Bayesian inference and validate on a synthetic HMM-based dataset.
 
 - title: In-context Learning and Induction Heads
@@ -717,9 +718,9 @@
   year: 2023
   venue: Interspeech
   url: https://arxiv.org/abs/2110.03894
-  mechanism: learnable
+  mechanism: model-reprogramming
   location: input-space
-  operator: additive
+  operator: addition
   alignment: statistical
   tags:
     - model-reprogramming
@@ -1071,10 +1072,10 @@
   year: 2023
   venue: ICASSP
   url: https://arxiv.org/abs/2211.01317
-  mechanism: MR # The paper explicitly proposes Neural Model Reprogramming (NMR) to repurpose frozen source models for a target task without updating base parameters (Abs.; Sec. 3; Fig. 1). 
-  location: X^S # The reprogramming module H operates before the frozen model by transforming input waveforms/features; all base preprocessing/DNN/classifier remain untouched (Sec. 3; Fig. 1a–c).
-  operator: param # Main contribution is input-dependent, non-linear transformations via learnable conv layers (ID-NMR/IDS-NMR); baseline II-NMR uses additive noise, but proposed methods are parametric (Sec. 3.1–3.2; Fig. 1b–c).
-  alignment: SA # Uses a many-to-one label mapping layer that averages source-class probabilities into target classes (statistical, fixed mapping) (Sec. 3, lines on “many-to-one label mapping”; Fig. 1).
+  mechanism: model-reprogramming # The paper explicitly proposes Neural Model Reprogramming (NMR) to repurpose frozen source models for a target task without updating base parameters (Abs.; Sec. 3; Fig. 1). 
+  location: input-layer # The reprogramming module H operates before the frozen model by transforming input waveforms/features; all base preprocessing/DNN/classifier remain untouched (Sec. 3; Fig. 1a–c).
+  operator: parametric # Main contribution is input-dependent, non-linear transformations via learnable conv layers (ID-NMR/IDS-NMR); baseline II-NMR uses additive noise, but proposed methods are parametric (Sec. 3.1–3.2; Fig. 1b–c).
+  alignment: statistical # Uses a many-to-one label mapping layer that averages source-class probabilities into target classes (statistical, fixed mapping) (Sec. 3, lines on “many-to-one label mapping”; Fig. 1).
   tags:
     - model-reprogramming
     - cross-modal
@@ -1282,7 +1283,7 @@
   year: 2023
   venue: CVPR
   url: https://arxiv.org/abs/2303.10883
-  mechanism: visual-prompting
+  mechanism: prompt-tuning
   configuration: learnable
   location: embedding / hidden
   operator: parametric   # (linear layers / adaptor + embeddings + high-frequency component tuning)
@@ -1316,7 +1317,7 @@
   year: 2024
   venue: CVPR
   url: https://arxiv.org/abs/2404.11207
-  mechanism: visual-prompting
+  mechanism: prompt-tuning
   location: input-layer
   operator: addition
   alignment: statistical
@@ -1342,7 +1343,7 @@
   year: 2022
   venue: arXiv
   url: https://arxiv.org/abs/2203.17274
-  mechanism: visual-prompting
+  mechanism: prompt-tuning
   location: input-layer
   operator: addition
   alignment: statistical
@@ -1376,7 +1377,7 @@
   year: 2023
   venue: NeurIPS
   url: https://arxiv.org/abs/2305.06500
-  mechanism: soft-prompt
+  mechanism: prompt-tuning
   location: embedding
   operator: parametric
   alignment: identity / rule / linear   # depending on task (mostly generate responses; classification via ranking)
@@ -1970,23 +1971,26 @@
   year: 2022
   venue: NAACL
   url: https://arxiv.org/abs/2112.08633
-  mechanism: prompt-retrieval
+  mechanism: prompt-instruction
   location: input-space
   operator: concatenation
   alignment: identity
   tags:
     - prompt-instruction
     - in-context-learning
-    - dense-retrieval
+    - prompt retrieval
   datasets:
-    - MTOP
-    - SMCalFlow
     - Break
+    - MTop
+    - SMCalFlow
   architectures:
-    - GPT-Neo
-    - GPT-J
-    - GPT-3
-    - Codex
+    - BERT-base  # dense retriever
+    - BM25  # unsupervised retrievers for candidate mining
+    - SBERT  # unsupervised retrievers for candidate mining
+    - GPT-Neo  # inference LMs
+    - GPT-J  # inference LMs
+    - GPT-3  # inference LMs
+    - Codex  # inference LMs
   tldr: Proposes training a dense retriever using language model feedback to automatically select high-quality demonstration examples for in-context learning, substantially improving performance over random or similarity-based selection methods.
 
 - title: 'Structured Prompting: Scaling In-Context Learning to 1,000 Examples'

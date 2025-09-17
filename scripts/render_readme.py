@@ -48,21 +48,27 @@ def load_papers(path: Path):
 
 
 def group_papers(papers):
-    # Group papers by main category only (simplified)
+    # Filter to recent papers (last 2 years) and group by main category
+    current_year = datetime.now().year
+    recent_cutoff = current_year - 2  # Last 2 years
+
     tree = defaultdict(list)
     for p in papers:
-        mech = p.get("mechanism", "unknown")
-        # Map to user-friendly category names
-        category_map = {
-            "model-reprogramming": "Model Reprogramming",
-            "adversarial-reprogramming": "Model Reprogramming",
-            "prompt-tuning": "Prompt Tuning",
-            "soft-prompts": "Prompt Tuning",
-            "hard-prompts": "Prompt Tuning",
-            "prompt-instruction": "Prompt Instruction",
-        }
-        category = category_map.get(mech, mech.replace("-", " ").title())
-        tree[category].append(p)
+        year = int(p.get("year", 0))
+        # Only include papers from recent years
+        if year >= recent_cutoff:
+            mech = p.get("mechanism", "unknown")
+            # Map to user-friendly category names
+            category_map = {
+                "model-reprogramming": "Model Reprogramming",
+                "adversarial-reprogramming": "Model Reprogramming",
+                "prompt-tuning": "Prompt Tuning",
+                "soft-prompts": "Prompt Tuning",
+                "hard-prompts": "Prompt Tuning",
+                "prompt-instruction": "Prompt Instruction",
+            }
+            category = category_map.get(mech, mech.replace("-", " ").title())
+            tree[category].append(p)
 
     # Sort each category by year desc, then title asc
     for category in tree:
@@ -70,10 +76,14 @@ def group_papers(papers):
     return tree
 
 
-def render_grouped_md(tree):
+def render_recent_advances_md(tree):
+    """Render recent advances in the format matching the new README.md structure"""
     lines = []
+    current_year = datetime.now().year
+    recent_cutoff = current_year - 2
+
     lines.append("\n")
-    lines.append("## Curated Papers (auto-generated)\n")
+    lines.append(f"#### 📈 Recent Advances ({recent_cutoff}-{current_year}) (auto-generated)\n")
 
     # Order categories logically
     category_order = ["Model Reprogramming", "Prompt Tuning", "Prompt Instruction"]
@@ -84,8 +94,12 @@ def render_grouped_md(tree):
 
     for category in ordered_categories:
         papers = tree[category]
-        lines.append(f"\n### {category}")
-        lines.append(f"\n*{len(papers)} papers*\n")
+        if not papers:  # Skip empty categories
+            continue
+
+        lines.append("<details>")
+        lines.append(f"<summary><strong>{category}</strong> <em>({len(papers)} papers)</em></summary>")
+        lines.append("")
 
         for p in papers:
             title = p.get("title", "Untitled")
@@ -94,18 +108,28 @@ def render_grouped_md(tree):
             url = p.get("url")
             code_url = p.get("code_url")
 
-            # Create paper entry
-            parts = [f"{title} ({year})"]
-            if venue:
-                parts.append(venue)
-            desc = " — ".join(parts)
-            link = f"[{desc}]({url})" if url else desc
-            suffix = f" · [code]({code_url})" if code_url else ""
-            lines.append(f"- {link}{suffix}")
+            # Create paper entry in new format: [Title](url) (year, venue)
+            if url:
+                link = f"[{title}]({url})"
+            else:
+                link = title
 
-    lines.append("\n")
+            venue_part = f", {venue}" if venue else ""
+            entry = f"- {link} ({year}{venue_part})"
+
+            # Add code link if available
+            if code_url:
+                entry += f" • [code]({code_url})"
+
+            lines.append(entry)
+
+        lines.append("")
+        lines.append("</details>")
+        lines.append("")
+
+    lines.append("> 📋 **Complete List**: [All Papers with Taxonomy Classification](docs/sections/papers.md)\n")
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
-    lines.append(f"_Generated: {generated_at}_\n")
+    lines.append(f"_Last updated: {generated_at}_\n")
     return "\n".join(lines)
 
 
@@ -120,20 +144,57 @@ def replace_auto_section(readme_text: str, new_content: str) -> str:
     return pattern.sub(replacement, readme_text)
 
 
+def update_last_updated_badge(readme_text: str) -> str:
+    """Update the Last Updated badge with current date"""
+    current_date = datetime.now().strftime("%Y--%m--%d")
+
+    # Pattern to match the Last Updated badge (handles both date format and placeholder XX)
+    badge_pattern = re.compile(
+        r'\[\!\[Last Updated\]\(https://img\.shields\.io/badge/Last%20Updated-\d{4}--\d{2}--(?:\d{2}|XX)-blue\.svg\)\]\(README\.md\)',
+        re.MULTILINE
+    )
+
+    new_badge = f"[![Last Updated](https://img.shields.io/badge/Last%20Updated-{current_date}-blue.svg)](README.md)"
+
+    if badge_pattern.search(readme_text):
+        updated_text = badge_pattern.sub(new_badge, readme_text)
+        return updated_text
+    else:
+        print("⚠️ Last Updated badge not found in README.md")
+        return readme_text
+
+
 def write_readme(tree):
     if not README.exists():
         print(f"❌ README not found at {README}")
         return 1
     with open(README, "r", encoding="utf-8") as f:
         current = f.read()
-    content = render_grouped_md(tree)
+
+    # Check if AUTO markers exist, if not, add them
+    if AUTO_START not in current:
+        print("⚠️ AUTO markers not found in README.md")
+        print("Please add the following markers where you want auto-generated content:")
+        print(f"{AUTO_START}")
+        print(f"{AUTO_END}")
+        return 1
+
+    # Update auto-generated content
+    content = render_recent_advances_md(tree)
     updated = replace_auto_section(current, content)
+
+    # Update Last Updated badge
+    updated = update_last_updated_badge(updated)
+
+    # Write changes if anything was updated
     if updated != current:
         with open(README, "w", encoding="utf-8") as f:
             f.write(updated)
-        print("✅ README auto section updated")
+        print("✅ README updated successfully")
+        print(f"📊 Generated {sum(len(papers) for papers in tree.values())} recent papers")
+        print(f"📅 Updated Last Updated badge to {datetime.now().strftime('%Y--%m--%d')}")
     else:
-        print("ℹ️ README auto section unchanged")
+        print("ℹ️ README unchanged")
     return 0
 
 
@@ -169,6 +230,17 @@ def map_mechanism_to_configuration(mechanism):
         "hard-prompts": "Fixed",
         "prompt-instruction": "Fixed",
     }
+
+    if isinstance(mechanism, list):
+        return " / ".join(
+            [format_mapping.get(loc.strip(), loc.strip()) for loc in mechanism]
+        )
+
+    if "/" in mechanism:
+        mechanisms = mechanism.split("/")
+        mechanisms = [a.strip() for a in mechanisms]
+        return " / ".join([format_mapping.get(a, a) for a in mechanisms])
+
     return format_mapping.get(mechanism, "Learnable")
 
 
@@ -187,7 +259,9 @@ def map_location_to_greek(location):
 
     # Handle case where location is a list
     if isinstance(location, list):
-        return " / ".join([location_mapping.get(loc.strip(), loc.strip()) for loc in location])
+        return " / ".join(
+            [location_mapping.get(loc.strip(), loc.strip()) for loc in location]
+        )
 
     if "/" in location:
         locations = location.split("/")
