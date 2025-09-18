@@ -15,19 +15,18 @@
 
 ## 📖 What is Neural Network Reprogrammability?
 
-**Neural network reprogrammability** is a unified framework for adapting pre-trained models to new tasks without modifying their parameters, through a fundamental principle of **interface manipulation** - 
-modifying downstream tasks to align with models rather than changing the models themselves.
+**Neural network reprogrammability** is a unified framework for adapting pre-trained models to new tasks without modifying their parameters, through a principle of **interface manipulation** - 
+modifying downstream tasks to align with the pre-trained models, rather than changing the models themselves.
+This encompasses three popular paradigms:
+
+- 🔧 **Model Reprogramming**: Learning input transformation (e.g., learnable noises) to repurpose frozen models
+   - e.g., to reuse an ImageNet-pretrained classifier,
+- 🎯 **Prompt Tuning**: Optimizing continuous prompts (e.g., soft token embeddings) to guide model behavior
+- 💬 **Prompt Instruction**: Using natural language/visual demonstrations (i.e., fixed ) to elicit in-context learning
 
 <div align="center">
 <img src="assets/purpose.jpg" alt="Neural Network Reprogrammability Overview" width="80%">
 </div>
-
-This encompasses three popular paradigms:
-
-- 🔧 **Model Reprogramming**: Learning input transformation (e.g., learnable noises) to repurpose frozen models
-- 🎯 **Prompt Tuning**: Optimizing continuous token prompts (e.g., soft ) to guide model behavior
-- 💬 **Prompt Instruction**: Using natural language/visual examples (i.e., fixed to elicit in-context learning
-
 
 ## 🗂️ Contents
 
@@ -39,31 +38,34 @@ This encompasses three popular paradigms:
   - [📖 Educational Resources](#-educational-resources)
 - [🔬 Explore by Taxonomy](#-explore-by-taxonomy)
 - [🚀 Applications & Use Cases](#-applications--use-cases)
-- [🎓 Learning Path](#-learning-path)
 - [🤝 Contributing](#-contributing)
 
 ---
 
 ## 🏗️ Overall Framework
 
-Neural network reprogrammability operates across **four key dimensions**, providing a unified way to understand all adaptation approaches:
+Neural network reprogrammability is a unified way to understand different adaptation paradigms, operating through **four key dimensions** that instantiate and distinguish existing methods.
 
-### 🧮 Mathematical Foundation
+### 🧮 Formulation
 
-The core principle of neural network reprogrammability can be expressed through the **universal reprogramming equation**:
+The core principle can be expressed through an **universal formulation**:
 
-$$\hat{y}_T = O_{\omega} \circ f \circ I_{\lambda, \tau, \ell} (\mathbf{x}^{\rm T}, c) $$
+$$\hat{\mathbf{y}}^{\rm T} = O_{\omega} \circ f \circ I_{\lambda, \tau, \ell} (\mathbf{x}^{\rm T}, c) $$
 
 Where:
-- **$f$**: Pre-trained source model (frozen parameters)
-- **$\mathbf{x}^{\rm T}$**: Target task input (e.g., image, text)
-- **$\lambda$**: Manipulation configuration (i.e., learnable or fixed)
-- **$\ell$**: Location where reprogramming is applied
-- **$\tau$**: Transformation operator (additive, concatenative, parametric)
-- **$\omega$**: Output alignment function
-- **$\hat{y}_T$**: Predicted output for target task
+- **$f$**: Pre-trained model (frozen parameters)
+- **$\mathbf{x}^{\rm T}$**: Downstream task input (e.g., an image, a text)
+- **$\hat{\mathbf{y}}^{\rm T}$**: Predicted output for the downstream task of the corresponding input $\mathbf{x}^{\rm T}$
 
-**Key Insight**: All three paradigms (Model Reprogramming, Prompt Tuning, Prompt Instruction) are special cases of this unified framework, differing only in their choice of $(\lambda, \ell, \tau, \omega)$.
+and
+- **$I$**: Input Manipulation function with following optional design choices
+   - **$\lambda$**: Manipulation configuration, what manipulation is applied (i.e., learnable or fixed)
+   - **$\tau$**: Manipulation operator, how manipulation is applied (i.e., additive, concatenative, parametric)
+   - **$\ell$**: Manipulaation location, where manipulation is applied (i.e., input space, embedding space, hidden space)
+- **$O_\omega$**: Output Alignment function
+
+
+> **Takeaway**: All three paradigms (Model Reprogramming, Prompt Tuning, Prompt Instruction) are special cases of this unified framework, differing only in their choice of $(\lambda, \ell, \tau, \omega)$.
 
 ### 📐 Four-Dimensional Taxonomy
 
@@ -99,6 +101,8 @@ Where:
 </table>
 
 ### 🧩 Method Characteristics
+
+> This only refers to a commonly categorization in the existing papers, but does not *strictly* imply future works.
 
 | Method | Configuration | Typical Location | Common Operators | Alignment |
 |--------|---------------|------------------|------------------|-----------|
