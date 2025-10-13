@@ -2,9 +2,8 @@
 
 <div align="center">
 
-> A comprehensive, curated collection of resources on neural network reprogrammability - the art of adapting pre-trained models for new tasks without updating their parameters.
+> A comprehensive collection of resources on neural network reprogrammability - the art of adapting pre-trained models for new tasks without updating their parameters.
 
-<!-- [![GitHub stars](https://img.shields.io/github/stars/your-username/awesome-reprogrammability?style=social)](https://github.com/your-username/awesome-reprogrammability/stargazers) -->
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--09--17-blue.svg)](README.md)
@@ -61,7 +60,7 @@ and
 - **$I$**: Input Manipulation function with following optional design choices
    - **$\lambda$**: Manipulation configuration, what manipulation is applied (i.e., learnable or fixed)
    - **$\tau$**: Manipulation operator, how manipulation is applied (i.e., additive, concatenative, parametric)
-   - **$\ell$**: Manipulaation location, where manipulation is applied (i.e., input space, embedding space, hidden space)
+   - **$\ell$**: Manipulation location, where manipulation is applied (i.e., input space, embedding space, hidden space)
 - **$O_\omega$**: Output Alignment function
 
 
@@ -202,25 +201,6 @@ _Last updated: 2025-09-17 23:03 UTC_
 
 ### 🛠️ Tools & Libraries
 
-#### 🔧 Frameworks & Libraries
-
-- **[OpenPrompt](https://github.com/thunlp/OpenPrompt)** - Comprehensive framework for prompt learning
-- **[Promptsource](https://github.com/bigscience-workshop/promptsource)** - Toolkit for creating and sharing prompts
-- **[Visual Prompting](https://github.com/hjbahng/visual_prompting)** - Tools for visual prompt learning
-- **[Time-LLM](https://github.com/KimMeen/Time-LLM)** - Time series forecasting via LLM reprogramming
-
-#### 🧰 Development Tools
-
-- **[Prompt Engineering Guide](https://www.promptingguide.ai/)** - Comprehensive guide and best practices
-- **[LangChain](https://github.com/langchain-ai/langchain)** - Framework with prompt templates and chains
-- **[Guidance](https://github.com/guidance-ai/guidance)** - Structured prompt programming
-
-#### 📊 Evaluation & Benchmarks
-
-- **[BIG-bench](https://github.com/google/BIG-bench)** - Beyond the Imitation Game benchmark
-- **[HELM](https://github.com/stanford-crfm/helm)** - Holistic evaluation of language models
-- **[SuperGLUE](https://super.gluebenchmark.com/)** - General language understanding evaluation
-
 ### 📊 Datasets & Benchmarks
 
 #### 🎯 Few-Shot Learning
@@ -244,22 +224,12 @@ _Last updated: 2025-09-17 23:03 UTC_
 ### 📖 Educational Resources
 
 #### 🎓 Tutorials & Courses
-
-- **[Prompt Engineering Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)** (DeepLearning.AI)
-- **[Visual Prompting Tutorial](tutorial-AAAI26/)** - AAAI 2026 tutorial materials
-- **[Model Reprogramming Workshop](https://example.com)** - Workshop materials and videos
+- **[Neural Network Reprogrammability Tutorial](tutorial-AAAI26/)** - AAAI 2026 tutorial materials
 
 #### 📚 Books & Surveys
 
 - **[A Comprehensive Survey of Neural Network Reprogrammability](https://arxiv.org/html/2506.04650v2)** - Definitive survey paper
 - **[Pre-train, Prompt, and Predict](https://arxiv.org/abs/2107.13586)** - Natural language processing paradigm
-- **[Parameter-Efficient Transfer Learning](https://arxiv.org/abs/1902.00751)** - Survey of efficient adaptation methods
-
-#### 🎬 Videos & Talks
-
-- **[Reprogramming Neural Networks](https://www.youtube.com/watch?v=example)** - Conference keynote
-- **[Prompt Learning Deep Dive](https://www.youtube.com/watch?v=example)** - Technical tutorial
-- **[Future of Model Adaptation](https://www.youtube.com/watch?v=example)** - Panel discussion
 
 ---
 
@@ -300,33 +270,7 @@ Navigate resources by the four-dimensional taxonomy:
 
 ### 🎯 Core Applications
 
-#### 📸 Computer Vision
-- **Zero-shot Image Classification** - Adapting vision models to new categories
-- **Cross-domain Transfer** - Medical imaging, satellite imagery, artistic styles
-- **Few-shot Object Detection** - Limited annotation scenarios
 
-#### 🗣️ Natural Language Processing
-- **Task Adaptation** - Sentiment analysis, summarization, QA
-- **Domain Transfer** - Legal, medical, scientific text processing
-- **Multilingual Transfer** - Cross-lingual understanding and generation
-
-#### 🎵 Audio & Speech
-- **Cross-modal Reprogramming** - Audio classification using vision models
-- **Speech Recognition** - Low-resource language adaptation
-- **Music Analysis** - Genre classification and content understanding
-
-#### 🧬 Scientific Domains
-- **Protein Analysis** - Sequence understanding and property prediction
-- **Time Series** - Forecasting using language model reprogramming
-- **Graph Analysis** - Network understanding and node classification
-
-### 💼 Industry Use Cases
-
-- **🏥 Healthcare**: Medical image analysis, patient record processing
-- **🏭 Manufacturing**: Quality control, predictive maintenance
-- **💰 Finance**: Fraud detection, risk assessment
-- **🛒 E-commerce**: Recommendation systems, customer support
-- **🎮 Entertainment**: Content generation, game AI
 
 ---
 
@@ -338,52 +282,19 @@ Navigate resources by the four-dimensional taxonomy:
    - Read the [survey paper](https://arxiv.org/html/2506.04650v2)
    - Understand the [four-dimensional taxonomy](meta/taxonomy.md)
 
-2. **First Steps**
-   - Try [simple prompt engineering](https://www.promptingguide.ai/introduction/basics)
-   - Experiment with [visual prompting](https://github.com/hjbahng/visual_prompting)
-
-3. **Hands-on Practice**
-   - Use [OpenPrompt](https://github.com/thunlp/OpenPrompt) for text tasks
-   - Try [CoOp](https://github.com/KaiyangZhou/CoOp) for vision-language models
-
-### 🚀 Intermediate Track
-
-1. **Deep Dive**
-   - Study foundational papers by approach
-   - Implement basic reprogramming methods
-
-2. **Specialization**
-   - Choose a domain (vision, NLP, audio)
-   - Explore domain-specific techniques
-
-3. **Research Skills**
-   - Reproduce key results
-   - Experiment with novel combinations
-
-### 🔬 Advanced Track
-
-1. **Theoretical Understanding**
-   - Study the mathematical foundations
-   - Explore connections between methods
-
-2. **Novel Research**
-   - Identify research gaps
-   - Develop new approaches
-
-3. **Community Contribution**
-   - Publish papers
-   - Contribute to open source projects
-
 ---
 
 ## 🏆 Featured Projects & Implementations
 
 ### 🌟 Flagship Projects
 
+- **[Input Manipulation](https://github.com/tmlr-group/smm)** - Sample-specific visual prompting
+- **[Output Alignment](https://github.com/tmlr-group/BayesianLM)** - Statistical gradient-free output mapping
+- **[Reprogramming VLM](https://github.com/tmlr-group/attrvr)** - Model Reprogramming with vision-language models
+- **[Multiple Prompts](https://github.com/tmlr-group/DecoupledVP)** - When multiple visual prompts are effective
 - **[CoOp & CoCoOp](https://github.com/KaiyangZhou/CoOp)** - Learning to prompt for vision-language models
 - **[Time-LLM](https://github.com/KimMeen/Time-LLM)** - Time series forecasting by reprogramming LLMs
-- **[Visual Prompting](https://github.com/hjbahng/visual_prompting)** - Comprehensive visual prompt learning
-- **[WARP](https://github.com/YerevaNN/WARP)** - Word-level adversarial reprogramming
+
 
 ### 🔥 Recent Breakthroughs
 
@@ -399,10 +310,10 @@ Navigate resources by the four-dimensional taxonomy:
 
 | Category | Count | Latest Addition |
 |----------|-------|----------------|
-| 📄 **Research Papers** | 69+ | 2025-01 |
-| 🛠️ **Tools & Libraries** | 15+ | 2024-12 |
-| 📊 **Datasets** | 12+ | 2024-11 |
-| 🎓 **Educational Resources** | 8+ | 2024-10 |
+| 📄 **Research Papers** | 69+ | 2025-09 |
+| 🛠️ **Tools & Libraries** | x+ | 2025-09 |
+| 📊 **Datasets** | x+ | 2025-09 |
+| 🎓 **Educational Resources** | 0+ | 2025-09 |
 
 </div>
 
@@ -419,7 +330,7 @@ We welcome contributions from the community! This awesome list thrives on commun
 - **Comprehensive datasets** that enable fair evaluation
 - **Educational content** that helps others learn
 
-### 📝 How to Contribute
+<!-- ### 📝 How to Contribute
 
 1. **Fork** this repository
 2. **Add** your resource following our [guidelines](CONTRIBUTING.md)
@@ -435,13 +346,13 @@ python scripts/linkcheck.py
 python scripts/render_readme.py
 ```
 
-> 📖 **Full Guidelines**: [Contributing Guide](CONTRIBUTING.md)
+> 📖 **Full Guidelines**: [Contributing Guide](CONTRIBUTING.md) -->
 
 ---
 
 ## 🙏 Acknowledgments
 
-This awesome list is built upon the comprehensive survey ["A Comprehensive Survey of Neural Network Reprogrammability"](https://arxiv.org/html/2506.04650v2) and the collective work of researchers worldwide advancing the field of neural network reprogrammability.
+This awesome list is built upon the comprehensive survey ["A Comprehensive Survey of Neural Network Reprogrammability"](https://arxiv.org/html/2506.04650) and the collective work of researchers worldwide advancing the field of neural network reprogrammability.
 
 Special thanks to all [contributors](https://github.com/your-username/awesome-reprogrammability/graphs/contributors) who help maintain and improve this resource.
 
