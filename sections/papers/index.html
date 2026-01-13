@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://username.github.io/awesome-reprogrammability/sections/papers/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Papers - Awesome Neural Network Reprogrammability</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Papers";
+        var mkdocs_page_input_path = "sections/papers.md";
+        var mkdocs_page_url = "/awesome-reprogrammability/sections/papers/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Awesome Neural Network Reprogrammability
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Papers</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomy</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../evaluations/">Evaluations</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Awesome Neural Network Reprogrammability</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Papers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="papers">Papers<a class="headerlink" href="#papers" title="Permanent link">&para;</a></h1>
+<p>A tabular view of curated papers organized by the reprogrammability taxonomy dimensions.</p>
+<table>
+<thead>
+<tr>
+<th>Paper</th>
+<th>Configuration ($\lambda$)</th>
+<th>Location ($\ell$)</th>
+<th>Operator ($\tau$)</th>
+<th>Alignment ($\omega$)</th>
+<th>Venue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://arxiv.org/abs/1806.11146">Adversarial Reprogramming of Neural Networks</a> Elsayed et al. (2019)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/1809.01829">Adversarial Reprogramming of Text Classification Neural Networks</a> Neekhara et al. (2019)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Parametric (PR)</td>
+<td>Statistical (SA) / Linear (LA)</td>
+<td>EMNLP/IJCNLP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2012.03460">Reprogramming Language Models for Molecular Representation Learning</a> Vinod et al. (2020)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Parametric (PR)</td>
+<td>Rule-based (RA)</td>
+<td>NeurIPS Workshop</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2104.06599">Learning how to ask: Querying LMs with mixtures of soft prompts</a> Qin et al. (2021)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>NAACL</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2105.11259">PTR: Prompt Tuning with Rules for Text Classification</a> HAN et al. (2021)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Rule-based (RA)</td>
+<td>arXiv preprint (cs.CL)</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2101.00190">Prefix-Tuning: Optimizing Continuous Prompts for Generation</a> Li et al. (2021)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ACL/IJCNLP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2104.08691">The Power of Scale for Parameter-Efficient Prompt Tuning</a> Lester et al. (2021)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Identity (ID)</td>
+<td>EMNLP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2007.08714">Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources</a> Tsai et al. (2021)</td>
+<td>Learnable</td>
+<td>input-layers</td>
+<td>statistical / linear</td>
+<td>Identity (ID)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2106.09296">Voice2series: Reprogramming acoustic models for time series classification</a> Yang et al. (2021)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Parametric (PR)</td>
+<td>Statistical (SA)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2101.00121">WARP: Word-level Adversarial ReProgramming</a> Hambardzumyan et al. (2021)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>ACL / ACL-IJCNLP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2206.03466">Adversarial Reprogramming Revisited</a> Englert et al. (2022)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2111.02080">An Explanation of In-context Learning as Implicit Bayesian Inference</a> Xie et al. (2022)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a> Wei et al. (2022)</td>
+<td>Fixed</td>
+<td>input-space</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2203.05557">Conditional Prompt Learning for Vision-Language Models</a> Zhou et al. (2022)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID) / Linear (LA)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2102.07325">Cross-modal Adversarial Reprogramming</a> Neekhara et al. (2022)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Linear (LA)</td>
+<td>WACV</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2108.13161">Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners</a> ZHANG et al. (2022)</td>
+<td>Fixed</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Statistical (SA)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2203.17274">Exploring Visual Prompts for Adapting Large-Scale Models</a> Bahng et al. (2022)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2209.11895">In-context Learning and Induction Heads</a> OLSSON et al. (2022)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2112.08633">Learning To Retrieve Prompts for In-Context Learning</a> Rubin et al. (2022)</td>
+<td>Fixed</td>
+<td>input-space</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>NAACL</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2109.01134">Learning to Prompt for Vision-Language Models</a> Zhou et al. (2022)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Identity (ID)</td>
+<td>IJCV</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2109.01134">Learning to Prompt for Vision-Language Models</a> Zhou et al. (2022)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>IJCV</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2205.10625">Least-to-Most Prompting Enables Complex Reasoning in Large Language Models</a> Zhou et al. (2022)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2110.07602">P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks</a> Liu et al. (2022)</td>
+<td>Learnable</td>
+<td>Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>ACL</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2109.04332">PPT: Pre-trained Prompt Tuning for Few-shot Learning</a> GU et al. (2022)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Rule-based (RA)</td>
+<td>ACL</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2202.12837">Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?</a> MIN et al. (2022)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Rule-based (RA)</td>
+<td>EMNLP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2110.07904">Spot: Better frozen model adaptation through soft prompt transfer</a> Vu et al. (2022)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ACL</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2212.06713">Structured Prompting: Scaling In-Context Learning to 1,000 Examples</a> HAO et al. (2022)</td>
+<td>Fixed</td>
+<td>Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2212.10556">Unleashing the Power of Visual Prompting At the Pixel Level</a> WU et al. (2022)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID) / Statistical (SA)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2203.12119">Visual Prompt Tuning</a> JIA et al. (2022)</td>
+<td>Fixed</td>
+<td>Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>ECCV</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2209.00647">Visual Prompting via Image Inpainting</a> BAR et al. (2022)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2302.06235">A Simple Zero-shot Prompt Weighting Technique to Improve Prompt Ensembling in Text-Image Models</a> ALLINGHAM et al. (2023)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2303.14773">BlackVIP: Black-Box Visual Prompting for Robust Transfer Learning</a> OH et al. (2023)</td>
+<td>Learnable</td>
+<td>input-space</td>
+<td>Additive (AD)</td>
+<td>Rule-based (RA)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2210.02406">Decomposed Prompting: A Modular Approach for Solving Complex Tasks</a> Khot et al. (2023)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2304.14593">Deep Graph Reprogramming</a> JING et al. (2023)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$) / Hidden ($\mathcal{H}$)</td>
+<td>concatenation / parametric</td>
+<td>Rule-based (RA)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2303.10883">Explicit Visual Prompting for Low-Level Structure Segmentations</a> Liu et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$)</td>
+<td>Parametric (PR)</td>
+<td>Identity (ID)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2301.07851">From English to More Languages: Parameter-Efficient Model Reprogramming for Cross-Lingual Speech Recognition</a> YANG et al. (2023)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$) / Hidden ($\mathcal{H}$)</td>
+<td>Additive (AD)</td>
+<td>Rule-based (RA)</td>
+<td>ICASSP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2305.06500">InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning</a> Dai et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Parametric (PR)</td>
+<td>Identity (ID) / rule / Linear (LA)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2212.10509">Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions</a> TRIVEDI et al. (2023)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ACL</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2211.01317">Low-Resource Music Genre Classification with Cross-Modal Neural Model Reprogramming</a> HUNG et al. (2023)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Parametric (PR)</td>
+<td>Statistical (SA)</td>
+<td>ICASSP</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2210.03117">MaPLe: Multi-modal Prompt Learning</a> Khattak et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2110.03894">Neural Model Reprogramming with Similarity Based Mapping for Low-Resource Spoken Command Recognition</a> Yen et al. (2023)</td>
+<td>Learnable</td>
+<td>input-space</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>Interspeech</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2306.03435">On the Role of Attention in Prompt-tuning</a> OYMAK et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2210.01253">PLOT: Prompt Learning with Optimal Transport for Vision-Language Models</a> CHEN et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2210.07144">Reprogramming Pretrained Language Models for Antibody Sequence Infilling</a> MELNYK et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Parametric (PR)</td>
+<td>Linear (LA)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2310.11441">Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V</a> YANG et al. (2023)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Rule-based (RA)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2304.06385">TransHP: Image Classification with Hierarchical Prompting</a> WANG et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Linear (LA)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2309.13847">Tuning Multi-mode Token-level Prompt Alignment across Modalities</a> WANG et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>NeurIPS 2023</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2211.11635">Understanding and Improving Visual Prompting: A Label-Mapping Perspective</a> CHEN et al. (2023)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2209.15240">Universal Prompt Tuning for Graph Neural Networks</a> FANG et al. (2023)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Linear (LA)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2304.08485">Visual Instruction Tuning</a> LIU et al. (2023)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>concatenation / parametric</td>
+<td>Identity (ID)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2209.03320">What Does a Platypus Look Like? Generating Customized Prompts for Zero-Shot Image Classification</a> PRATT et al. (2023)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICCV</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2301.13670">What Makes Good Examples for Visual In-Context Learning?</a> ZHANG et al. (2023)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2311.16494">ArGue: Attribute-Guided Prompt Tuning for Vision-Language Models</a> TIAN et al. (2024)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2310.08381">AutoVP: An Automated Visual Prompting Framework and Benchmark</a> TSAO et al. (2024)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Concatenative (CO)</td>
+<td>Statistical (SA) / Linear (LA)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2410.24018">Bayesian-guided Label Mapping for Visual Reprogramming</a> CAI et al. (2024)</td>
+<td>Learnable</td>
+<td>input-space</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>NeurIPS</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2404.11207">Exploring the Transferability of Visual Prompting for Multimodal Large Language Models</a> Zhang et al. (2024)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2404.04514">Joint Visual and Text Prompting for Improved Object-Centric Perception with Multimodal Large Language Models</a> Jiang et al. (2024)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$) / Embedding ($\mathcal{E}$)</td>
+<td>addition / concatenation</td>
+<td>Identity (ID)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2403.10800">Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders</a> GENG et al. (2024)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$) / Embedding ($\mathcal{E}$)</td>
+<td>addition / parametric</td>
+<td>Identity (ID)</td>
+<td>SatML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2402.07872">PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs</a> NASIRIANY et al. (2024)</td>
+<td>Fixed</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Rule-based (RA)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2403.02781">PromptKD: Unsupervised Prompt Distillation for Vision-Language Models</a> LI et al. (2024)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>CVPR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2406.03150">Sample-specific Masks for Visual Reprogramming-based Prompting</a> Cai et al. (2024)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Statistical (SA)</td>
+<td>ICML</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2310.01728">Time-LLM: Time Series Forecasting by Reprogramming Large Language Models</a> JIN et al. (2024)</td>
+<td>Learnable</td>
+<td>Embedding ($\mathcal{E}$)</td>
+<td>Parametric (PR)</td>
+<td>Linear (LA)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/2310.19698">When Do Prompting and Prefix-Tuning Work? A Theory of Capabilities and Limitations</a> PETROV et al. (2024)</td>
+<td>Learnable / Fixed</td>
+<td>Input ($\mathcal{X}_S$) / Embedding ($\mathcal{E}$) / Hidden ($\mathcal{H}$)</td>
+<td>Concatenative (CO)</td>
+<td>Identity (ID)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2501.13982">Attribute-based Visual Reprogramming for Vision-Language Models</a> Cai et al. (2025)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>addition / concatenation</td>
+<td>Rule-based (RA)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2403.20271">Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want</a> Lin et al. (2025)</td>
+<td>Learnable</td>
+<td>embedding-level</td>
+<td>Parametric (PR)</td>
+<td>Linear (LA)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2506.0620">Model Reprogramming Demystified: A Neural Tangent Kernel Perspective</a> Chung et al. (2025)</td>
+<td>Learnable</td>
+<td>input-layers</td>
+<td>Additive (AD)</td>
+<td>Identity (ID)</td>
+<td>arXiv</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2502.18508">Refine: Inversion-free backdoor defense via model reprogramming</a> Chen et al. (2025)</td>
+<td>Learnable</td>
+<td>input-layers</td>
+<td>Additive (AD)</td>
+<td>Identity (ID)</td>
+<td>ICLR</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2301.02120">Reprogramming pretrained language models for protein sequence representation learning</a> Vinod et al. (2025)</td>
+<td>Learnable</td>
+<td>input-layers</td>
+<td>Additive (AD)</td>
+<td>Identity (ID)</td>
+<td>Digital Discovery</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2506.01000">Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts</a> CAI et al. (2025)</td>
+<td>Learnable</td>
+<td>Input ($\mathcal{X}_S$)</td>
+<td>Additive (AD)</td>
+<td>Linear (LA)</td>
+<td>ICML</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../taxonomy/" class="btn btn-neutral float-right" title="Taxonomy">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../taxonomy/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

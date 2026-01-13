@@ -1,0 +1,193 @@
+{
+  "tutorial": {
+    "title": "Neural Network Reprogrammability: A Unified Framework for Parameter-Efficient Foundation Model Adaptation",
+    "conference": "AAAI 2026",
+    "date": "January 20-21, 2026",
+    "duration": "3.5 hours",
+    "venue": "SINGAPORE EXPO, Singapore",
+    "contact": [
+      {
+        "name": "Feng Liu",
+        "email": "feng.liu1@unimelb.edu.au",
+        "homepage": "https://fengliu90.github.io/"
+      },
+      {
+        "name": "Zesheng Ye",
+        "email": "zesheng.ye@unimelb.edu.au",
+        "homepage": "https://zyecs.github.io"
+      }
+    ],
+    "official_link": "https://aaai.org/conference/aaai/aaai-26/",
+    "description": "A comprehensive introduction to <strong>Neural Network Reprogrammability</strong>, covering <em>theoretical foundations</em>, <em>practical implementation</em>, and <em>trustworthiness implications</em>.\nJoin us and learn how to leverage <strong>input transformations</strong> and <strong>output alignment</strong> to efficiently adapt frozen pre-trained models for new tasks!"
+  },
+  "sessions": [
+    {
+      "order": 1,
+      "title": "Foundations of Reprogrammability",
+      "presenter": "Feng Liu",
+      "duration": "70 min",
+      "topics": [
+        "This session establishes the <strong>WHY</strong> and <strong>WHAT</strong> of the neural network reprogrammability framework.",
+        "Adaptation bottleneck and paradigm shift from fully fine-tuning to parameter-efficient fine-tuning",
+        "From vulnerability to strength: leveraging input sensitivity positively for model adaptation",
+        "Examples of reprogrammability: in-context learning vs model reprogramming",
+        "Formal definition of reprogrammability across modalities, architectures, and applications."
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Mechanics of Reprogrammability",
+      "presenter": "Zesheng Ye",
+      "duration": "70 min",
+      "topics": [
+        "This session introduces the <strong>HOW</strong> of the neural network reprogrammability framework.",
+        "Comprehensive taxonomy of Input Manipulation.",
+        "Comprehensive taxonomy of Ouput Alignment.",
+        "Deep dive case study: sample-specific input manipulation and probabilistic output alignment",
+        "Hands-on implementation examples and best practices"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Implications of Reprogrammability",
+      "presenter": "Pin-Yu Chen",
+      "duration": "70 min",
+      "topics": [
+        "This session discusses the <strong>SO WHAT</strong> of the neural network reprogrammability framework.",
+        "Holistic trustworthiness evaluation: robustness, security, fairness perspectives",
+        "Real-world applications: bioinformatics, time series analysis, multimodal learning",
+        "Emerging challenges: adversarial reprogramming, privacy implications",
+        "Future research directions and open challenges in the field"
+      ]
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Feng Liu",
+      "affiliation": "The University of Melbourne; RIKEN AIP",
+      "email": "feng.liu1@unimelb.edu.au",
+      "bio": "Feng Liu is a researcher focusing on neural network adaptation and parameter efficiency. His work spans foundation model reprogramming, few-shot learning, and efficient transfer learning methods. He has published extensively on model reprogramming techniques and their theoretical foundations.",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "name": "Zesheng Ye",
+      "affiliation": "The University of Melbourne",
+      "email": "zesheng.ye@unimelb.edu.au",
+      "bio": "Zesheng Ye specializes in input manipulation and output alignment mechanisms for neural network reprogramming. His research focuses on developing practical implementation frameworks and understanding the mechanics behind successful model reprogramming.",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "name": "Pin-Yu Chen",
+      "affiliation": "IBM Research AI; MIT-IBM Watson AI Lab",
+      "email": "pin-yu.chen@ibm.com",
+      "bio": "Pin-Yu Chen researches trustworthy AI and adversarial machine learning. He explores the security and robustness implications of neural network reprogramming, with particular focus on adversarial reprogramming and defense mechanisms.",
+      "sessions": [
+        3
+      ]
+    }
+  ],
+  "materials": {
+    "slides": [
+      {
+        "title": "Session 1: Foundations of Reprogrammability",
+        "url": "TBD",
+        "format": "PDF",
+        "description": "Theoretical foundations and formal framework"
+      },
+      {
+        "title": "Session 2: Input Manipulation Mechanics",
+        "url": "TBD",
+        "format": "PDF",
+        "description": "Practical implementation and taxonomy"
+      },
+      {
+        "title": "Session 3: Trustworthy AI Implications",
+        "url": "TBD",
+        "format": "PDF",
+        "description": "Security, robustness, and applications"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Full Tutorial Recording",
+        "url": "TBD",
+        "platform": "YouTube",
+        "description": "Complete 3.5-hour tutorial recording"
+      },
+      {
+        "title": "Session Highlights",
+        "url": "TBD",
+        "platform": "YouTube",
+        "description": "Key takeaways and demonstrations"
+      }
+    ],
+    "code": [
+      {
+        "title": "Tutorial Implementation Examples",
+        "url": "TBD",
+        "description": "Code examples for all three reprogramming paradigms"
+      },
+      {
+        "title": "Interactive Jupyter Notebooks",
+        "url": "TBD",
+        "description": "Hands-on exercises and demonstrations"
+      },
+      {
+        "title": "Framework Integration Guide",
+        "url": "TBD",
+        "description": "PyTorch and TensorFlow implementation guides"
+      }
+    ]
+  },
+  "reading": [
+    {
+      "title": "Neural Network Reprogrammability: A Unified Theme in the Era of Foundation Models",
+      "authors": "Liu, F., Ye, Z., Chen, P.",
+      "url": "https://arxiv.org/abs/2506.04650",
+      "type": "essential",
+      "description": "Foundational survey paper introducing the unified reprogrammability framework",
+      "bibtex": "@article{liu2024reprogrammability,\n  title={Neural Network Reprogrammability: A Unified Theme in the Era of Foundation Models},\n  author={Liu, Feng and Ye, Zesheng and Chen, Pin-Yu},\n  journal={arXiv preprint arXiv:2506.04650},\n  year={2024}\n}"
+    },
+    {
+      "title": "Adversarial Reprogramming of Neural Networks",
+      "authors": "Elsayed, G. F., et al.",
+      "url": "https://arxiv.org/abs/1806.11146",
+      "type": "foundational",
+      "description": "Seminal work on adversarial reprogramming techniques",
+      "bibtex": "@article{elsayed2018adversarial,\n  title={Adversarial Reprogramming of Neural Networks},\n  author={Elsayed, Gamaleldin F and Goodfellow, Ian and Sohl-Dickstein, Jascha},\n  journal={arXiv preprint arXiv:1806.11146},\n  year={2018}\n}"
+    },
+    {
+      "title": "Visual Prompt Tuning",
+      "authors": "Jia, M., et al.",
+      "url": "https://arxiv.org/abs/2203.12119",
+      "type": "recommended",
+      "description": "Key work on visual prompt tuning for vision transformers",
+      "bibtex": "@article{jia2022visual,\n  title={Visual Prompt Tuning},\n  author={Jia, Menglin and Tang, Luming and Chen, Bor-Chun and Cardie, Claire and Belongie, Serge and Hariharan, Bharath and Lim, Ser-Nam},\n  journal={arXiv preprint arXiv:2203.12119},\n  year={2022}\n}"
+    }
+  ],
+  "schedule": {
+    "total_duration": "3.5 hours",
+    "break_duration": "15 min",
+    "session_breaks": [
+      {
+        "after_session": 1,
+        "duration": "15 min"
+      },
+      {
+        "after_session": 2,
+        "duration": "15 min"
+      }
+    ]
+  },
+  "learning_outcomes": [
+    "Understand the unified reprogrammability framework and its theoretical foundations",
+    "Master the taxonomy of input manipulation techniques across different domains",
+    "Apply reprogramming methods to real-world scenarios and evaluate trade-offs",
+    "Assess trustworthiness implications including robustness and security considerations",
+    "Implement practical solutions using provided code examples and frameworks"
+  ]
+}
