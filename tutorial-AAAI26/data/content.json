@@ -153,12 +153,36 @@
       "bibtex": "@article{ye2025neural,\n  title={Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction},\n  author={Ye, Zesheng and Cai, Chengyi and Dong, Ruijiang and Qi, Jianzhong and Feng, Lei and Chen, Pin-Yu and Liu, Feng},\n  journal={arXiv preprint arXiv:2506.04650},\n  year={2025}\n}"
     },
     {
+      "title": "Model Reprogramming: Resource-Efficient Cross-Domain Machine Learning",
+      "authors": "Chen, P.-Y.",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/30267",
+      "type": "survey",
+      "description": "Survey on model reprogramming techniques and applications",
+      "bibtex": "@inproceedings{chen2024model,\n  title={Model Reprogramming: Resource-Efficient Cross-Domain Machine Learning},\n  author={Chen, Pin-Yu},\n  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\n  volume={38},\n  number={20},\n  pages={22584--22591},\n  year={2024},\n  doi={10.1609/aaai.v38i20.30267},\n  url={https://ojs.aaai.org/index.php/AAAI/article/view/30267}\n}"
+    },
+    {
       "title": "Adversarial Reprogramming of Neural Networks",
       "authors": "Elsayed, G. F., Goodfellow, I., Sohl-Dickstein, J.",
       "url": "https://arxiv.org/abs/1806.11146",
       "type": "foundational",
-      "description": "Introducing the concept of model reprogramming",
+      "description": "Foundational work that introduces the concept of model reprogramming",
       "bibtex": "@inproceedings{elsayed2019adversarial,\n  title={Adversarial Reprogramming of Neural Networks},\n  author={Elsayed, Gamaleldin F and Goodfellow, Ian and Sohl-Dickstein, Jascha},\n  booktitle={International Conference on Learning Representations},\n  year={2019},\n  url={https://openreview.net/forum?id=Syx_Ss05tm}\n}"
+    },
+    {
+      "title": "Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources",
+      "authors": "Tsai, Y.-Y., Chen, P.-Y., Ho, T.-Y.",
+      "url": "https://proceedings.mlr.press/v119/tsai20a.html",
+      "type": "foundational",
+      "description": "Pre-trained models can be reprogrammed in a black-box manner",
+      "bibtex": "@inproceedings{pmlr-v119-tsai20a,\n  title={Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources},\n  author={Tsai, Yun-Yun and Chen, Pin-Yu and Ho, Tsung-Yi},\n  booktitle={Proceedings of the 37th International Conference on Machine Learning},\n  pages={9614--9624},\n  year={2020},\n  volume={119},\n  series={Proceedings of Machine Learning Research},\n  publisher={PMLR},\n  url={https://proceedings.mlr.press/v119/tsai20a.html}\n}"
+    },
+    {
+      "title": "Voice2Series: Reprogramming Acoustic Models for Time Series Classification",
+      "authors": "Yang, C.-H. H., Tsai, Y.-Y., Chen, P.-Y.",
+      "url": "https://proceedings.mlr.press/v139/yang21j.html",
+      "type": "foundational",
+      "description": "Reprogramming acoustic models for time series tasks via input manipulation",
+      "bibtex": "@inproceedings{pmlr-v139-yang21j,\n  title={Voice2Series: Reprogramming Acoustic Models for Time Series Classification},\n  author={Yang, Chao-Han Huck and Tsai, Yun-Yun and Chen, Pin-Yu},\n  booktitle={Proceedings of the 38th International Conference on Machine Learning},\n  pages={11808--11819},\n  year={2021},\n  volume={139},\n  series={Proceedings of Machine Learning Research},\n  publisher={PMLR},\n  url={https://proceedings.mlr.press/v139/yang21j.html}\n}"
     },
     {
       "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
@@ -173,7 +197,7 @@
       "authors": "Zhou, K., Yang, J., Loy, C. C., Liu, Z.",
       "url": "https://arxiv.org/abs/2109.01134",
       "type": "foundational",
-      "description": "Soft prompting tuning for Vision-Language Models on the textual branch",
+      "description": "Soft prompting tuning for Vision-Language Models on the language branch",
       "bibtex": "@article{zhou2022learning,\n  title={Learning to Prompt for Vision-Language Models},\n  author={Zhou, Kaiyang and Yang, Jingkang and Loy, Chen Change and Liu, Ziwei},\n  journal={International Journal of Computer Vision},\n  volume={130},\n  number={9},\n  pages={2337--2348},\n  year={2022},\n  publisher={Springer}\n}"
     },
     {
@@ -181,7 +205,7 @@
       "authors": "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et al.",
       "url": "https://arxiv.org/abs/2005.14165",
       "type": "foundational",
-      "description": "First work that demonstrates that scaling LLMs can elicit in-context learning capability",
+      "description": "Scaling pre-trained models can elicit in-context learning capability",
       "bibtex": "@inproceedings{brown2020language,\n  title={Language Models are Few-Shot Learners},\n  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={33},\n  pages={1877--1901},\n  year={2020},\n  url={https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html}\n}"
     },
     {
@@ -189,7 +213,7 @@
       "authors": "Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.",
       "url": "https://arxiv.org/abs/2201.11903",
       "type": "foundational",
-      "description": "Breakthrough in instruction-based reasoning",
+      "description": "Instruction-based reasoning can further improve in-context learning capability",
       "bibtex": "@inproceedings{wei2022chain,\n  title={Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},\n  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={35},\n  pages={24824--24837},\n  year={2022},\n  url={https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html}\n}"
     },
     {
@@ -197,7 +221,7 @@
       "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
       "url": "https://icml.cc/virtual/2024/poster/35002",
       "type": "recommended",
-      "description": "Sample-specific masking approach for improved visual reprogramming",
+      "description": "Sample-specific masking that improves input manipulation",
       "bibtex": "@inproceedings{cai2024sample,\n  title={Sample-specific Masks for Visual Reprogramming-based Prompting},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={International Conference on Machine Learning},\n  year={2024},\n  note={ICML 2024 Spotlight},\n  url={https://openreview.net/forum?id=4sikyurTLX}\n}"
     },
     {
@@ -205,7 +229,7 @@
       "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/1f7e17e9d60e7bc692b72f41d2178b95-Abstract-Conference.html",
       "type": "recommended",
-      "description": "Probabilistic label mapping for improved visual reprogramming",
+      "description": "Probabilistic label mapping that improves output alignment",
       "bibtex": "@inproceedings{cai2024bayesian,\n  title={Bayesian-guided Label Mapping for Visual Reprogramming},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={37},\n  year={2024},\n  note={NeurIPS 2024 Oral},\n  url={https://openreview.net/forum?id=135eKqDoRR}\n}"
     },
     {
@@ -213,7 +237,7 @@
       "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
       "url": "https://openreview.net/forum?id=j964C6y92q",
       "type": "recommended",
-      "description": "Attribute-guided visual reprogramming for CLIP and vision-language models",
+      "description": "Improve visual reprogramming of vision-language models via improved language guidance",
       "bibtex": "@inproceedings{cai2025attribute,\n  title={Attribute-based Visual Reprogramming for Vision-Language Models},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={International Conference on Learning Representations},\n  year={2025},\n  url={https://openreview.net/forum?id=j964C6y92q}\n}"
     },
     {
@@ -221,8 +245,32 @@
       "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
       "url": "https://icml.cc/virtual/2025/poster/45490",
       "type": "recommended",
-      "description": "Decoupled visual prompts for enhanced CLIP reprogramming",
+      "description": "Improve visual reprogramming via tailoring visual prompts to different semantics",
       "bibtex": "@inproceedings{cai2025understanding,\n  title={Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={International Conference on Machine Learning},\n  year={2025},\n  url={https://openreview.net/forum?id=Ne5brB1tKN}\n}"
+    },
+    {
+      "title": "Reprogramming Pretrained Language Models for Antibody Sequence Infilling",
+      "authors": "Melnyk, I., Chenthamarakshan, V., Chen, P.-Y., Das, P., Dhurandhar, A., Padhi, I., Das, D.",
+      "url": "https://proceedings.mlr.press/v202/melnyk23a.html",
+      "type": "recommended",
+      "description": "Reprogramming language models for antibody design",
+      "bibtex": "@inproceedings{pmlr-v202-melnyk23a,\n  title={Reprogramming Pretrained Language Models for Antibody Sequence Infilling},\n  author={Melnyk, Igor and Chenthamarakshan, Vijil and Chen, Pin-Yu and Das, Payel and Dhurandhar, Amit and Padhi, Inkit and Das, Devleena},\n  booktitle={Proceedings of the 40th International Conference on Machine Learning},\n  pages={24398--24419},\n  year={2023},\n  volume={202},\n  series={Proceedings of Machine Learning Research},\n  publisher={PMLR},\n  url={https://proceedings.mlr.press/v202/melnyk23a.html}\n}"
+    },
+    {
+      "title": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "authors": "Jin, M., Wang, S., Ma, L., Chu, Z., Zhang, J. Y., Shi, X., Chen, P.-Y., Liang, Y., Li, Y.-F., Pan, S., Wen, Q.",
+      "url": "https://openreview.net/forum?id=Unb5CVPtae",
+      "type": "recommended",
+      "description": "Reprogramming language models for time series forecasting",
+      "bibtex": "@inproceedings{jin2024timellm,\n  title={Time-LLM: Time Series Forecasting by Reprogramming Large Language Models},\n  author={Jin, Ming and Wang, Shiyu and Ma, Lintao and Chu, Zhixuan and Zhang, James Y and Shi, Xiaoming and Chen, Pin-Yu and Liang, Yuxuan and Li, Yuan-Fang and Pan, Shirui and Wen, Qingsong},\n  booktitle={International Conference on Learning Representations},\n  year={2024},\n  url={https://openreview.net/forum?id=Unb5CVPtae}\n}"
+    },
+    {
+      "title": "REFINE: Inversion-Free Backdoor Defense via Model Reprogramming",
+      "authors": "Chen, Y., Shao, S., Huang, E., Li, Y., Chen, P.-Y., Qin, Z., Ren, K.",
+      "url": "https://openreview.net/forum?id=4IYdCws9fc",
+      "type": "recommended",
+      "description": "Reprogramming as a defense against backdoor attacks in neural networks",
+      "bibtex": "@inproceedings{chen2025refine,\n  title={REFINE: Inversion-Free Backdoor Defense via Model Reprogramming},\n  author={Chen, Yukun and Shao, Shuo and Huang, Enhao and Li, Yiming and Chen, Pin-Yu and Qin, Zhan and Ren, Kui},\n  booktitle={International Conference on Learning Representations},\n  year={2025},\n  url={https://openreview.net/forum?id=4IYdCws9fc}\n}"
     }
   ],
   "schedule": {
