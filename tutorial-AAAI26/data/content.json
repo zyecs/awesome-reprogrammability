@@ -2,9 +2,9 @@
   "tutorial": {
     "title": "Neural Network Reprogrammability: A Unified Framework for Parameter-Efficient Foundation Model Adaptation",
     "conference": "AAAI 2026",
-    "date": "January 20-21, 2026",
+    "date": "2:00 PM, January 21, 2026",
     "duration": "3.5 hours",
-    "venue": "SINGAPORE EXPO, Singapore",
+    "venue": "Room Peridot 205, SINGAPORE EXPO, Singapore",
     "contact": [
       {
         "name": "Feng Liu",
@@ -18,7 +18,7 @@
       }
     ],
     "official_link": "https://aaai.org/conference/aaai/aaai-26/",
-    "description": "A comprehensive introduction to <strong>Neural Network Reprogrammability</strong>, covering <em>theoretical foundations</em>, <em>practical implementation</em>, and <em>trustworthiness implications</em>.\n\nJoin us and learn how to adapt frozen pre-trained models for new tasks with <strong>input transformation</strong> and <strong>output alignment</strong>!"
+    "description": "Welcome to the tutorial on <strong>Neural Network Reprogrammability</strong>. We'll cover <em>theoretical foundations</em>, <em>practical implementation</em>, and <em>trustworthiness implications</em>.\n\nJoin us and learn how to adapt frozen pre-trained models for new tasks with <strong>input transformation</strong> and <strong>output alignment</strong>!"
   },
   "sessions": [
     {
@@ -44,7 +44,7 @@
         "Comprehensive taxonomy of Input Manipulation.",
         "Comprehensive taxonomy of Ouput Alignment.",
         "Deep dive case study: sample-specific input manipulation and probabilistic output alignment",
-        "Hands-on implementation examples and best practices"
+        "Hands-on implementation examples"
       ]
     },
     {
@@ -56,7 +56,7 @@
         "This session discusses the <strong>SO WHAT</strong> of the neural network reprogrammability framework.",
         "Holistic trustworthiness evaluation: robustness, security, fairness perspectives",
         "Real-world applications: bioinformatics, time series analysis, multimodal learning",
-        "Emerging challenges: adversarial reprogramming, privacy implications",
+        "Emerging challenges: adversarial reprogramming, reprogramming against backdoor attacks, privacy implications",
         "Future research directions and open challenges in the field"
       ]
     }
@@ -75,7 +75,7 @@
       "name": "Zesheng Ye",
       "affiliation": "The University of Melbourne",
       "email": "zesheng.ye@unimelb.edu.au",
-      "bio": "Dr. Zesheng Ye is a NIPG Postdoctoral Research Fellow at The University of Melbourne, working on trustworthy machine learning, with a focus on the robustness, efficiency, privacy of Foundation Model deployment. He received his Ph.D. from the University of New South Wales and serves as Area Chair/Senior PC Member for conferences including TheWebConf, IJCNN, and CIKM. He is also a regular reviewer for ICML, NeurIPS, ICLR, AAAI, CVPR, KDD, and SIGIR, and has been recognized with the PRCV 2024 Best Reviewer Award and the ICML 2025 Top Reviewer Award.",
+      "bio": "Dr. Zesheng Ye is a Postdoctoral Research Fellow at The University of Melbourne and a recipient of the NIPG Fellowship, working on trustworthy machine learning, with a focus on the robustness, efficiency, privacy of Foundation Model deployment. He received his Ph.D. from the University of New South Wales and serves as Area Chair/Senior PC Member for conferences including TheWebConf, ICASSP, CIKM, and IJCNN. He is also a regular reviewer for ICML, NeurIPS, ICLR, AAAI, and CVPR, and has been recognized with the PRCV 2024 Best Reviewer Award, ICML 2025 Top Reviewer Award, and RecSys 2025 Distinguished PC Member Award.",
       "sessions": [
         2
       ]
@@ -145,28 +145,84 @@
   },
   "reading": [
     {
-      "title": "Neural Network Reprogrammability: A Unified Theme in the Era of Foundation Models",
-      "authors": "Liu, F., Ye, Z., Chen, P.",
+      "title": "Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction",
+      "authors": "Ye, Z., Cai, C., Dong, R., Feng, L., Qi, J., Chen, P.-Y., Liu, F.",
       "url": "https://arxiv.org/abs/2506.04650",
-      "type": "essential",
-      "description": "Foundational survey paper introducing the unified reprogrammability framework",
-      "bibtex": "@article{liu2024reprogrammability,\n  title={Neural Network Reprogrammability: A Unified Theme in the Era of Foundation Models},\n  author={Liu, Feng and Ye, Zesheng and Chen, Pin-Yu},\n  journal={arXiv preprint arXiv:2506.04650},\n  year={2024}\n}"
+      "type": "survey",
+      "description": "Introducing the unified reprogrammability framework",
+      "bibtex": "@article{ye2025neural,\n  title={Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction},\n  author={Ye, Zesheng and Cai, Chengyi and Dong, Ruijiang and Qi, Jianzhong and Feng, Lei and Chen, Pin-Yu and Liu, Feng},\n  journal={arXiv preprint arXiv:2506.04650},\n  year={2025}\n}"
     },
     {
       "title": "Adversarial Reprogramming of Neural Networks",
-      "authors": "Elsayed, G. F., et al.",
+      "authors": "Elsayed, G. F., Goodfellow, I., Sohl-Dickstein, J.",
       "url": "https://arxiv.org/abs/1806.11146",
       "type": "foundational",
-      "description": "Seminal work on adversarial reprogramming techniques",
-      "bibtex": "@article{elsayed2018adversarial,\n  title={Adversarial Reprogramming of Neural Networks},\n  author={Elsayed, Gamaleldin F and Goodfellow, Ian and Sohl-Dickstein, Jascha},\n  journal={arXiv preprint arXiv:1806.11146},\n  year={2018}\n}"
+      "description": "Introducing the concept of model reprogramming",
+      "bibtex": "@inproceedings{elsayed2019adversarial,\n  title={Adversarial Reprogramming of Neural Networks},\n  author={Elsayed, Gamaleldin F and Goodfellow, Ian and Sohl-Dickstein, Jascha},\n  booktitle={International Conference on Learning Representations},\n  year={2019},\n  url={https://openreview.net/forum?id=Syx_Ss05tm}\n}"
     },
     {
-      "title": "Visual Prompt Tuning",
-      "authors": "Jia, M., et al.",
-      "url": "https://arxiv.org/abs/2203.12119",
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "authors": "Lester, B., Al-Rfou, R., Constant, N.",
+      "url": "https://aclanthology.org/2021.emnlp-main.243/",
+      "type": "foundational",
+      "description": "Foundational prompt tuning research",
+      "bibtex": "@inproceedings{lester2021power,\n  title={The Power of Scale for Parameter-Efficient Prompt Tuning},\n  author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},\n  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},\n  pages={3045--3059},\n  year={2021},\n  url={https://aclanthology.org/2021.emnlp-main.243}\n}"
+    },
+    {
+      "title": "Learning to Prompt for Vision-Language Models",
+      "authors": "Zhou, K., Yang, J., Loy, C. C., Liu, Z.",
+      "url": "https://arxiv.org/abs/2109.01134",
+      "type": "foundational",
+      "description": "Soft prompting tuning for Vision-Language Models on the textual branch",
+      "bibtex": "@article{zhou2022learning,\n  title={Learning to Prompt for Vision-Language Models},\n  author={Zhou, Kaiyang and Yang, Jingkang and Loy, Chen Change and Liu, Ziwei},\n  journal={International Journal of Computer Vision},\n  volume={130},\n  number={9},\n  pages={2337--2348},\n  year={2022},\n  publisher={Springer}\n}"
+    },
+    {
+      "title": "Language Models are Few-Shot Learners",
+      "authors": "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et al.",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "type": "foundational",
+      "description": "First work that demonstrates that scaling LLMs can elicit in-context learning capability",
+      "bibtex": "@inproceedings{brown2020language,\n  title={Language Models are Few-Shot Learners},\n  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={33},\n  pages={1877--1901},\n  year={2020},\n  url={https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html}\n}"
+    },
+    {
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "authors": "Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.",
+      "url": "https://arxiv.org/abs/2201.11903",
+      "type": "foundational",
+      "description": "Breakthrough in instruction-based reasoning",
+      "bibtex": "@inproceedings{wei2022chain,\n  title={Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},\n  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={35},\n  pages={24824--24837},\n  year={2022},\n  url={https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html}\n}"
+    },
+    {
+      "title": "Sample-specific Masks for Visual Reprogramming-based Prompting",
+      "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
+      "url": "https://icml.cc/virtual/2024/poster/35002",
       "type": "recommended",
-      "description": "Key work on visual prompt tuning for vision transformers",
-      "bibtex": "@article{jia2022visual,\n  title={Visual Prompt Tuning},\n  author={Jia, Menglin and Tang, Luming and Chen, Bor-Chun and Cardie, Claire and Belongie, Serge and Hariharan, Bharath and Lim, Ser-Nam},\n  journal={arXiv preprint arXiv:2203.12119},\n  year={2022}\n}"
+      "description": "Sample-specific masking approach for improved visual reprogramming",
+      "bibtex": "@inproceedings{cai2024sample,\n  title={Sample-specific Masks for Visual Reprogramming-based Prompting},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={International Conference on Machine Learning},\n  year={2024},\n  note={ICML 2024 Spotlight},\n  url={https://openreview.net/forum?id=4sikyurTLX}\n}"
+    },
+    {
+      "title": "Bayesian-guided Label Mapping for Visual Reprogramming",
+      "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/1f7e17e9d60e7bc692b72f41d2178b95-Abstract-Conference.html",
+      "type": "recommended",
+      "description": "Probabilistic label mapping for improved visual reprogramming",
+      "bibtex": "@inproceedings{cai2024bayesian,\n  title={Bayesian-guided Label Mapping for Visual Reprogramming},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={37},\n  year={2024},\n  note={NeurIPS 2024 Oral},\n  url={https://openreview.net/forum?id=135eKqDoRR}\n}"
+    },
+    {
+      "title": "Attribute-based Visual Reprogramming for Vision-Language Models",
+      "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
+      "url": "https://openreview.net/forum?id=j964C6y92q",
+      "type": "recommended",
+      "description": "Attribute-guided visual reprogramming for CLIP and vision-language models",
+      "bibtex": "@inproceedings{cai2025attribute,\n  title={Attribute-based Visual Reprogramming for Vision-Language Models},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={International Conference on Learning Representations},\n  year={2025},\n  url={https://openreview.net/forum?id=j964C6y92q}\n}"
+    },
+    {
+      "title": "Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts",
+      "authors": "Cai, C., Ye, Z., Feng, L., Qi, J., Liu, F.",
+      "url": "https://icml.cc/virtual/2025/poster/45490",
+      "type": "recommended",
+      "description": "Decoupled visual prompts for enhanced CLIP reprogramming",
+      "bibtex": "@inproceedings{cai2025understanding,\n  title={Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts},\n  author={Cai, Chengyi and Ye, Zesheng and Feng, Lei and Qi, Jianzhong and Liu, Feng},\n  booktitle={International Conference on Machine Learning},\n  year={2025},\n  url={https://openreview.net/forum?id=Ne5brB1tKN}\n}"
     }
   ],
   "schedule": {

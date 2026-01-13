@@ -39,9 +39,9 @@
         <!-- Materials Header -->
         <div class="text-center mb-5">
             <h1>Tutorial Materials</h1>
-            <p class="lead">Comprehensive resources for learning neural network reprogrammability</p>
+            <p class="lead">Resources for learning neural network reprogrammability</p>
             <div class="alert alert-info">
-                <strong>Note:</strong> Materials will be made available shortly before and during the tutorial.
+                <strong>Note:</strong> Materials will be made available shortly before, during and after the tutorial.
                 Check back regularly for updates.
             </div>
         </div>
@@ -61,15 +61,15 @@
                 </div>
 
                 <!-- Videos Section -->
-                <div class="mb-5">
+                <!-- <div class="mb-5">
                     <h3 class="d-flex align-items-center">
                         <span class="me-2">🎥</span> Video Recordings
                     </h3>
                     <p class="text-muted mb-3">Complete tutorial recordings and highlights</p>
                     <div id="videos-list" class="list-group mb-4">
                         <!-- Videos loaded dynamically -->
-                    </div>
-                </div>
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
 
             <!-- Right Column - Interactive Materials -->
@@ -85,21 +85,24 @@
                     </div>
                 </div>
 
-                <!-- Reading List Section -->
-                <div class="mb-5">
-                    <h3 class="d-flex align-items-center">
-                        <span class="me-2">📚</span> Essential Reading
-                    </h3>
-                    <p class="text-muted mb-3">Key papers and resources for deeper understanding</p>
-                    <div id="reading-list">
-                        <!-- Reading loaded dynamically -->
-                    </div>
+            </div>
+        </div>
+
+        <!-- Reading List Section (Full Width, Two Columns) -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="d-flex align-items-center mb-3">
+                    <span class="me-2">📚</span> Recommended Reading
+                </h3>
+                <p class="text-muted mb-4">Key papers and resources for deeper understanding</p>
+                <div id="reading-list" class="row">
+                    <!-- Reading loaded dynamically in two columns -->
                 </div>
             </div>
         </div>
 
         <!-- Additional Resources -->
-        <div class="row mt-5">
+        <!-- <div class="row mt-5">
             <div class="col-md-6">
                 <div class="card h-100">
                     <div class="card-body">
@@ -154,11 +157,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- License and Attribution -->
-        <div class="row mt-4">
-            <div class="col-md-12">
+        <div class="row mt-5">
+            <div class="col-12">
                 <div class="card">
                     <div class="card-body">
                         <h4>📜 License and Attribution</h4>
@@ -179,7 +182,7 @@
                         </ul>
                         <p class="mb-0">
                             <strong>Citation:</strong> If you use these materials in your work, please cite the tutorial
-                            and the foundational survey paper.
+                            and our survey paper.
                         </p>
                     </div>
                 </div>
@@ -191,7 +194,7 @@
         <div class="container text-center">
             <p class="mb-0">
                 Part of <a href="../">awesome-reprogrammability</a> |
-                Contact: <a href="mailto:feng.liu1@unimelb.edu.au">feng.liu1@unimelb.edu.au</a> |
+                Contact: <a href="mailto:zesheng.ye@unimelb.edu.au">Zesheng Ye</a> |
                 <a href="https://github.com/username/awesome-reprogrammability" target="_blank">GitHub</a>
             </p>
         </div>
@@ -212,23 +215,25 @@
 
     <!-- Reading Item Template -->
     <template id="reading-template">
-        <div class="card mb-3">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h6 class="reading-title mb-1"></h6>
-                    <span class="badge bg-info reading-type"></span>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="reading-title mb-1"></h6>
+                        <span class="badge bg-info reading-type"></span>
+                    </div>
+                    <p class="text-muted reading-authors mb-2"></p>
+                    <p class="reading-description mb-3"></p>
+                    <div class="d-flex gap-2 align-items-center">
+                        <button class="btn btn-sm btn-outline-secondary" onclick="copyBibtex(this)">
+                            📋 Copy BibTeX
+                        </button>
+                        <a href="#" class="btn btn-sm btn-outline-primary reading-link" target="_blank">
+                            🔗 View Paper
+                        </a>
+                    </div>
+                    <textarea class="bibtex-content d-none"></textarea>
                 </div>
-                <p class="text-muted reading-authors mb-2"></p>
-                <p class="reading-description mb-3"></p>
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-secondary" onclick="copyBibtex(this)">
-                        📋 Copy BibTeX
-                    </button>
-                    <a href="#" class="btn btn-sm btn-outline-primary reading-link" target="_blank">
-                        🔗 View Paper
-                    </a>
-                </div>
-                <textarea class="bibtex-content d-none"></textarea>
             </div>
         </div>
     </template>

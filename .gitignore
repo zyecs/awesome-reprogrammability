@@ -1,0 +1,42 @@
+# MkDocs build output
+site/
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE and Development Tools
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+**/.claude/
+.gemini/
+**/.gemini/
+.aider*
+.cursor/
+**/.cursor/
+
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
