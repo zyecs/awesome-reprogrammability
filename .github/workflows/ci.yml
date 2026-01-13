@@ -10,9 +10,13 @@ on:
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -52,10 +56,16 @@ jobs:
       - name: Render README (auto)
         run: |
           python scripts/render_readme.py
-          # Fail if README needs updating but changes were not committed
+          # Auto-commit README changes if any
           if ! git diff --exit-code -- README.md; then
-            echo "README changed by renderer. Commit the updated README." >&2
-            exit 1
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Auto-update README timestamp [skip ci]"
+            git push
+            echo "README updated and committed automatically"
+          else
+            echo "README is already up to date"
           fi
 
       - name: Linkcheck
