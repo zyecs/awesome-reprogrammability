@@ -1,5 +1,7 @@
 # Awesome Neural Network Reprogrammability [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+> **📢 [AAAI 2026 Tutorial Website Now Live!](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/)** - Learn neural network reprogrammability techniques for parameter-efficient foundation model adaptation.
+
 <div align="center">
 
 > A comprehensive collection of resources on neural network reprogrammability - the art of adapting pre-trained models for new tasks without updating their parameters.
