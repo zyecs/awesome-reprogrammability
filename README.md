@@ -8,7 +8,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--09--17-blue.svg)](README.md)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--01--13-blue.svg)](README.md)
 
 📚 **[View AAAI 2026 Tutorial Website](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/)** | [Source](tree/main/tutorial-AAAI26)
 
@@ -132,10 +132,10 @@ and
 <!-- AUTO:START -->
 
 
-#### 📈 Recent Advances (2023-2025) (auto-generated)
+#### 📈 Recent Advances (2024-2026) (auto-generated)
 
 <details>
-<summary><strong>Model Reprogramming</strong> <em>(17 papers)</em></summary>
+<summary><strong>Model Reprogramming</strong> <em>(10 papers)</em></summary>
 
 - [Attribute-based Visual Reprogramming for Vision-Language Models](https://arxiv.org/abs/2501.13982) (2025, ICLR)
 - [Model Reprogramming Demystified: A Neural Tangent Kernel Perspective](https://arxiv.org/abs/2506.0620) (2025, arXiv)
@@ -147,46 +147,24 @@ and
 - [Model Reprogramming Outperforms Fine-tuning on Out-of-distribution Data in Text-Image Encoders](https://arxiv.org/abs/2403.10800) (2024, SatML)
 - [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) (2024, ICML)
 - [Time-LLM: Time Series Forecasting by Reprogramming Large Language Models](https://arxiv.org/abs/2310.01728) (2024, ICLR)
-- [BlackVIP: Black-Box Visual Prompting for Robust Transfer Learning](https://arxiv.org/abs/2303.14773) (2023, CVPR)
-- [Deep Graph Reprogramming](https://arxiv.org/abs/2304.14593) (2023, CVPR)
-- [From English to More Languages: Parameter-Efficient Model Reprogramming for Cross-Lingual Speech Recognition](https://arxiv.org/abs/2301.07851) (2023, ICASSP)
-- [Low-Resource Music Genre Classification with Cross-Modal Neural Model Reprogramming](https://arxiv.org/abs/2211.01317) (2023, ICASSP)
-- [Neural Model Reprogramming with Similarity Based Mapping for Low-Resource Spoken Command Recognition](https://arxiv.org/abs/2110.03894) (2023, Interspeech)
-- [Reprogramming Pretrained Language Models for Antibody Sequence Infilling](https://arxiv.org/abs/2210.07144) (2023, ICML)
-- [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) (2023, CVPR)
 
 </details>
 
 <details>
-<summary><strong>Prompt Tuning</strong> <em>(13 papers)</em></summary>
+<summary><strong>Prompt Tuning</strong> <em>(4 papers)</em></summary>
 
 - [Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want](https://arxiv.org/abs/2403.20271) (2025, ICLR)
 - [ArGue: Attribute-Guided Prompt Tuning for Vision-Language Models](https://arxiv.org/abs/2311.16494) (2024, CVPR)
 - [Exploring the Transferability of Visual Prompting for Multimodal Large Language Models](https://arxiv.org/abs/2404.11207) (2024, CVPR)
 - [PromptKD: Unsupervised Prompt Distillation for Vision-Language Models](https://arxiv.org/abs/2403.02781) (2024, CVPR)
-- [Explicit Visual Prompting for Low-Level Structure Segmentations](https://arxiv.org/abs/2303.10883) (2023, CVPR)
-- [InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning](https://arxiv.org/abs/2305.06500) (2023, NeurIPS)
-- [MaPLe: Multi-modal Prompt Learning](https://arxiv.org/abs/2210.03117) (2023, CVPR)
-- [On the Role of Attention in Prompt-tuning](https://arxiv.org/abs/2306.03435) (2023, ICML)
-- [PLOT: Prompt Learning with Optimal Transport for Vision-Language Models](https://arxiv.org/abs/2210.01253) (2023, ICLR)
-- [TransHP: Image Classification with Hierarchical Prompting](https://arxiv.org/abs/2304.06385) (2023, NeurIPS)
-- [Tuning Multi-mode Token-level Prompt Alignment across Modalities](https://arxiv.org/abs/2309.13847) (2023, NeurIPS 2023)
-- [Universal Prompt Tuning for Graph Neural Networks](https://arxiv.org/abs/2209.15240) (2023, NeurIPS)
-- [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485) (2023, NeurIPS)
 
 </details>
 
 <details>
-<summary><strong>Prompt Instruction</strong> <em>(8 papers)</em></summary>
+<summary><strong>Prompt Instruction</strong> <em>(2 papers)</em></summary>
 
 - [Joint Visual and Text Prompting for Improved Object-Centric Perception with Multimodal Large Language Models](https://arxiv.org/abs/2404.04514) (2024, arXiv)
 - [PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs](https://arxiv.org/abs/2402.07872) (2024, ICML)
-- [A Simple Zero-shot Prompt Weighting Technique to Improve Prompt Ensembling in Text-Image Models](https://arxiv.org/abs/2302.06235) (2023, ICML)
-- [Decomposed Prompting: A Modular Approach for Solving Complex Tasks](https://arxiv.org/abs/2210.02406) (2023, ICLR)
-- [Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions](https://arxiv.org/abs/2212.10509) (2023, ACL)
-- [Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V](https://arxiv.org/abs/2310.11441) (2023, arXiv)
-- [What Does a Platypus Look Like? Generating Customized Prompts for Zero-Shot Image Classification](https://arxiv.org/abs/2209.03320) (2023, ICCV)
-- [What Makes Good Examples for Visual In-Context Learning?](https://arxiv.org/abs/2301.13670) (2023, arXiv)
 
 </details>
 
@@ -199,7 +177,7 @@ and
 
 > 📋 **Complete List**: [All Papers with Taxonomy Classification](docs/sections/papers.md)
 
-_Last updated: 2025-09-17 23:03 UTC_
+_Last updated: 2026-01-13 14:18 UTC_
 
 <!-- AUTO:END -->
 

@@ -6,6 +6,7 @@ Paper | Configuration ($\lambda$) | Location ($\ell$) | Operator ($\tau$) | Alig
 --- | --- | --- | --- | --- | ---
 [Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146) Elsayed et al. (2019) | Learnable | Input ($\mathcal{X}_S$) | Additive (AD) | Statistical (SA) | ICLR
 [Adversarial Reprogramming of Text Classification Neural Networks](https://arxiv.org/abs/1809.01829) Neekhara et al. (2019) | Learnable | Embedding ($\mathcal{E}$) | Parametric (PR) | Statistical (SA) / Linear (LA) | EMNLP/IJCNLP
+[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) BROWN et al. (2020) | Fixed | input-space | Concatenative (CO) | Identity (ID) | NeurIPS
 [Reprogramming Language Models for Molecular Representation Learning](https://arxiv.org/abs/2012.03460) Vinod et al. (2020) | Learnable | Input ($\mathcal{X}_S$) | Parametric (PR) | Rule-based (RA) | NeurIPS Workshop
 [Learning how to ask: Querying LMs with mixtures of soft prompts](https://arxiv.org/abs/2104.06599) Qin et al. (2021) | Learnable | Embedding ($\mathcal{E}$) | Concatenative (CO) | Identity (ID) | NAACL
 [PTR: Prompt Tuning with Rules for Text Classification](https://arxiv.org/abs/2105.11259) HAN et al. (2021) | Learnable | Embedding ($\mathcal{E}$) | Concatenative (CO) | Rule-based (RA) | arXiv preprint (cs.CL)
