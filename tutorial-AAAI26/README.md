@@ -1,4 +1,23 @@
-# Neural Network Reprogrammability Tutorial Website
+# Neural Network Reprogrammability Tutorial - AAAI 2026
+
+## 🌐 View Live Tutorial Website
+
+**👉 [Click here to view the tutorial website](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/)**
+
+This folder contains the source files for the tutorial website. For the best experience, please visit the live website above.
+
+---
+
+## Quick Links
+
+- [Tutorial Home](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/index.html)
+- [Program Schedule](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/program.html)
+- [Speakers](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/speakers.html)
+- [Materials](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/materials.html)
+
+---
+
+## About This Tutorial
 
 A minimal, academic-style static website for the "Neural Network Reprogrammability" tutorial at AAAI 2026.
 
