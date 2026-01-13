@@ -8,6 +8,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--09--17-blue.svg)](README.md)
 
+📚 **[View AAAI 2026 Tutorial Website](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/)** | [Source](tree/main/tutorial-AAAI26)
+
 </div>
 
 ---
