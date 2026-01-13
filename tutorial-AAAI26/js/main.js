@@ -245,8 +245,39 @@ function renderReadingList(readings) {
 
         item.querySelector('.reading-authors').textContent = paper.authors;
 
+        // Set description
+        const description = item.querySelector('.reading-description');
+        if (description && paper.description) {
+            description.textContent = paper.description;
+        }
+
+        // Set type badge with color based on type
+        const typeBadge = item.querySelector('.reading-type');
+        if (typeBadge && paper.type) {
+            typeBadge.textContent = paper.type;
+
+            // Apply different colors based on paper type
+            typeBadge.classList.remove('bg-info', 'bg-primary', 'bg-success', 'bg-warning');
+            if (paper.type.toLowerCase() === 'foundational') {
+                typeBadge.classList.add('bg-primary');  // Blue for foundational papers
+            } else if (paper.type.toLowerCase() === 'recommended') {
+                typeBadge.classList.add('bg-success');  // Green for recommended papers
+            } else if (paper.type.toLowerCase() === 'survey') {
+                typeBadge.classList.add('bg-warning');  // Yellow for survey papers
+            } else {
+                typeBadge.classList.add('bg-info');     // Light blue as default fallback
+            }
+        }
+
+        // Set BibTeX content
         const bibtexTextarea = item.querySelector('.bibtex-content');
         bibtexTextarea.value = paper.bibtex;
+
+        // Set "View Paper" link
+        const viewPaperLink = item.querySelector('.reading-link');
+        if (viewPaperLink && paper.url) {
+            viewPaperLink.href = paper.url;
+        }
 
         list.appendChild(item);
     });
@@ -254,36 +285,56 @@ function renderReadingList(readings) {
 
 // Copy BibTeX to clipboard
 function copyBibtex(button) {
-    const textarea = button.parentElement.querySelector('.bibtex-content');
+    // Find the textarea within the same card body
+    const cardBody = button.closest('.card-body');
+    const textarea = cardBody.querySelector('.bibtex-content');
+
+    if (!textarea) {
+        console.error('BibTeX textarea not found');
+        return;
+    }
 
     if (navigator.clipboard) {
         navigator.clipboard.writeText(textarea.value).then(() => {
-            button.textContent = 'Copied!';
-            setTimeout(() => button.textContent = 'Copy BibTeX', 2000);
+            const originalText = button.innerHTML;
+            button.innerHTML = '✅ Copied!';
+            setTimeout(() => button.innerHTML = originalText, 2000);
+        }).catch(err => {
+            console.error('Failed to copy:', err);
+            alert('Failed to copy BibTeX');
         });
     } else {
         // Fallback for older browsers
         textarea.select();
         document.execCommand('copy');
-        button.textContent = 'Copied!';
-        setTimeout(() => button.textContent = 'Copy BibTeX', 2000);
+        const originalText = button.innerHTML;
+        button.innerHTML = '✅ Copied!';
+        setTimeout(() => button.innerHTML = originalText, 2000);
     }
 }
 
 // Add to calendar function
-function addToCalendar() {
-    const tutorial = contentData?.tutorial;
-    if (!tutorial) return;
+async function addToCalendar() {
+    // Ensure content is loaded
+    const data = await loadContent();
+    if (!data || !data.tutorial) {
+        console.error('Tutorial data not available');
+        return;
+    }
 
+    const tutorial = data.tutorial;
+
+    // Convert "2:00 PM, January 21, 2026" to ISO format
+    // Singapore is UTC+8, so 2:00 PM SGT = 06:00 UTC
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tutorial//Neural Network Reprogrammability//EN
 BEGIN:VEVENT
 UID:reprogrammability-tutorial-${Date.now()}@tutorial-website
-DTSTART:20260101T100000Z
-DURATION:PT3H30M
+DTSTART:20260121T060000Z
+DTEND:20260121T093000Z
 SUMMARY:${tutorial.title}
-DESCRIPTION:${tutorial.description}
+DESCRIPTION:${tutorial.description.replace(/\n/g, '\\n')}
 LOCATION:${tutorial.venue}
 END:VEVENT
 END:VCALENDAR`;
