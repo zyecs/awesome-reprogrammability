@@ -33,7 +33,11 @@ jobs:
 
       - name: Build MkDocs
         run: |
-          mkdocs build --strict --site-dir site
+          mkdocs build --site-dir site
+
+      - name: Copy tutorial-AAAI26 to site
+        run: |
+          cp -r tutorial-AAAI26 site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

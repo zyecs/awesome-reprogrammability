@@ -17,7 +17,6 @@ nav:
   - Papers: sections/papers.md
   - Taxonomy: sections/taxonomy.md
   - Evaluations: sections/evaluations.md
-  - Leaderboards: sections/leaderboards.md
 
 markdown_extensions:
   - tables
