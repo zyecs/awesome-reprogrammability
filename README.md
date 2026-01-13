@@ -177,7 +177,7 @@ and
 
 > 📋 **Complete List**: [All Papers with Taxonomy Classification](docs/sections/papers.md)
 
-_Last updated: 2026-01-13 14:18 UTC_
+_Last updated: 2026-01-13 16:39 UTC_
 
 <!-- AUTO:END -->
 
