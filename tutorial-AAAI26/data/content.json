@@ -97,19 +97,19 @@
     "slides": [
       {
         "title": "Session 1: Foundations of Reprogrammability",
-        "url": "TBD",
+        "url": "assets/repgm-aaai-tutorial-s1-feng.pdf",
         "format": "PDF",
         "description": "Theoretical foundations and formal framework"
       },
       {
-        "title": "Session 2: Input Manipulation Mechanics",
-        "url": "TBD",
+        "title": "Session 2: Mechanics of Reprogrammability",
+        "url": "assets/repgm-aaai-tutorial-s2-zesheng.pdf",
         "format": "PDF",
         "description": "Practical implementation and taxonomy"
       },
       {
-        "title": "Session 3: Trustworthy AI Implications",
-        "url": "TBD",
+        "title": "Session 3: Implications of Reprogrammability",
+        "url": "assets/repgm-aaai-tutorial-s3-pin-yu.pdf",
         "format": "PDF",
         "description": "Security, robustness, and applications"
       }
