@@ -35,7 +35,7 @@ DEFAULT_PATHS = [
     "docs",
 ]
 
-URL_RE = re.compile(r"https?://[\w\-._~:/?#\[\]@!$&'()*+,;=%]+", re.IGNORECASE)
+URL_RE = re.compile(r"https?://[\w\-._~:/?#\[\]@!$&'()*+,;=%]+?(?=[\)\]\s]|$)", re.IGNORECASE)
 
 
 def discover_files(paths: Iterable[Path]) -> List[Path]:
