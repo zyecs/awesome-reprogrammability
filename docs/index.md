@@ -15,4 +15,4 @@ Neural network reprogrammability refers to methods that enable pre-trained neura
 
 ## Quick Start
 
-Browse the main [README](https://github.com/username/awesome-reprogrammability) for the complete curated list of papers, datasets, and tools.
+Browse the main [README](https://github.com/zyecs/awesome-reprogrammability) for the complete curated list of papers, datasets, and tools.

@@ -15,7 +15,7 @@ This document provides templates for adding new resources to the Awesome Neural 
 ```markdown
 - **[Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146)** (Elsayed et al., 2019, ICLR) - Seminal work introducing adversarial reprogramming for cross-task transfer
   - 📊 **Taxonomy**: Learnable | Input | Additive | Statistical
-  - 🔗 **Code**: [adversarial-reprogramming](https://github.com/google-research/google-research/tree/master/adversarial_reprogramming)
+  - 🔗 **Code**: Available in supplementary materials
 ```
 
 ## 🛠️ Tool/Library Template
@@ -34,7 +34,7 @@ This document provides templates for adding new resources to the Awesome Neural 
 - **[OpenPrompt](https://github.com/thunlp/OpenPrompt)** - Comprehensive framework for prompt learning with support for multiple models and prompt types
   - 🏷️ **Category**: Framework
   - 💻 **Language**: Python
-  - 📚 **Documentation**: [openprompt.readthedocs.io](https://openprompt.readthedocs.io/)
+  - 📚 **Documentation**: See GitHub README
   - ⭐ **Stars**: 4.2k+
   - 🏃 **Status**: Active
 ```
@@ -57,7 +57,7 @@ This document provides templates for adding new resources to the Awesome Neural 
   - 🏷️ **Domain**: Computer Vision
   - 🎯 **Task**: Few-shot classification
   - 📄 **Paper**: [Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples](https://arxiv.org/abs/1903.03096)
-  - 💾 **Download**: [tfds.load('meta_dataset')](https://www.tensorflow.org/datasets/catalog/meta_dataset)
+  - 💾 **Download**: See GitHub repository for installation instructions
 ```
 
 ## 📖 Educational Resource Template

@@ -336,7 +336,7 @@ python scripts/render_readme.py
 
 This awesome list is built upon the comprehensive survey ["A Comprehensive Survey of Neural Network Reprogrammability"](https://arxiv.org/html/2506.04650) and the collective work of researchers worldwide advancing the field of neural network reprogrammability.
 
-Special thanks to all [contributors](https://github.com/your-username/awesome-reprogrammability/graphs/contributors) who help maintain and improve this resource.
+Special thanks to all [contributors](https://github.com/zyecs/awesome-reprogrammability/graphs/contributors) who help maintain and improve this resource.
 
 ---
 
