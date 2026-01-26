@@ -26,6 +26,7 @@
       "title": "Foundations of Reprogrammability",
       "presenter": "Feng Liu",
       "duration": "70 min (60 min lecture + 10 min Q&A)",
+      "slides": "assets/repgm-aaai-tutorial-s1-feng.pdf",
       "topics": [
         "This session establishes the <strong>WHY</strong> and <strong>WHAT</strong> of the neural network reprogrammability framework.",
         "Adaptation bottleneck and paradigm shift from fully fine-tuning to parameter-efficient fine-tuning",
@@ -39,6 +40,7 @@
       "title": "Mechanics of Reprogrammability",
       "presenter": "Zesheng Ye",
       "duration": "70 min (60 min lecture + 10 min Q&A)",
+      "slides": "assets/repgm-aaai-tutorial-s2-zesheng.pdf",
       "topics": [
         "This session introduces the <strong>HOW</strong> of the neural network reprogrammability framework.",
         "Comprehensive taxonomy of Input Manipulation.",
@@ -52,6 +54,7 @@
       "title": "Implications of Reprogrammability",
       "presenter": "Pin-Yu Chen",
       "duration": "70 min (60 min lecture + 10 min Q&A)",
+      "slides": "assets/repgm-aaai-tutorial-s3-pin-yu.pdf",
       "topics": [
         "This session discusses the <strong>SO WHAT</strong> of the neural network reprogrammability framework.",
         "Holistic trustworthiness evaluation: robustness, security, fairness perspectives",

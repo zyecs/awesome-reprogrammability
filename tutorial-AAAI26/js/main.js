@@ -154,6 +154,13 @@ function renderProgram(data) {
             topicsList.appendChild(ul);
         }
 
+        // Set slides link if available
+        const slidesLink = sessionCard.querySelector('.slides-link');
+        if (slidesLink && session.slides) {
+            slidesLink.href = session.slides;
+            slidesLink.style.display = 'block';
+        }
+
         sessionList.appendChild(sessionCard);
     });
 }
