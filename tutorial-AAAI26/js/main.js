@@ -154,11 +154,10 @@ function renderProgram(data) {
             topicsList.appendChild(ul);
         }
 
-        // Set slides link if available
-        const slidesLink = sessionCard.querySelector('.slides-link');
-        if (slidesLink && session.slides) {
-            slidesLink.href = session.slides;
-            slidesLink.style.display = 'block';
+        // Update Materials button to link to session slides
+        const materialsLink = sessionCard.querySelector('.materials-link');
+        if (materialsLink && session.slides) {
+            materialsLink.href = session.slides;
         }
 
         sessionList.appendChild(sessionCard);
@@ -212,7 +211,15 @@ function renderMaterialSection(type, materials) {
         link.href = material.url || '#';
 
         item.querySelector('.material-title').textContent = material.title;
-        item.querySelector('.material-format').textContent = material.format || material.platform || 'Link';
+
+        const formatBadge = item.querySelector('.material-format');
+        formatBadge.textContent = material.format || material.platform || 'Link';
+
+        // Apply bright cyan color for slides (more visible)
+        if (type === 'slides') {
+            formatBadge.classList.remove('bg-secondary');
+            formatBadge.classList.add('bg-info');
+        }
 
         const description = item.querySelector('.material-description');
         if (description && material.description) {
