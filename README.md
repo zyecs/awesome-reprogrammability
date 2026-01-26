@@ -8,7 +8,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--01--13-blue.svg)](README.md)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--01--26-blue.svg)](README.md)
 
 📚 **[View AAAI 2026 Tutorial Website](https://zyecs.github.io/awesome-reprogrammability/tutorial-AAAI26/)** | [Source](tree/main/tutorial-AAAI26)
 
@@ -177,7 +177,7 @@ and
 
 > 📋 **Complete List**: [All Papers with Taxonomy Classification](docs/sections/papers.md)
 
-_Last updated: 2026-01-13 06:17 UTC_
+_Last updated: 2026-01-26 03:57 UTC_
 
 <!-- AUTO:END -->
 
